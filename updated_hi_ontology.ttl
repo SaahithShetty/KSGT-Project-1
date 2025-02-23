@@ -1,0 +1,225 @@
+@prefix hi: <http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+hi:Accuracy a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Accuracy" ;
+    rdfs:comment "Automatically added class: Accuracy",
+        "Automatically added data property: Accuracy",
+        "Automatically added object property: Accuracy" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:Algorithm a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Algorithm" ;
+    rdfs:comment "Automatically added class: Algorithm",
+        "Automatically added data property: Algorithm",
+        "Automatically added object property: Algorithm" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:Artificial_Intelligence a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Artificial_Intelligence" ;
+    rdfs:comment "Automatically added class: Artificial_Intelligence",
+        "Automatically added data property: Artificial_Intelligence",
+        "Automatically added object property: Artificial_Intelligence" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:Concept_ID a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Concept_ID" ;
+    rdfs:comment "Automatically added class: Concept_ID",
+        "Automatically added data property: Concept_ID",
+        "Automatically added object property: Concept_ID" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:Conversational_Agent a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Conversational_Agent" ;
+    rdfs:comment "Automatically added class: Conversational_Agent",
+        "Automatically added data property: Conversational_Agent",
+        "Automatically added object property: Conversational_Agent" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:Human_Centered_AI_Dementia a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Human_Centered_AI_Dementia" ;
+    rdfs:comment "Automatically added class: Human_Centered_AI_Dementia",
+        "Automatically added data property: Human_Centered_AI_Dementia",
+        "Automatically added object property: Human_Centered_AI_Dementia" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:Reinforcement_Learning a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "Reinforcement_Learning" ;
+    rdfs:comment "Automatically added class: Reinforcement_Learning",
+        "Automatically added data property: Reinforcement_Learning",
+        "Automatically added object property: Reinforcement_Learning" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:agent a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "agent" ;
+    rdfs:comment "Automatically added class: agent",
+        "Automatically added data property: agent",
+        "Automatically added object property: agent" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:available a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "available" ;
+    rdfs:comment "Automatically added class: available",
+        "Automatically added data property: available",
+        "Automatically added object property: available" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:cluster a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "cluster" ;
+    rdfs:comment "Automatically added class: cluster",
+        "Automatically added data property: cluster",
+        "Automatically added object property: cluster" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:data a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "data" ;
+    rdfs:comment "Automatically added class: data",
+        "Automatically added data property: data",
+        "Automatically added object property: data" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:design a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "design" ;
+    rdfs:comment "Automatically added class: design",
+        "Automatically added data property: design",
+        "Automatically added object property: design" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:figure a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "figure" ;
+    rdfs:comment "Automatically added class: figure",
+        "Automatically added data property: figure",
+        "Automatically added object property: figure" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:human a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "human" ;
+    rdfs:comment "Automatically added class: human",
+        "Automatically added data property: human",
+        "Automatically added object property: human" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:learning a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "learning" ;
+    rdfs:comment "Automatically added class: learning",
+        "Automatically added data property: learning",
+        "Automatically added object property: learning" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:model a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "model" ;
+    rdfs:comment "Automatically added class: model",
+        "Automatically added data property: model",
+        "Automatically added object property: model" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:sampling a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "sampling" ;
+    rdfs:comment "Automatically added class: sampling",
+        "Automatically added data property: sampling",
+        "Automatically added object property: sampling" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:trust a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "trust" ;
+    rdfs:comment "Automatically added class: trust",
+        "Automatically added data property: trust",
+        "Automatically added object property: trust" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:uncertainty a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "uncertainty" ;
+    rdfs:comment "Automatically added class: uncertainty",
+        "Automatically added data property: uncertainty",
+        "Automatically added object property: uncertainty" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
+hi:user a owl:Class,
+        owl:DatatypeProperty,
+        owl:ObjectProperty ;
+    rdfs:label "user" ;
+    rdfs:comment "Automatically added class: user",
+        "Automatically added data property: user",
+        "Automatically added object property: user" ;
+    rdfs:domain hi:AIModel ;
+    rdfs:range hi:AIConcept,
+        xsd:string .
+
