@@ -1,23 +1,21 @@
-# Hybrid Intelligence KE Repository
-This repository contains material for the work on "Knowledge Engineering for Hybrid Intelligence": ontologies, scenarios, task descriptions, etc. 
+Hybrid Intelligence Ontology: Knowledge Graph & Semantic Technologies
 
-## Domain Layer 
-- This visualisation shows the various knowledge roles for Hybrid Intelligence scenarios and functions as a high-level ontology  [HIO-v2.draw.png](HIO-v2.drawio.png)
-- Also included is the OWL ontology in Turtle syntax [hi_ontology.ttl](hi_ontology.ttl)
+This repository contains the implementation of an ontology-driven knowledge graph for Hybrid Intelligence (HI). The project demonstrates the integration of semantic technologies with machine learning to represent and query research knowledge.
 
-## Task and Inference Layer
-We list HI-specific tasks and subtasks in this visualisation [HITasks.png](HITasks.png)
+🔹 Project Overview
 
-## Scenario repository
-For seven Hybrid Intelligence scenarios, we provide the task decomposition in markdown as well as a visual (flowchart) representation. The task decomposition consists of a *title*, a *description*, a *visual task decomposition*, *terminology*,  *inference steps* and *tasks*. The HI scenarios currently in the repository are listed below:
+The goal of this project is to:
+	•	Expand and modify an ontology (hi_ontology.ttl) based on extracted concepts from research papers.
+	•	Populate the ontology with RDF instances of research papers.
+	•	Integrate external Linked Data sources (DBpedia, Wikidata, ORKG).
+	•	Perform SPARQL queries, KG embeddings, and link prediction for data insights.
+	•	Develop a research proposal based on identified gaps and challenges.
 
-- [S1](S1/) Detecting conflicting, non-cooperative Smart Watch Assistants.
-- [S2](S2/) Learning Explainable Sequential Behaviors.
-- [S3](S3/) Collective Decisions in Law and Economics
-- [S4](S4/) Educational Recommenders with Narratives
-- [S5](S5/) Knowledge Graphs supporting Machine Intelligence
-- [S6](S6/) Co-learning Buildings
-- [S7](S7/) Knowledge-aware Museum Guide for Virtual Heritage Exhibitions
+📌 Key Features
 
-To add a new scenario and task decomposition, clone the repository, add a folder "SX" with a README.md file that uses the same layout as the existing scenarios as well as an image showing the visual task decomposition. Add the scenario through a git pull request.
-
+✅ Ontology Design: Extended hi_ontology.ttl with new classes, object properties, and data properties.
+✅ Instance Creation: Converted research papers into structured RDF triples.
+✅ Knowledge Graph Integration: Linked ontology concepts to external KGs.
+✅ Semantic Querying: Extracted insights using SPARQL queries.
+✅ KG Metrics & Analysis: Evaluated ontology structure with KG embeddings and metrics.
+✅ Research Proposal: Identified challenges & proposed solutions based on ontology-based reasoning.
