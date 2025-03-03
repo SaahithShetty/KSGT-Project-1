@@ -1,0 +1,3668 @@
+@prefix hi: <http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51/> .
+@prefix hi1: <http://example.org/HI#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+hi1:HI_AutonomousSystems a owl:Class ;
+    rdfs:label "HI_AutonomousSystems" ;
+    rdfs:comment "HI for self-driving cars, robotics" ;
+    rdfs:subClassOf hi1:HI .
+
+hi1:HI_ComputationalCost a owl:Class ;
+    rdfs:label "HI_ComputationalCost" ;
+    rdfs:comment "Resource-intensive HI models" ;
+    rdfs:subClassOf hi1:HI .
+
+hi1:HI_DataBias a owl:Class ;
+    rdfs:label "HI_DataBias" ;
+    rdfs:comment "Bias issues in HI datasets" ;
+    rdfs:subClassOf hi1:HI .
+
+hi1:HI_EducationApplication a owl:Class ;
+    rdfs:label "HI_EducationApplication" ;
+    rdfs:comment "HI for personalized learning and tutoring" ;
+    rdfs:subClassOf hi1:HI .
+
+hi1:HI_FinanceApplication a owl:Class ;
+    rdfs:label "HI_FinanceApplication" ;
+    rdfs:comment "Applications of HI in finance" ;
+    rdfs:subClassOf hi1:HI .
+
+hi1:HI_HealthcareApplication a owl:Class ;
+    rdfs:label "HI_HealthcareApplication" ;
+    rdfs:comment "Applications of HI in healthcare" ;
+    rdfs:subClassOf hi1:HI .
+
+hi1:HI_HybridApproach a owl:Class ;
+    rdfs:label "HI_HybridApproach" ;
+    rdfs:comment "Hybrid models combining ML and symbolic AI" ;
+    rdfs:subClassOf hi1:HI .
+
+hi1:HI_Interpretability a owl:Class ;
+    rdfs:label "HI_Interpretability" ;
+    rdfs:comment "Challenges in explaining HI decisions" ;
+    rdfs:subClassOf hi1:HI .
+
+hi1:HI_MachineLearning a owl:Class ;
+    rdfs:label "HI_MachineLearning" ;
+    rdfs:comment "ML-based HI techniques" ;
+    rdfs:subClassOf hi1:HI .
+
+hi1:HI_SymbolicAI a owl:Class ;
+    rdfs:label "HI_SymbolicAI" ;
+    rdfs:comment "Symbolic reasoning in HI" ;
+    rdfs:subClassOf hi1:HI .
+
+hi1:Paper_1 a hi1:HI_Paper ;
+    hi1:hasAuthor "Jakob Schoeffer, Johannes Jakubik, Michael Voessing, Niklas Kuehl, Gerhard Satzger" ;
+    hi1:hasDOI "10.3233/faia230074" ;
+    hi1:hasJournal "Frontiers in Artificial Intelligence and Applications" ;
+    hi1:hasKeyword hi1:agent,
+        hi1:agents,
+        hi1:available,
+        hi1:best,
+        hi1:figure,
+        hi1:human,
+        hi1:learning,
+        hi1:metaylorreinforcementlearningrequireshumanintheloopframingandapproaches,
+        hi1:open,
+        hi1:rl ;
+    hi1:hasPublicationYear 2023 ;
+    hi1:hasTitle "On the Interdependence of Reliance Behavior and Accuracy in AI-Assisted Decision-Making" ;
+    hi1:hasURL "https://doi.org/10.3233/faia230074" ;
+    hi1:relatedTo hi1:amodei_d_deep_reinforcement,
+        hi1:ancinghowimpactfulasuccessfulsolutionwillbe,
+        hi1:artificialintelligence19991121181211,
+        hi1:atari,
+        hi1:autonomous_systems,
+        hi1:ca,
+        hi1:chernova_s,
+        hi1:cifaraichair,
+        hi1:contrastwiththistraditionalviewofrl,
+        <http://example.org/HI#curran
+associates>,
+        hi1:dazeley_r,
+        hi1:doiorg101109iros20178202133,
+        hi1:dulacarnoldg,
+        hi1:fernandezlealahuman,
+        hi1:human_preferences,
+        hi1:knowledgebased_systems,
+        hi1:laurapetrich,
+        hi1:lil,
+        hi1:lip,
+        hi1:liuy,
+        hi1:liy,
+        hi1:martic_m,
+        hi1:mdp,
+        hi1:mdpandtrytolearnahigherperformingpolicy,
+        hi1:metaylorreinforcementlearningrequireshumanintheloopframingandapproaches,
+        hi1:metaylorreinforcementlearningrequireshumanintheloopframingandapproaches_353,
+        hi1:metaylorreinforcementlearningrequireshumanintheloopframingandapproaches_357,
+        <http://example.org/HI#metaylorreinforcementlearningrequireshumanintheloopframingandapproaches_359
+references>,
+        hi1:ml,
+        hi1:neural_information_processing_systems,
+        hi1:ngay,
+        hi1:open_access,
+        hi1:people_business_sme_devops_laypeople_mlrl,
+        hi1:reinforcement_learning,
+        hi1:rl,
+        hi1:rlops,
+        hi1:robertloftin,
+        hi1:sc,
+        hi1:sme,
+        hi1:sutton_rs,
+        hi1:the_creative_commons_attribution_noncommercial_license,
+        hi1:thispaperdiscusses5stepstowardssuccessfulrldeployment,
+        hi1:thomasj,
+        hi1:veloso_m .
+
+hi1:Paper_10 a hi1:HI_Paper ;
+    hi1:hasAuthor "Lars Krupp, Steffen Steinert, Maximilian Kiefer-Emmanouilidis, Karina E. Avila, Paul Lukowicz, Jochen Kuhn, Stefan Küchemann, Jakob Karolus" ;
+    hi1:hasDOI "10.3233/faia240195" ;
+    hi1:hasJournal "Frontiers in Artificial Intelligence and Applications" ;
+    hi1:hasKeyword hi1:al,
+        hi1:bsayinetalvalueawareactivelearning,
+        hi1:learning,
+        hi1:model,
+        hi1:sampling,
+        hi1:strategies,
+        hi1:tos,
+        hi1:uncertainty,
+        hi1:uncertainty_sampling,
+        hi1:value ;
+    hi1:hasPublicationYear 2024 ;
+    hi1:hasTitle "Unreflected Acceptance – Investigating the Negative Consequences of ChatGPT-Assisted Problem Solving in Physics Education" ;
+    hi1:hasURL "https://doi.org/10.3233/faia240195" ;
+    hi1:relatedTo hi1:,
+        hi1:_00,
+        hi1:_0018_0795,
+        hi1:_002,
+        hi1:_0034_0971,
+        hi1:_0078_0071,
+        hi1:_0173_00_00_00,
+        hi1:_0456_0237,
+        hi1:_0487,
+        hi1:_0493_0198,
+        hi1:_0551_0385,
+        hi1:_0631_051_0341,
+        hi1:_0777,
+        hi1:_0777_0335,
+        hi1:aaaipress,
+        hi1:ahuman,
+        hi1:aitrentofbkunitn,
+        hi1:andreapasseriniaandfabiocasatic,
+        hi1:asourexperimentalevaluationwillshow,
+        hi1:btos,
+        hi1:burcu_sayin,
+        hi1:certainty,
+        hi1:certainty_5,
+        hi1:eu,
+        hi1:forthisreason,
+        hi1:groveaj,
+        hi1:hatespeech,
+        hi1:hcomp,
+        hi1:inthisbalanceddataset,
+        hi1:inwhichthemodelneverabstainsk0however,
+        <http://example.org/HI#limitationsandconclusions
+inthiswork>,
+        hi1:logistic_regression,
+        hi1:luj,
+        hi1:m,
+        hi1:ml,
+        hi1:moharebm,
+        hi1:n,
+        hi1:open_access,
+        hi1:q2,
+        hi1:santaclara,
+        hi1:santosrodrıguezr,
+        hi1:suny,
+        hi1:sxττsx,
+        hi1:table_2,
+        hi1:the_creative_commons_attribution_noncommercial_license,
+        hi1:tos,
+        hi1:trainvaltestsize,
+        hi1:us_airlines,
+        <http://example.org/HI#usa
+abstract>,
+        hi1:valueaware_active_learning,
+        hi1:wenamethisstrategythresholdorientedsamplingtosnote,
+        hi1:xargmin,
+        hi1:xargmin_xd .
+
+hi1:Paper_2 a hi1:HI_Paper ;
+    hi1:hasAuthor "Burcu Sayin, Jie Yang, Andrea Passerini, Fabio Casati" ;
+    hi1:hasDOI "10.3233/faia230085" ;
+    hi1:hasJournal "Frontiers in Artificial Intelligence and Applications" ;
+    hi1:hasKeyword hi1:activities,
+        hi1:agent,
+        hi1:current,
+        hi1:events,
+        hi1:information,
+        hi1:life,
+        hi1:patient,
+        hi1:patients,
+        hi1:pvossenetalaconversationalagent,
+        hi1:questions ;
+    hi1:hasPublicationYear 2023 ;
+    hi1:hasTitle "Value-Aware Active Learning" ;
+    hi1:hasURL "https://doi.org/10.3233/faia230085" ;
+    hi1:relatedTo hi1:,
+        hi1:activitiesofdailylifeadl123suchmonitoringis,
+        hi1:adl,
+        hi1:community,
+        <http://example.org/HI#conversationalintent
+fortheagentunderconsideration>,
+        hi1:densityandsaturationcriteria_eventsandtheirpropertiescanbenecessary,
+        hi1:factbank,
+        hi1:functioning,
+        <http://example.org/HI#functioning__wellbeing
+piekvossena1selenebaezsantamariaaandthomasbaiera>,
+        hi1:gp,
+        hi1:grainedemotions,
+        hi1:hasplace,
+        hi1:hybrid_human_ai_systems,
+        hi1:journalofhumannutritionanddietetics2022351165,
+        hi1:kimj,
+        hi1:koenigsberg_mr,
+        hi1:krishnaswamy_n,
+        hi1:llm,
+        hi1:monitoringpatientswell,
+        hi1:multimodal_semantic_representations,
+        hi1:nwo,
+        hi1:ontological_references,
+        hi1:open_access,
+        hi1:success,
+        hi1:the_creative_commons_attribution_noncommercial_license,
+        <http://example.org/HI#the_netherlands
+organisation_for_scientific_research>,
+        hi1:usingabelievedesireintentprotocol20theplatformutilizesmodulesthatde,
+        hi1:vanduinc,
+        hi1:weuseencoderllmsfine .
+
+hi1:Paper_3 a hi1:HI_Paper ;
+    hi1:hasAuthor "Wen-Tseng Chang, Shihan Wang, Stephanie Kramer, Michel Oey, Somaya Ben Allouch" ;
+    hi1:hasDOI "10.3233/faia240185" ;
+    hi1:hasJournal "Frontiers in Artificial Intelligence and Applications" ;
+    hi1:hasKeyword hi1:cluster,
+        hi1:digital,
+        hi1:ethical,
+        hi1:idealism,
+        hi1:journal,
+        hi1:machiavellianism,
+        hi1:moral,
+        hi1:personality,
+        hi1:relativism,
+        hi1:virtuous ;
+    hi1:hasPublicationYear 2024 ;
+    hi1:hasTitle "Human-Centered AI for Dementia Care: Using Reinforcement Learning for Personalized Interventions Support in Eating and Drinking Scenarios" ;
+    hi1:hasURL "https://doi.org/10.3233/faia240185" ;
+    hi1:relatedTo hi1:_f,
+        hi1:a_european_review,
+        <http://example.org/HI#abc_p0001
+conscientiousness>,
+        hi1:academy_of_management_journal,
+        hi1:adrianfurnham,
+        hi1:adrianoschimmenti,
+        hi1:aishaakbar,
+        hi1:alessandro_acquisti,
+        hi1:analyse,
+        hi1:andflorianschaub,
+        hi1:anova,
+        hi1:anupamdas,
+        hi1:arturnilsson,
+        hi1:auniversità,
+        hi1:autonomous_systems,
+        hi1:aysen_gurcan_namlu,
+        hi1:binliu,
+        hi1:business_ethics,
+        hi1:carinapaine,
+        hi1:celiamoore,
+        hi1:cham2022,
+        hi1:christinageary,
+        hi1:clusteranalysisnewberrypark1984,
+        hi1:communication1711182011,
+        hi1:conscientiousness,
+        hi1:correlation48,
+        hi1:costanza,
+        hi1:current_psychology,
+        hi1:dark_triad,
+        hi1:delroy_l_paulhus,
+        hi1:dictingdigitalbehaviorsindifferentagesampleseg,
+        hi1:digital,
+        hi1:digital_humanism,
+        hi1:digitalbehaviors,
+        hi1:elianesommerfeld,
+        hi1:elżbieta_sanecka,
+        hi1:ept,
+        hi1:ernest_h_oboyle,
+        hi1:etp,
+        hi1:eur,
+        hi1:evitamarch,
+        hi1:exosoul,
+        hi1:exosoul_ethical_engine_scheme,
+        hi1:exosoulisbasedonthenotion,
+        hi1:f,
+        hi1:feedback_interface,
+        hi1:fig1,
+        hi1:florence_l_geis,
+        hi1:forthisreason,
+        hi1:hatice_ferhan_odabasi,
+        hi1:hexaco,
+        hi1:ibm_spss_statistics,
+        hi1:ieee,
+        hi1:individual_differences10085942016,
+        <http://example.org/HI#inference_engine
+fill>,
+        hi1:informatics,
+        hi1:ingeneral,
+        hi1:ininternational_conference,
+        <http://example.org/HI#initial_ethical
+inference_engine_profile>,
+        hi1:instagram,
+        <http://example.org/HI#international
+journal_of_mental_health>,
+        hi1:international_journal,
+        hi1:international_journal_of_management_and_bussiness,
+        hi1:inthiscontextthemultidisciplinaryprojectexosoul,
+        hi1:ios_press,
+        hi1:joshuadmiller,
+        hi1:journal_of_applied,
+        hi1:journal_of_personality8366446642015,
+        hi1:journal_of_research,
+        hi1:lucianofloridi,
+        hi1:marcoautili,
+        hi1:martindegeling,
+        hi1:massimiliano,
+        hi1:mcdaniel,
+        hi1:mcgrawhill,
+        hi1:means1015,
+        hi1:mmolaee,
+        hi1:narcissism,
+        hi1:normansadeh,
+        hi1:ny,
+        hi1:official_journal,
+        hi1:open_access,
+        hi1:paolainverardi,
+        hi1:patriziomigliarini,
+        hi1:patriziopelliccione,
+        hi1:paul_t_costa,
+        hi1:paul_t_costa_jr,
+        hi1:personality4357477542009,
+        hi1:philosophy__technology,
+        hi1:pierssteel,
+        hi1:qrcode,
+        hi1:science_of_computer,
+        hi1:social_psychology_bulletin12175801986,
+        hi1:softethicsandthegovernanceofthedigital,
+        hi1:statisticsanova,
+        hi1:taya_r_cohen,
+        hi1:the_council_of_the_european_union,
+        hi1:the_creative_commons_attribution_noncommercial_license,
+        hi1:the_dark_triad_dirty,
+        hi1:the_ethics_position_questionnaire,
+        hi1:the_european_parliament,
+        <http://example.org/HI#the_journal_of
+education>,
+        hi1:the_university_of_laquila,
+        hi1:tombuchanan,
+        hi1:tukeys_posthoc,
+        hi1:usa2020associationforcomputingmachinery,
+        hi1:user_profiling,
+        hi1:ward .
+
+hi1:Paper_4 a hi1:HI_Paper ;
+    hi1:hasAuthor "Matthew E. Taylor" ;
+    hi1:hasDOI "10.3233/faia230098" ;
+    hi1:hasJournal "Frontiers in Artificial Intelligence and Applications" ;
+    hi1:hasKeyword hi1:age,
+        hi1:case,
+        hi1:cases,
+        hi1:compas,
+        hi1:data,
+        hi1:dataset,
+        hi1:decision,
+        hi1:number,
+        hi1:order,
+        hi1:outcome ;
+    hi1:hasPublicationYear 2023 ;
+    hi1:hasTitle "Reinforcement Learning Requires Human-in-the-Loop Framing and Approaches" ;
+    hi1:hasURL "https://doi.org/10.3233/faia230098" ;
+    hi1:relatedTo hi1:admissions,
+        hi1:ai,
+        hi1:ai__law,
+        hi1:antony_as,
+        hi1:argument__computation,
+        hi1:armaan_a,
+        hi1:bart,
+        hi1:bernoulli_institute_for_mathematics_computer_science_and_artificial_intelligence,
+        hi1:black_aw,
+        hi1:blackbox_systems,
+        hi1:categorical_data,
+        hi1:cb,
+        hi1:cbr,
+        <http://example.org/HI#chargedegree_f_m
+forced>,
+        hi1:chargedegree_indicates,
+        hi1:compas,
+        hi1:computational_models_of_argument,
+        hi1:computing_sciences,
+        hi1:correctional_offender_management_profiling,
+        hi1:cˇyras_k,
+        hi1:department_of_information,
+        hi1:dimensions_preferences,
+        hi1:f,
+        hi1:f__m,
+        hi1:f_for_s,
+        hi1:f_s,
+        hi1:florence_italy_association_for_computational_linguistics,
+        hi1:gdpr,
+        hi1:grisel,
+        hi1:harv_jl__tech,
+        <http://example.org/HI#harvard
+data_science_review>,
+        hi1:ibm,
+        hi1:iccids,
+        hi1:international_data_privacy_law,
+        hi1:ios_press,
+        hi1:journal_of_machine_learning_research,
+        hi1:l,
+        hi1:label_0,
+        hi1:larusstone_n,
+        hi1:legal_theory,
+        hi1:linear,
+        <http://example.org/HI#machine
+learning_in_python>,
+        hi1:machine_learning,
+        hi1:nature_machine_intelligence,
+        hi1:netherlands_organisation_for_scientific_research,
+        hi1:northepointe_inc,
+        hi1:northpointe_inc,
+        hi1:open_access,
+        hi1:pareek_a,
+        hi1:pearson,
+        hi1:propublica,
+        hi1:race,
+        hi1:racedimension,
+        hi1:remark_41,
+        hi1:rx,
+        hi1:scheffler,
+        hi1:table_2,
+        hi1:the_base_samples_of_cognos_analytics,
+        hi1:the_certifiably_optimal_rule_lists,
+        hi1:the_compas_recidivism_algorithm,
+        hi1:the_creative_commons_attribution_noncommercial_license,
+        hi1:the_dutch_ministry_of_education,
+        hi1:the_hybrid_intelligence_center,
+        hi1:the_pearson_correlation,
+        hi1:the_small_compas_data,
+        hi1:university_of_amsterdam,
+        hi1:university_of_groningen,
+        hi1:utrecht_university .
+
+hi1:Paper_5 a hi1:HI_Paper ;
+    hi1:hasAuthor "Jacob T. Browne, Saskia Bakker, Bin Yu, Peter Lloyd, Somaya Ben Allouch" ;
+    hi1:hasDOI "10.3233/faia220192" ;
+    hi1:hasJournal "Frontiers in Artificial Intelligence and Applications" ;
+    hi1:hasKeyword hi1:ai,
+        hi1:al,
+        hi1:available,
+        hi1:clinical,
+        hi1:clinicians,
+        hi1:et,
+        hi1:et_al,
+        hi1:internet,
+        hi1:internet_available,
+        hi1:trust ;
+    hi1:hasPublicationYear 2022 ;
+    hi1:hasTitle "Trust in Clinical AI: Expanding the Unit of Analysis" ;
+    hi1:hasURL "https://doi.org/10.3233/faia220192" ;
+    hi1:relatedTo hi1:a_philips_experience_design,
+        hi1:ackerman_ms,
+        hi1:acm,
+        hi1:acm_conference_on_computer_supported_cooperative_work,
+        hi1:adams_r,
+        hi1:adaptation_and_personalization,
+        hi1:agrawal_m,
+        hi1:ai,
+        hi1:al,
+        hi1:albayram,
+        hi1:american_institute_of_aeronautics,
+        hi1:amsterdam_university_of_applied_sciences,
+        hi1:antaki_jf,
+        hi1:artificial_intelligence__a,
+        hi1:artificial_intelligence_trust_calibration,
+        hi1:ashktorab_z,
+        hi1:automated_systems,
+        hi1:barda_aj,
+        hi1:bedoya_ad,
+        hi1:bellamy_rke,
+        hi1:benda,
+        hi1:bernardino_a,
+        hi1:bmc_med,
+        <http://example.org/HI#bmc_med_inform_decis
+mak>,
+        hi1:bmc_med_inform_decis_mak,
+        hi1:bmj_health_care_inform,
+        hi1:bonexpert,
+        hi1:building_trust,
+        hi1:büyüktür_ag,
+        hi1:cabitza_f,
+        hi1:cad,
+        hi1:center_for_devices_radiological_health,
+        hi1:chexplain,
+        <http://example.org/HI#chi
+conference_on_human_factors>,
+        hi1:chi_conference,
+        hi1:chi_conference_on_human_factors,
+        hi1:clinical_ai,
+        hi1:cole,
+        hi1:computer,
+        <http://example.org/HI#computing
+systems>,
+        hi1:computing_systems,
+        <http://example.org/HI#conf
+proc_ethnogr_prax_ind_conf>,
+        hi1:crc_press,
+        hi1:cscw,
+        hi1:davidoff_s_trust,
+        hi1:dcode,
+        hi1:de_keizer_nf,
+        hi1:defining_trust,
+        hi1:delft_university_of_technology,
+        <http://example.org/HI#distributed_dynamic
+team_trust>,
+        hi1:dst,
+        hi1:dz,
+        hi1:ehr,
+        hi1:ely_jw,
+        hi1:european_commission,
+        hi1:expanding_trust,
+        hi1:fahim_maa,
+        hi1:fda,
+        hi1:fitzpatrick,
+        hi1:frontiers_of_theory_and_research,
+        hi1:fussell_sr,
+        hi1:graber_ml,
+        hi1:gutzwiller_rs,
+        hi1:hcomp,
+        hi1:healthcare,
+        hi1:hegde_n,
+        hi1:holloway_a,
+        hi1:horizon_2020,
+        hi1:horvat_cm,
+        hi1:httpdxdoiorg1011453181671,
+        hi1:hum_factors,
+        hi1:ieee,
+        hi1:informatics_institute,
+        hi1:intelligent_systems_technical_conference,
+        hi1:ios_press,
+        <http://example.org/HI#j_am_med_inform
+assoc>,
+        hi1:j_am_med_inform_assoc,
+        hi1:jmir_med_inform,
+        hi1:jp,
+        hi1:keebler_jr,
+        hi1:kerstholt_jh,
+        hi1:keshmiri_s,
+        hi1:khodyakov_d_trust,
+        hi1:kiesler_s,
+        hi1:komorowski_m,
+        hi1:kramer_rm,
+        hi1:leeuwenberg_am,
+        hi1:marsh_s,
+        hi1:mcnair_jb,
+        hi1:med_care_res_rev,
+        hi1:nasa,
+        hi1:nat_med,
+        hi1:nijman_swj,
+        hi1:nishikawa,
+        hi1:novak_ll,
+        hi1:npj_digit_med,
+        hi1:nuthakki_s,
+        hi1:open_access,
+        hi1:pak_r,
+        hi1:parker_w,
+        hi1:personal_differences,
+        hi1:phillips_ek,
+        hi1:platt_je,
+        <http://example.org/HI#postdeployment
+351>,
+        hi1:povykalo_a,
+        hi1:predevelopment,
+        hi1:pringle_c_eleftheriou_i,
+        hi1:prokop_m,
+        hi1:radiol_med,
+        hi1:reale_c,
+        hi1:reliance,
+        hi1:riener_a,
+        hi1:sendak,
+        hi1:sepsis_watch,
+        hi1:siewiorek_dp,
+        hi1:singh_p_pomerantz_s_doyle_s_kakarmath_s,
+        hi1:smithrenner_a,
+        hi1:social_computing,
+        hi1:spie,
+        <http://example.org/HI#spie
+proceedings>,
+        hi1:strohm,
+        hi1:swift_trust,
+        hi1:teller_road,
+        <http://example.org/HI#the
+european_unions>,
+        <http://example.org/HI#the_2020_conference_on
+fairness_accountability>,
+        hi1:the_2020_conference_on_fairness_accountability,
+        hi1:the_21st_international_conference_on_intelligent_user_interfaces,
+        hi1:the_aaai_conference_on_human_computation,
+        hi1:the_clinical_ai_deployment_cycle,
+        hi1:the_creative_commons_attribution_noncommercial_license,
+        hi1:the_efmi_working_group_for_assessment_of_health_information_systems,
+        <http://example.org/HI#the_netherlands
+abstract>,
+        hi1:the_unit_of_analysis_of_trust,
+        hi1:trews,
+        <http://example.org/HI#trust_through_a_clinical_champion
+clinical>,
+        hi1:trust_through_clinical_involvement,
+        <http://example.org/HI#trust_through_clinical_trials_and_peer_reviewed_publications
+prior>,
+        hi1:trust_through_public_accountability,
+        hi1:trust_through_the_ai_development_team,
+        hi1:trust_through_the_training_of_the_ai,
+        hi1:university_of_amsterdam,
+        hi1:us_food_and_drug_administration,
+        hi1:user_modeling,
+        hi1:user_trust,
+        hi1:wang,
+        hi1:wilcox_l,
+        hi1:wilson_s_stumpf_s_user,
+        hi1:working_group,
+        hi1:workload,
+        <http://example.org/HI#yearb
+med_inform>,
+        hi1:yearb_med_inform .
+
+hi1:Paper_6 a hi1:HI_Paper ;
+    hi1:hasAuthor "Yaoli Mao, Janet Rafner, Yi Wang, Jacob Sherson" ;
+    hi1:hasDOI "10.3233/faia230078" ;
+    hi1:hasJournal "Frontiers in Artificial Intelligence and Applications" ;
+    hi1:hasKeyword hi1:ai,
+        hi1:assistant,
+        hi1:design,
+        hi1:design_goals,
+        hi1:gd,
+        hi1:goals,
+        hi1:output,
+        hi1:perceived,
+        hi1:willingness,
+        hi1:ymaoetalahybridintelligenceapproachtotraininggenerativedesignassistants ;
+    hi1:hasPublicationYear 2023 ;
+    hi1:hasTitle "A Hybrid Intelligence Approach to Training Generative Design Assistants: Partnership Between Human Experts and AI Enhanced Co-Creative Tools" ;
+    hi1:hasURL "https://doi.org/10.3233/faia230078" ;
+    hi1:relatedTo <http://example.org/HI#aarhusuniversity
+abstract>,
+        hi1:acostazazuetaga3dshapegenerativemethodforaestheticprod,
+        hi1:ai,
+        <http://example.org/HI#ai
+learningr74>,
+        hi1:aitam,
+        <http://example.org/HI#anearly
+design_framework_to_support_concept_creation_and_evaluation>,
+        hi1:artificial_intelligence_ai,
+        hi1:asdescribedintheaitam,
+        <http://example.org/HI#business
+informationsystemsengineering201658367>,
+        hi1:caetano,
+        hi1:cancelevelp001p01p05,
+        hi1:chengcy,
+        hi1:construct_qualitativecodes_quantitativemeasuresdatarange,
+        hi1:doeyl,
+        hi1:gd,
+        hi1:grasshopper,
+        hi1:grossmd,
+        hi1:guidelinesforhumanaiinteractionwhichseekstoguidedinteractionovertimebeyond,
+        hi1:hjortha,
+        hi1:idonothavetheabilitytoadjusttoindividualpreferencesintheway,
+        hi1:incontrast,
+        hi1:international_journal_of_human,
+        hi1:ithinkitisuselesstotrainitwithmylikes,
+        hi1:itisverycapableofperformingitsjob,
+        hi1:jalt_testing__evaluation_sig_newsletter,
+        hi1:lees,
+        hi1:liux,
+        hi1:manexpertswillingnesstocontributetothecocreativetoolduringandaftercocreation,
+        hi1:npdtam,
+        hi1:objectspace,
+        hi1:open_access,
+        hi1:ourcontributiontohumanaiin,
+        hi1:ourcontributiontohumanaiinteractionisthreefold,
+        hi1:p001andaioutputtrustr76,
+        hi1:p7,
+        hi1:qualitativecooccurrences,
+        hi1:rahmaniaslm_sketchopt,
+        hi1:reflexive_thematic_analysis,
+        hi1:schoolofbusinessand,
+        hi1:socialscience,
+        hi1:tam,
+        hi1:the_creative_commons_attribution_noncommercial_license,
+        hi1:thenumberofdesigngoals,
+        hi1:therecentlylaunchedchatgptseemstoprovidehuman,
+        hi1:thiscodecould__idonotfeeloutofcontrolinworkingwithit,
+        hi1:totrainwasassociatedwithmorewillingnessr72,
+        <http://example.org/HI#virtualassistantstheapplication
+broadly>,
+        hi1:wouldyouinvestyourtimeintrainingtouse .
+
+hi1:Paper_7 a hi1:HI_Paper ;
+    hi1:hasAuthor "Wijnand van Woerkom, Davide Grossi, Henry Prakken, Bart Verheij" ;
+    hi1:hasDOI "10.3233/faia220200" ;
+    hi1:hasJournal "Frontiers in Artificial Intelligence and Applications" ;
+    hi1:hasKeyword hi1:acc,
+        hi1:accuracy,
+        hi1:ai,
+        hi1:cid,
+        hi1:cid_cid,
+        hi1:correct,
+        hi1:decisionmaking,
+        hi1:final,
+        hi1:recommendations,
+        hi1:wrong ;
+    hi1:hasPublicationYear 2022 ;
+    hi1:hasTitle "Landmarks in Case-Based Reasoning: From Theory to Data" ;
+    hi1:hasURL "https://doi.org/10.3233/faia220200" ;
+    hi1:relatedTo hi1:a__acc,
+        hi1:a_correcto_correct100acc_aia,
+        hi1:aakritikumar,
+        hi1:acc,
+        hi1:acc_1050,
+        hi1:acc_a_0theminimumachievabledecision,
+        hi1:acc_acc,
+        hi1:accfinal,
+        hi1:acmtransactions,
+        hi1:ai,
+        <http://example.org/HI#ai
+acc>,
+        <http://example.org/HI#ai
+geometrically>,
+        <http://example.org/HI#ai
+w>,
+        hi1:ai_ai_ai,
+        hi1:aiaccuracy,
+        hi1:antinokim,
+        hi1:carinabenz,
+        hi1:cid3,
+        hi1:corollary_5,
+        hi1:discovery,
+        <http://example.org/HI#discussionandconclusion
+inthiswork>,
+        hi1:helenavasconcelos,
+        hi1:joshandres,
+        hi1:madeleinegrundemclaughlin,
+        hi1:maxschemmer,
+        hi1:michaeldesmond,
+        hi1:michaelmuller,
+        hi1:mochenyang,
+        hi1:n,
+        hi1:niklas,
+        hi1:niklaskuehl,
+        hi1:nn,
+        hi1:notethatsinceacc,
+        hi1:open_access,
+        hi1:padhraicsmyth,
+        hi1:patrickhemmer,
+        hi1:tejeda,
+        hi1:the_2020_conference_on_fairness_accountability,
+        hi1:the_acm_on_humancomputer_interaction,
+        hi1:the_creative_commons_attribution_noncommercial_license,
+        <http://example.org/HI#the_interdependence_of_reliance
+behavior>,
+        hi1:weshowthatthehumanmayneverbeexpectedtocomplementtheai,
+        hi1:wewouldexpectthehumantoadheretoaofcorrectairecommendationsanda,
+        hi1:yunfengzhang .
+
+hi1:Paper_8 a hi1:HI_Paper ;
+    hi1:hasAuthor "Piek Vossen, Selene Báez Santamaría, Thomas Baier" ;
+    hi1:hasDOI "10.3233/faia240204" ;
+    hi1:hasJournal "Frontiers in Artificial Intelligence and Applications" ;
+    hi1:hasKeyword hi1:ai,
+        hi1:algorithms,
+        hi1:dementia,
+        hi1:environment,
+        hi1:figure,
+        hi1:home,
+        hi1:rl,
+        hi1:type,
+        hi1:user,
+        hi1:wtchangetalhumancenteredaifordementiacare ;
+    hi1:hasPublicationYear 2024 ;
+    hi1:hasTitle "A Conversational Agent for Structured Diary Construction Enabling Monitoring of Functioning &amp; Well-Being" ;
+    hi1:hasURL "https://doi.org/10.3233/faia240204" ;
+    hi1:relatedTo hi1:ai,
+        hi1:aisystemandemphasizetheimportanceofmaintaininguserengagementandreducing,
+        hi1:alirezaie_m,
+        <http://example.org/HI#ambi
+ent>,
+        hi1:andcontextualthompsonsamplingcts24amongthem,
+        hi1:andempathicaisystemthatcan,
+        hi1:andneedsofpwd,
+        hi1:aungmh,
+        hi1:baselineresults,
+        hi1:chuw,
+        hi1:consideringthecognitiveimpairmentofpwd,
+        hi1:contextualandnon,
+        hi1:cts,
+        hi1:cts_1,
+        hi1:ctsachievedthebestperformanceamongthealgorithms,
+        hi1:ctsdynamicallyadaptsitsapproach,
+        hi1:deep_epsilongreedy,
+        hi1:deepepsilongreedy,
+        hi1:dementia,
+        <http://example.org/HI#drinking_scenarios
+wentsengchanga>,
+        hi1:european_dementia_monitor,
+        hi1:f_tischler_v,
+        hi1:greenewaldk,
+        hi1:hybrid_human_ai_systems,
+        hi1:keywords,
+        hi1:klasnjap,
+        hi1:lil,
+        hi1:linear_upper_confidence_bound,
+        hi1:open_access,
+        hi1:procedia,
+        <http://example.org/HI#proceedingsoftheacm
+oninteractive>,
+        hi1:pwd,
+        hi1:rl,
+        hi1:robben_s,
+        hi1:robinsonlpersonalisation,
+        hi1:schapirere,
+        hi1:somayabenallouch,
+        hi1:the_creative_commons_attribution_noncommercial_license,
+        hi1:thompson_wr,
+        hi1:userbot,
+        hi1:world_health_organization,
+        hi1:wtchangetalhuman .
+
+hi1:Paper_9 a hi1:HI_Paper ;
+    hi1:hasAuthor "Carlo Metta, Riccardo Guidotti, Yuan Yin, Patrick Gallinari, Salvatore Rinzivillo" ;
+    hi1:hasDOI "10.3233/faia220209" ;
+    hi1:hasJournal "Frontiers in Artificial Intelligence and Applications" ;
+    hi1:hasKeyword hi1:agent,
+        hi1:agents,
+        hi1:environment,
+        hi1:goal,
+        hi1:human,
+        hi1:misalignment,
+        hi1:participants,
+        hi1:sweerawardhanaetalexploringthedynamicnatureoftrustusinginterventions,
+        hi1:task,
+        hi1:trust ;
+    hi1:hasPublicationYear 2022 ;
+    hi1:hasTitle "Exemplars and Counterexemplars Explanations for Skin Lesion Classifiers" ;
+    hi1:hasURL "https://doi.org/10.3233/faia220209" ;
+    hi1:relatedTo hi1:,
+        hi1:_700,
+        hi1:academicpress2021p143,
+        <http://example.org/HI#althoefer
+k>,
+        hi1:antecedents_of_trust,
+        hi1:associationforcomputing,
+        hi1:autonomoussystems,
+        hi1:betweenthelandmarksχ212536,
+        <http://example.org/HI#boehmdavisdaeffectsofageandcongestioninformationaccuracyofadvancedtraveler
+informationsystemsonusertrustandcompliance>,
+        hi1:caos,
+        hi1:cece,
+        hi1:clare_as,
+        hi1:complianceisoftenusedasabehaviouraldemonstrationoftrustinhuman,
+        hi1:cummings_ml,
+        hi1:daronnat_s,
+        hi1:designingforhumancenteredsystems,
+        hi1:det,
+        hi1:fordet,
+        hi1:forthedeterministicdandnon,
+        hi1:ftrafficpsychologyandbehaviour2020731528,
+        hi1:hai,
+        hi1:hoesterey_s,
+        hi1:hri,
+        hi1:hybrid_human_ai_systems,
+        hi1:keenj,
+        hi1:kellyt,
+        hi1:leejdmodelinggoalalignmentinhumanaiteaming,
+        hi1:lih,
+        hi1:lik,
+        hi1:mieled,
+        hi1:muir,
+        hi1:newyork,
+        hi1:nondet,
+        hi1:open_access,
+        hi1:pimentelj,
+        hi1:table_43,
+        hi1:the_creative_commons_attribution_noncommercial_license,
+        hi1:the_google_mapsassisted,
+        hi1:theacademyof,
+        hi1:thelocationmapislaidonagrid,
+        <http://example.org/HI#theparticipantcouldinter
+venebyclickingtheinterruptbutton>,
+        hi1:theparticipantstrustedandusedthegpsdrivingadvice,
+        <http://example.org/HI#theroleoftrustin
+humanrobotinteraction>,
+        hi1:timecollaboration,
+        <http://example.org/HI#trustinhumanrobot
+interaction>,
+        hi1:un,
+        hi1:unitedkingdom,
+        hi1:usa_association,
+        hi1:usingakruskalwallisranksum,
+        hi1:wealsosimulatedcriticaleventsduringtherouteplanningtask,
+        hi1:wiesee .
+
+hi1:hasAbstract a owl:DatatypeProperty ;
+    rdfs:comment "Abstract of the research paper" ;
+    rdfs:range xsd:string .
+
+hi1:hasAffiliation a owl:DatatypeProperty ;
+    rdfs:comment "Institution/organization of the author" ;
+    rdfs:range xsd:string .
+
+hi1:hasCitations a owl:DatatypeProperty ;
+    rdfs:comment "Number of citations received" ;
+    rdfs:range xsd:string .
+
+hi1:hasLimitation a owl:ObjectProperty ;
+    rdfs:domain hi1:HI_Technique ;
+    rdfs:range hi1:HI_Challenge .
+
+hi1:isAppliedIn a owl:ObjectProperty ;
+    rdfs:domain hi1:HI_Application ;
+    rdfs:range hi1:HI_Domain .
+
+hi1:utilizesTechnique a owl:ObjectProperty ;
+    rdfs:domain hi1:HI_Application ;
+    rdfs:range hi1:HI_Technique .
+
+<http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51> a owl:Ontology .
+
+hi:Adaptiveness a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Adult a hi:Human,
+        owl:NamedIndividual .
+
+hi:BDI a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Child a hi:Human,
+        owl:NamedIndividual .
+
+hi:Collaboration-based a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Collaborativeness a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Communication a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Contribution-based a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Designer a hi:Human,
+        owl:NamedIndividual .
+
+hi:Explainability a hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:Generating a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Hybrid a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Intelligent_System a hi:ArtificialAgent,
+        owl:NamedIndividual .
+
+hi:Learning a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Multimodal a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Neuro-symbolic a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Non-cooperative a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Question-Answering a hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:Reasoning a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Recommendation a hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:Responsibility a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Robot a hi:ArtificialAgent,
+        owl:NamedIndividual .
+
+hi:Single-agent a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Statistical a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Symbolic a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Teacher a hi:Human,
+        owl:NamedIndividual .
+
+hi:Transforming a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Transparency a hi:Capability,
+        owl:NamedIndividual .
+
+hi:capability a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:Capability .
+
+hi:context a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Context .
+
+hi:domain a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Domain .
+
+hi:endgoal a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Endgoal .
+
+hi:hasEthicalConsideration a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:EthicalConsideration .
+
+hi:hasInteraction a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Interaction .
+
+hi:inScenario a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:Scenario ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+hi:informationMethod a owl:ObjectProperty ;
+    rdfs:domain hi:InformationProcessing ;
+    rdfs:range hi:ProcessingMethod .
+
+hi:interactingAgent a owl:ObjectProperty ;
+    rdfs:domain hi:Interaction ;
+    rdfs:range hi:Actor .
+
+hi:interactionMethod a owl:ObjectProperty ;
+    rdfs:domain hi:Interaction ;
+    rdfs:range hi:InteractionMethod .
+
+hi:interactionTask a owl:ObjectProperty ;
+    rdfs:domain hi:Interaction ;
+    rdfs:range hi:InteractionTask .
+
+hi:processingInformation a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:InformationProcessing .
+
+hi:processingTask a owl:ObjectProperty ;
+    rdfs:domain hi:InformationProcessing ;
+    rdfs:range hi:ProcessingTask .
+
+hi1:_00 a owl:Class ;
+    rdfs:label "0.002 0.0",
+        "0.716 0.0" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:_0018_0795 a owl:Class ;
+    rdfs:label "0.147 0.018 0.795" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:_002 a owl:Class ;
+    rdfs:label "0.045 0.02" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:_0034_0971 a owl:Class ;
+    rdfs:label "0.079 0.034 0.971" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:_0078_0071 a owl:Class ;
+    rdfs:label "0.443 0.078 0.071" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:_0173_00_00_00 a owl:Class ;
+    rdfs:label "0.002 0.173 0.0 0.0 0.0" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:_0456_0237 a owl:Class ;
+    rdfs:label "0.641 0.456 0.237" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:_0487 a owl:Class ;
+    rdfs:label "0.776 0.487" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:_0493_0198 a owl:Class ;
+    rdfs:label "0.51 0.493 0.198" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:_0551_0385 a owl:Class ;
+    rdfs:label "0.632 0.551 0.385" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:_0631_051_0341 a owl:Class ;
+    rdfs:label "0.855 0.631 0.51 0.341" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:_0777 a owl:Class ;
+    rdfs:label "0.031 0.777" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:_0777_0335 a owl:Class ;
+    rdfs:label "0.144 0.777 0.335" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:_700 a owl:Class ;
+    rdfs:label "6.04 7.00" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:_f a owl:Class ;
+    rdfs:label ".315 F" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:a__acc a owl:Class ;
+    rdfs:label "A ≥ Acc" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:a_correcto_correct100acc_aia a owl:Class ;
+    rdfs:label "⎪⎪⎨(A correct+O correct)−(100%−Acc AI−A" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:a_european_review a owl:Class ;
+    rdfs:label "A European Review" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:a_philips_experience_design a owl:Class ;
+    rdfs:label "a Philips Experience Design" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:aaaipress a owl:Class ;
+    rdfs:label "AAAIPress" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:aakritikumar a owl:Class ;
+    rdfs:label "AakritiKumar" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#aarhusuniversity
+abstract> a owl:Class ;
+    rdfs:label """AarhusUniversity
+Abstract""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#abc_p0001
+conscientiousness> a owl:Class ;
+    rdfs:label """.082)abc p<.0001
+Conscientiousness""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:academicpress2021p143 a owl:Class ;
+    rdfs:label "AcademicPress;2021.p.143" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:academy_of_management_journal a owl:Class ;
+    rdfs:label "Academy of Management Journal" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:acc_1050 a owl:Class ;
+    rdfs:label "Acc ∈[10%,50%" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:acc_a_0theminimumachievabledecision a owl:Class ;
+    rdfs:label "Acc −A >0.Theminimumachievabledecision" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:acc_acc a owl:Class ;
+    rdfs:label "Acc <Acc",
+        "Acc >Acc" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:accfinal a owl:Class ;
+    rdfs:label "Accfinal" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ackerman_ms a owl:Class ;
+    rdfs:label "Ackerman MS" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:acm a owl:Class ;
+    rdfs:label "ACM" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:acm_conference_on_computer_supported_cooperative_work a owl:Class ;
+    rdfs:label """ACM Conference on Computer Supported Cooperative Work
+""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:acmtransactions a owl:Class ;
+    rdfs:label "ACMTransactions" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:acostazazuetaga3dshapegenerativemethodforaestheticprod a owl:Class ;
+    rdfs:label "Acosta-ZazuetaG.A3Dshapegenerativemethodforaestheticprod-" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:activitiesofdailylifeadl123suchmonitoringis a owl:Class ;
+    rdfs:label "ActivitiesofDailyLife(ADL)[1,2,3].Suchmonitoringis" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:adams_r a owl:Class ;
+    rdfs:label "Adams R" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:adaptation_and_personalization a owl:Class ;
+    rdfs:label "Adaptation and Personalization" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:adl a owl:Class ;
+    rdfs:label "ADL" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:admissions a owl:Class ;
+    rdfs:label "Admissions" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:adrianfurnham a owl:Class ;
+    rdfs:label "AdrianFurnham" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:adrianoschimmenti a owl:Class ;
+    rdfs:label "AdrianoSchimmenti" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:agrawal_m a owl:Class ;
+    rdfs:label "Agrawal M" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ahuman a owl:Class ;
+    rdfs:label "Ahuman" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#ai
+acc> a owl:Class ;
+    rdfs:label """AI
+Acc ∈""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#ai
+geometrically> a owl:Class ;
+    rdfs:label """AI
+Geometrically""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#ai
+learningr74> a owl:Class ;
+    rdfs:label """AI
+learning(r=.74""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#ai
+w> a owl:Class ;
+    rdfs:label """AI
+W""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ai__law a owl:Class ;
+    rdfs:label "AI & law" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ai_ai_ai a owl:Class ;
+    rdfs:label "AI AI AI" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:aiaccuracy a owl:Class ;
+    rdfs:label "AIaccuracy" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:aishaakbar a owl:Class ;
+    rdfs:label "AishaAkbar" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:aisystemandemphasizetheimportanceofmaintaininguserengagementandreducing a owl:Class ;
+    rdfs:label "AIsystemandemphasizetheimportanceofmaintaininguserengagementandreducing" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:aitam a owl:Class ;
+    rdfs:label "AI-TAM" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:aitrentofbkunitn a owl:Class ;
+    rdfs:label "AI@Trento(FBK-Unitn" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:albayram a owl:Class ;
+    rdfs:label "Albayram" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:alessandro_acquisti a owl:Class ;
+    rdfs:label "Alessandro Acquisti" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:alirezaie_m a owl:Class ;
+    rdfs:label "Alirezaie M" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#althoefer
+k> a owl:Class ;
+    rdfs:label """Althoefer
+K""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#ambi
+ent> a owl:Class ;
+    rdfs:label """ambi-
+ent""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:american_institute_of_aeronautics a owl:Class ;
+    rdfs:label "American Institute of Aeronautics" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:amodei_d_deep_reinforcement a owl:Class ;
+    rdfs:label "Amodei D. Deep Reinforcement" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:amsterdam_university_of_applied_sciences a owl:Class ;
+    rdfs:label "Amsterdam University of Applied Sciences" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:analyse a owl:Class ;
+    rdfs:label "Analyse" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ancinghowimpactfulasuccessfulsolutionwillbe a owl:Class ;
+    rdfs:label "ancinghowimpactfulasuccessfulsolutionwillbe" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:andcontextualthompsonsamplingcts24amongthem a owl:Class ;
+    rdfs:label "andContextualThompsonSampling(CTS)[24].Amongthem" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:andempathicaisystemthatcan a owl:Class ;
+    rdfs:label "andempathicAIsystemthatcan" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:andflorianschaub a owl:Class ;
+    rdfs:label "andFlorianSchaub" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:andneedsofpwd a owl:Class ;
+    rdfs:label "andneedsofPwD" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:andreapasseriniaandfabiocasatic a owl:Class ;
+    rdfs:label "AndreaPASSERINIaandFabioCASATIc" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#anearly
+design_framework_to_support_concept_creation_and_evaluation> a owl:Class ;
+    rdfs:label """AnEarly
+Design Framework to Support Concept Creation and Evaluation""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:anova a owl:Class ;
+    rdfs:label "Anova" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:antaki_jf a owl:Class ;
+    rdfs:label "Antaki JF" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:antecedents_of_trust a owl:Class ;
+    rdfs:label "Antecedents of Trust" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:antinokim a owl:Class ;
+    rdfs:label "AntinoKim" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:antony_as a owl:Class ;
+    rdfs:label "Antony AS" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:anupamdas a owl:Class ;
+    rdfs:label "AnupamDas" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:argument__computation a owl:Class ;
+    rdfs:label "Argument & Computation" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:armaan_a a owl:Class ;
+    rdfs:label "Armaan A" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:artificial_intelligence__a a owl:Class ;
+    rdfs:label "Artificial Intelligence - A" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:artificial_intelligence_ai a owl:Class ;
+    rdfs:label "Artificial Intelligence (AI" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:artificial_intelligence_trust_calibration a owl:Class ;
+    rdfs:label "Artificial Intelligence, Trust Calibration" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:artificialintelligence19991121181211 a owl:Class ;
+    rdfs:label "ArtificialIntelligence.1999;112(1):181-211" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:arturnilsson a owl:Class ;
+    rdfs:label "ArturNilsson" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:asdescribedintheaitam a owl:Class ;
+    rdfs:label "asdescribedintheAI-TAM" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ashktorab_z a owl:Class ;
+    rdfs:label "Ashktorab Z" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:asourexperimentalevaluationwillshow a owl:Class ;
+    rdfs:label "Asourexperimentalevaluationwillshow" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:associationforcomputing a owl:Class ;
+    rdfs:label "AssociationforComputing" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:atari a owl:Class ;
+    rdfs:label "Atari" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:aungmh a owl:Class ;
+    rdfs:label "AungMH" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:auniversità a owl:Class ;
+    rdfs:label "aUniversità" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:automated_systems a owl:Class ;
+    rdfs:label "Automated Systems" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:autonomoussystems a owl:Class ;
+    rdfs:label "AutonomousSystems" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:aysen_gurcan_namlu a owl:Class ;
+    rdfs:label "Aysen Gurcan Namlu" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:barda_aj a owl:Class ;
+    rdfs:label "Barda AJ" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:bart a owl:Class ;
+    rdfs:label "Bart" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:baselineresults a owl:Class ;
+    rdfs:label "BaselineResults" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:bedoya_ad a owl:Class ;
+    rdfs:label "Bedoya AD" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:bellamy_rke a owl:Class ;
+    rdfs:label "Bellamy RKE" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:benda a owl:Class ;
+    rdfs:label "Benda" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:bernardino_a a owl:Class ;
+    rdfs:label "Bernardino A" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:bernoulli_institute_for_mathematics_computer_science_and_artificial_intelligence a owl:Class ;
+    rdfs:label "Bernoulli Institute for Mathematics, Computer Science and Artificial Intelligence" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:betweenthelandmarksχ212536 a owl:Class ;
+    rdfs:label "betweenthelandmarks(χ2=125.36" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:binliu a owl:Class ;
+    rdfs:label "BinLiu" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:black_aw a owl:Class ;
+    rdfs:label "Black AW" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:blackbox_systems a owl:Class ;
+    rdfs:label "Black-Box Systems" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:bmc_med a owl:Class ;
+    rdfs:label "BMC Med" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#bmc_med_inform_decis
+mak> a owl:Class ;
+    rdfs:label """BMC Med Inform Decis
+Mak""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:bmc_med_inform_decis_mak a owl:Class ;
+    rdfs:label "BMC Med Inform Decis Mak" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:bmj_health_care_inform a owl:Class ;
+    rdfs:label "BMJ Health Care Inform" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#boehmdavisdaeffectsofageandcongestioninformationaccuracyofadvancedtraveler
+informationsystemsonusertrustandcompliance> a owl:Class ;
+    rdfs:label """Boehm-DavisDA.EffectsofAgeandCongestionInformationAccuracyofAdvancedTraveler
+InformationSystemsonUserTrustandCompliance""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:bonexpert a owl:Class ;
+    rdfs:label "BoneXpert" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:btos a owl:Class ;
+    rdfs:label "BTOS" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:building_trust a owl:Class ;
+    rdfs:label "Building Trust" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:burcu_sayin a owl:Class ;
+    rdfs:label "Burcu Sayin" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#business
+informationsystemsengineering201658367> a owl:Class ;
+    rdfs:label """Business
+&InformationSystemsEngineering.2016;58:367-""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:business_ethics a owl:Class ;
+    rdfs:label "Business Ethics" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:büyüktür_ag a owl:Class ;
+    rdfs:label "Büyüktür AG" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ca a owl:Class ;
+    rdfs:label "CA" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:cabitza_f a owl:Class ;
+    rdfs:label "Cabitza F" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:cad a owl:Class ;
+    rdfs:label "CAD" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:caetano a owl:Class ;
+    rdfs:label "Caetano" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:cancelevelp001p01p05 a owl:Class ;
+    rdfs:label "cancelevel:∗∗∗p<.001,∗∗p<.01,∗p<.05" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:caos a owl:Class ;
+    rdfs:label "CaoS" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:carinabenz a owl:Class ;
+    rdfs:label "CarinaBenz" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:carinapaine a owl:Class ;
+    rdfs:label "CarinaPaine" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:categorical_data a owl:Class ;
+    rdfs:label "Categorical Data" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:cb a owl:Class ;
+    rdfs:label "CB" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:cbr a owl:Class ;
+    rdfs:label "CBR" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:cece a owl:Class ;
+    rdfs:label "Cece" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:celiamoore a owl:Class ;
+    rdfs:label "CeliaMoore" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:center_for_devices_radiological_health a owl:Class ;
+    rdfs:label "Center for Devices, Radiological Health" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:certainty a owl:Class ;
+    rdfs:label "Certainty",
+        "• Certainty" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:certainty_5 a owl:Class ;
+    rdfs:label "CERTAINTY 5" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:cham2022 a owl:Class ;
+    rdfs:label "Cham,2022" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#chargedegree_f_m
+forced> a owl:Class ;
+    rdfs:label """ChargeDegree F M
+Forced""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:chargedegree_indicates a owl:Class ;
+    rdfs:label "ChargeDegree Indicates" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:chengcy a owl:Class ;
+    rdfs:label "ChengCY" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:chernova_s a owl:Class ;
+    rdfs:label "Chernova S" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:chexplain a owl:Class ;
+    rdfs:label "CheXplain" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#chi
+conference_on_human_factors> a owl:Class ;
+    rdfs:label """CHI
+Conference on Human Factors""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:chi_conference a owl:Class ;
+    rdfs:label "CHI Conference" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:chi_conference_on_human_factors a owl:Class ;
+    rdfs:label "CHI Conference on Human Factors" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:christinageary a owl:Class ;
+    rdfs:label "ChristinaGeary" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:chuw a owl:Class ;
+    rdfs:label "ChuW" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:cid a owl:Class ;
+    rdfs:label "cid" ;
+    rdfs:comment "Automatically added AI concept" .
+
+hi1:cid3 a owl:Class ;
+    rdfs:label "cid:3" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:cifaraichair a owl:Class ;
+    rdfs:label "CIFARAIChair" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:clare_as a owl:Class ;
+    rdfs:label "Clare AS" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:clinical_ai a owl:Class ;
+    rdfs:label "Clinical AI" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:clusteranalysisnewberrypark1984 a owl:Class ;
+    rdfs:label "Clusteranalysis.newberrypark,1984" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:cole a owl:Class ;
+    rdfs:label "Cole" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:communication1711182011 a owl:Class ;
+    rdfs:label "communication,17(1):1–18,2011" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:community a owl:Class ;
+    rdfs:label "Community" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:complianceisoftenusedasabehaviouraldemonstrationoftrustinhuman a owl:Class ;
+    rdfs:label "Complianceisoftenusedasabehaviouraldemonstrationoftrustinhuman" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:computational_models_of_argument a owl:Class ;
+    rdfs:label "Computational Models of Argument" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:computer a owl:Class ;
+    rdfs:label "Computer" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#computing
+systems> a owl:Class ;
+    rdfs:label """Computing
+Systems""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:computing_sciences a owl:Class ;
+    rdfs:label "Computing Sciences" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:computing_systems a owl:Class ;
+    rdfs:label "Computing Systems" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#conf
+proc_ethnogr_prax_ind_conf> a owl:Class ;
+    rdfs:label """Conf
+Proc Ethnogr Prax Ind Conf""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:conscientiousness a owl:Class ;
+    rdfs:label "Conscientiousness" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:consideringthecognitiveimpairmentofpwd a owl:Class ;
+    rdfs:label "ConsideringthecognitiveimpairmentofPwD" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:construct_qualitativecodes_quantitativemeasuresdatarange a owl:Class ;
+    rdfs:label "Construct QualitativeCodes QuantitativeMeasures(DataRange" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:contextualandnon a owl:Class ;
+    rdfs:label "ContextualandNon" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:contrastwiththistraditionalviewofrl a owl:Class ;
+    rdfs:label "contrastwiththistraditionalviewofRL" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#conversationalintent
+fortheagentunderconsideration> a owl:Class ;
+    rdfs:label """Conversationalintent
+Fortheagentunderconsideration""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:corollary_5 a owl:Class ;
+    rdfs:label "Corollary 5" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:correctional_offender_management_profiling a owl:Class ;
+    rdfs:label "Correctional Offender Management Profiling" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:correlation48 a owl:Class ;
+    rdfs:label "correlation[48" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:costanza a owl:Class ;
+    rdfs:label "Costanza" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:crc_press a owl:Class ;
+    rdfs:label "CRC Press" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:cscw a owl:Class ;
+    rdfs:label "CSCW" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:cts a owl:Class ;
+    rdfs:label "CTS" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:cts_1 a owl:Class ;
+    rdfs:label "CTS 1" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ctsachievedthebestperformanceamongthealgorithms a owl:Class ;
+    rdfs:label "CTSachievedthebestperformanceamongthealgorithms" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ctsdynamicallyadaptsitsapproach a owl:Class ;
+    rdfs:label "CTSdynamicallyadaptsitsapproach" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:cummings_ml a owl:Class ;
+    rdfs:label "Cummings ML" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#curran
+associates> a owl:Class ;
+    rdfs:label """Curran
+Associates""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:current_psychology a owl:Class ;
+    rdfs:label "Current Psychology" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:cˇyras_k a owl:Class ;
+    rdfs:label "Cˇyras K" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:dark_triad a owl:Class ;
+    rdfs:label "Dark Triad" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:daronnat_s a owl:Class ;
+    rdfs:label "Daronnat S" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:davidoff_s_trust a owl:Class ;
+    rdfs:label "Davidoff S. Trust" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:dazeley_r a owl:Class ;
+    rdfs:label "Dazeley R" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:dcode a owl:Class ;
+    rdfs:label "DCODE" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:de_keizer_nf a owl:Class ;
+    rdfs:label "De Keizer NF" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:deep_epsilongreedy a owl:Class ;
+    rdfs:label "Deep Epsilon-Greedy" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:deepepsilongreedy a owl:Class ;
+    rdfs:label "DeepEpsilon-Greedy" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:defining_trust a owl:Class ;
+    rdfs:label "Defining Trust" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:delft_university_of_technology a owl:Class ;
+    rdfs:label "Delft University of Technology" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:delroy_l_paulhus a owl:Class ;
+    rdfs:label "Delroy L Paulhus" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:densityandsaturationcriteria_eventsandtheirpropertiescanbenecessary a owl:Class ;
+    rdfs:label "DensityandSaturationcriteria Eventsandtheirpropertiescanbenecessary" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:department_of_information a owl:Class ;
+    rdfs:label "Department of Information" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:design a owl:Class ;
+    rdfs:label "design" ;
+    rdfs:comment "Automatically added AI concept" .
+
+hi1:designingforhumancenteredsystems a owl:Class ;
+    rdfs:label "DesigningforHuman-CenteredSystems" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:det a owl:Class ;
+    rdfs:label "DET" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:dictingdigitalbehaviorsindifferentagesampleseg a owl:Class ;
+    rdfs:label "dictingdigitalbehaviorsindifferentagesamples(e.g" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:digital_humanism a owl:Class ;
+    rdfs:label "Digital Humanism" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:digitalbehaviors a owl:Class ;
+    rdfs:label "DigitalBehaviors" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:dimensions_preferences a owl:Class ;
+    rdfs:label "Dimensions, Preferences" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:discovery a owl:Class ;
+    rdfs:label "Discovery" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#discussionandconclusion
+inthiswork> a owl:Class ;
+    rdfs:label """DiscussionandConclusion
+Inthiswork""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#distributed_dynamic
+team_trust> a owl:Class ;
+    rdfs:label """Distributed Dynamic
+Team Trust""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:doeyl a owl:Class ;
+    rdfs:label "DoEYL" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:doiorg101109iros20178202133 a owl:Class ;
+    rdfs:label "doi.org/10.1109/IROS.2017.8202133" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#drinking_scenarios
+wentsengchanga> a owl:Class ;
+    rdfs:label """Drinking Scenarios
+Wen-TsengCHANGa""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:dst a owl:Class ;
+    rdfs:label "DST" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:dulacarnoldg a owl:Class ;
+    rdfs:label "Dulac-ArnoldG" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:dz a owl:Class ;
+    rdfs:label "DZ" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ehr a owl:Class ;
+    rdfs:label "EHR" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:elianesommerfeld a owl:Class ;
+    rdfs:label "ElianeSommerfeld" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ely_jw a owl:Class ;
+    rdfs:label "Ely JW" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:elżbieta_sanecka a owl:Class ;
+    rdfs:label "Elżbieta Sanecka" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ept a owl:Class ;
+    rdfs:label "EPT" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ernest_h_oboyle a owl:Class ;
+    rdfs:label "Ernest H O’Boyle" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:etp a owl:Class ;
+    rdfs:label "ETP" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:eu a owl:Class ;
+    rdfs:label "EU" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:eur a owl:Class ;
+    rdfs:label "EUR" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:european_commission a owl:Class ;
+    rdfs:label "European Commission" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:european_dementia_monitor a owl:Class ;
+    rdfs:label "European Dementia Monitor" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:evitamarch a owl:Class ;
+    rdfs:label "EvitaMarch" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:exosoul a owl:Class ;
+    rdfs:label "Exosoul" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:exosoul_ethical_engine_scheme a owl:Class ;
+    rdfs:label "EXOSOUL Ethical Engine Scheme" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:exosoulisbasedonthenotion a owl:Class ;
+    rdfs:label "EXOSOULisbasedonthenotion" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:expanding_trust a owl:Class ;
+    rdfs:label "Expanding Trust" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:f__m a owl:Class ;
+    rdfs:label "F ≺ M" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:f_for_s a owl:Class ;
+    rdfs:label "F for s¯" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:f_s a owl:Class ;
+    rdfs:label "F :s",
+        "F :s." ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:f_tischler_v a owl:Class ;
+    rdfs:label "F, Tischler V" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:factbank a owl:Class ;
+    rdfs:label "FactBank" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:fahim_maa a owl:Class ;
+    rdfs:label "Fahim MAA" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:fda a owl:Class ;
+    rdfs:label "FDA" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:feedback_interface a owl:Class ;
+    rdfs:label "Feedback Interface" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:fernandezlealahuman a owl:Class ;
+    rdfs:label "Ferna´ndez-LealA.Human-" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:fig1 a owl:Class ;
+    rdfs:label "Fig.1" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:fitzpatrick a owl:Class ;
+    rdfs:label "Fitzpatrick" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:florence_italy_association_for_computational_linguistics a owl:Class ;
+    rdfs:label "Florence, Italy: Association for Computational Linguistics" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:florence_l_geis a owl:Class ;
+    rdfs:label "Florence L Geis" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:fordet a owl:Class ;
+    rdfs:label "forDET" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:forthedeterministicdandnon a owl:Class ;
+    rdfs:label "forthedeterministic(D)andnon" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:frontiers_of_theory_and_research a owl:Class ;
+    rdfs:label "Frontiers of Theory and Research" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ftrafficpsychologyandbehaviour2020731528 a owl:Class ;
+    rdfs:label "F:TrafficPsychologyandBehaviour.2020;73:15-28" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:functioning a owl:Class ;
+    rdfs:label "Functioning" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#functioning__wellbeing
+piekvossena1selenebaezsantamariaaandthomasbaiera> a owl:Class ;
+    rdfs:label """Functioning & Well-Being
+PiekVOSSENa,1,SeleneBA´EZSANTAMAR´IAaandThomasBAIERa""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:fussell_sr a owl:Class ;
+    rdfs:label "Fussell SR" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:gdpr a owl:Class ;
+    rdfs:label "GDPR" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:gp a owl:Class ;
+    rdfs:label "GP" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:graber_ml a owl:Class ;
+    rdfs:label "Graber ML" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:grainedemotions a owl:Class ;
+    rdfs:label "GrainedEmotions" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:grasshopper a owl:Class ;
+    rdfs:label "Grasshopper" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:greenewaldk a owl:Class ;
+    rdfs:label "GreenewaldK" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:grisel a owl:Class ;
+    rdfs:label "Grisel" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:grossmd a owl:Class ;
+    rdfs:label "GrossMD" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:groveaj a owl:Class ;
+    rdfs:label "GroveAJ" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:guidelinesforhumanaiinteractionwhichseekstoguidedinteractionovertimebeyond a owl:Class ;
+    rdfs:label "GuidelinesforHuman-AIInteractionwhichseekstoguidedinteractionovertimebeyond" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:gutzwiller_rs a owl:Class ;
+    rdfs:label "Gutzwiller RS" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:hai a owl:Class ;
+    rdfs:label "HAI" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:harv_jl__tech a owl:Class ;
+    rdfs:label "Harv JL & Tech" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#harvard
+data_science_review> a owl:Class ;
+    rdfs:label """Harvard
+Data Science Review""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:hasAuthor a owl:DatatypeProperty ;
+    rdfs:comment "Name of the paper author" ;
+    rdfs:range xsd:string .
+
+hi1:hasplace a owl:Class ;
+    rdfs:label "hasPlace" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:hatespeech a owl:Class ;
+    rdfs:label "HateSpeech" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:hatice_ferhan_odabasi a owl:Class ;
+    rdfs:label "Hatice Ferhan Odabasi" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:healthcare a owl:Class ;
+    rdfs:label "Healthcare" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:hegde_n a owl:Class ;
+    rdfs:label "Hegde N" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:helenavasconcelos a owl:Class ;
+    rdfs:label "HelenaVasconcelos" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:hexaco a owl:Class ;
+    rdfs:label "Hexaco" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:hjortha a owl:Class ;
+    rdfs:label "HjorthA" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:hoesterey_s a owl:Class ;
+    rdfs:label "Hoesterey S" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:holloway_a a owl:Class ;
+    rdfs:label "Holloway A" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:horizon_2020 a owl:Class ;
+    rdfs:label "Horizon 2020" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:horvat_cm a owl:Class ;
+    rdfs:label "Horvat CM" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:hri a owl:Class ;
+    rdfs:label "HRI" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:httpdxdoiorg1011453181671 a owl:Class ;
+    rdfs:label "http://dx.doi.org/10.1145/3181671" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:hum_factors a owl:Class ;
+    rdfs:label "Hum Factors" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:human_preferences a owl:Class ;
+    rdfs:label "Human Preferences" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ibm a owl:Class ;
+    rdfs:label "IBM" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ibm_spss_statistics a owl:Class ;
+    rdfs:label "IBM SPSS Statistics" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:iccids a owl:Class ;
+    rdfs:label "ICCIDS" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:idonothavetheabilitytoadjusttoindividualpreferencesintheway a owl:Class ;
+    rdfs:label "Idonothavetheabilitytoadjusttoindividualpreferencesintheway" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:incontrast a owl:Class ;
+    rdfs:label "Incontrast" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:individual_differences10085942016 a owl:Class ;
+    rdfs:label "Individual Differences,100:85–94,2016" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#inference_engine
+fill> a owl:Class ;
+    rdfs:label """Inference Engine
+Fill""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:informatics a owl:Class ;
+    rdfs:label "Informatics" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:informatics_institute a owl:Class ;
+    rdfs:label "Informatics Institute" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ingeneral a owl:Class ;
+    rdfs:label "Ingeneral" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ininternational_conference a owl:Class ;
+    rdfs:label "InInternational Conference" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#initial_ethical
+inference_engine_profile> a owl:Class ;
+    rdfs:label """Initial Ethical
+Inference Engine Profile""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:instagram a owl:Class ;
+    rdfs:label "Instagram" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:intelligent_systems_technical_conference a owl:Class ;
+    rdfs:label "Intelligent Systems Technical Conference" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#international
+journal_of_mental_health> a owl:Class ;
+    rdfs:label """International
+Journal of Mental Health""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:international_data_privacy_law a owl:Class ;
+    rdfs:label "International Data Privacy Law" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:international_journal a owl:Class ;
+    rdfs:label "International Journal" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:international_journal_of_human a owl:Class ;
+    rdfs:label "International Journal of Human" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:international_journal_of_management_and_bussiness a owl:Class ;
+    rdfs:label "International Journal of Management and Bussiness" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:inthisbalanceddataset a owl:Class ;
+    rdfs:label "Inthisbalanceddataset" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:inthiscontextthemultidisciplinaryprojectexosoul a owl:Class ;
+    rdfs:label "InthiscontextthemultidisciplinaryprojectExosoul" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:inwhichthemodelneverabstainsk0however a owl:Class ;
+    rdfs:label "inwhichthemodelneverabstains(k=0).However" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ithinkitisuselesstotrainitwithmylikes a owl:Class ;
+    rdfs:label "• Ithinkitisuselesstotrainitwithmylikes" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:itisverycapableofperformingitsjob a owl:Class ;
+    rdfs:label "• Itisverycapableofperformingitsjob" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#j_am_med_inform
+assoc> a owl:Class ;
+    rdfs:label """J Am Med Inform
+Assoc""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:j_am_med_inform_assoc a owl:Class ;
+    rdfs:label "J Am Med Inform Assoc" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:jalt_testing__evaluation_sig_newsletter a owl:Class ;
+    rdfs:label "JALT Testing & Evaluation SIG Newsletter" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:jmir_med_inform a owl:Class ;
+    rdfs:label "JMIR Med Inform" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:joshandres a owl:Class ;
+    rdfs:label "JoshAndres" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:joshuadmiller a owl:Class ;
+    rdfs:label "JoshuaDMiller" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:journal_of_applied a owl:Class ;
+    rdfs:label "Journal of Applied" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:journal_of_machine_learning_research a owl:Class ;
+    rdfs:label "Journal of Machine Learning Research" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:journal_of_personality8366446642015 a owl:Class ;
+    rdfs:label "Journal of personality,83(6):644–664,2015" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:journal_of_research a owl:Class ;
+    rdfs:label "Journal of Research" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:journalofhumannutritionanddietetics2022351165 a owl:Class ;
+    rdfs:label "JournalofHumanNutritionandDietetics.2022;35(1):165" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:jp a owl:Class ;
+    rdfs:label "JP" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:keebler_jr a owl:Class ;
+    rdfs:label "Keebler JR" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:keenj a owl:Class ;
+    rdfs:label "KeenJ" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:kellyt a owl:Class ;
+    rdfs:label "KellyT" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:kerstholt_jh a owl:Class ;
+    rdfs:label "Kerstholt JH" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:keshmiri_s a owl:Class ;
+    rdfs:label "Keshmiri S" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:keywords a owl:Class ;
+    rdfs:label "Keywords" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:khodyakov_d_trust a owl:Class ;
+    rdfs:label "Khodyakov D. Trust" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:kiesler_s a owl:Class ;
+    rdfs:label "Kiesler S" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:kimj a owl:Class ;
+    rdfs:label "KimJ" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:klasnjap a owl:Class ;
+    rdfs:label "KlasnjaP" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:knowledgebased_systems a owl:Class ;
+    rdfs:label "Knowledge-Based Systems" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:koenigsberg_mr a owl:Class ;
+    rdfs:label "Koenigsberg MR" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:komorowski_m a owl:Class ;
+    rdfs:label "Komorowski M" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:kramer_rm a owl:Class ;
+    rdfs:label "Kramer RM" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:krishnaswamy_n a owl:Class ;
+    rdfs:label "Krishnaswamy N" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:l a owl:Class ;
+    rdfs:label "l" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:label_0 a owl:Class ;
+    rdfs:label "Label 0" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:larusstone_n a owl:Class ;
+    rdfs:label "Larus-Stone N" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:laurapetrich a owl:Class ;
+    rdfs:label "LauraPetrich" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:leejdmodelinggoalalignmentinhumanaiteaming a owl:Class ;
+    rdfs:label "LeeJD.ModelingGoalAlignmentinHuman-AITeaming" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:lees a owl:Class ;
+    rdfs:label "LeeS" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:leeuwenberg_am a owl:Class ;
+    rdfs:label "Leeuwenberg AM" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:legal_theory a owl:Class ;
+    rdfs:label "Legal Theory" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:lih a owl:Class ;
+    rdfs:label "LiH" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:lik a owl:Class ;
+    rdfs:label "LiK" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#limitationsandconclusions
+inthiswork> a owl:Class ;
+    rdfs:label """LimitationsandConclusions
+Inthiswork""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:linear a owl:Class ;
+    rdfs:label "linear" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:linear_upper_confidence_bound a owl:Class ;
+    rdfs:label "Linear Upper Confidence Bound" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:lip a owl:Class ;
+    rdfs:label "LiP" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:liux a owl:Class ;
+    rdfs:label "LiuX" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:liuy a owl:Class ;
+    rdfs:label "LiuY" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:liy a owl:Class ;
+    rdfs:label "LiY" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:llm a owl:Class ;
+    rdfs:label "LLM" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:logistic_regression a owl:Class ;
+    rdfs:label "Logistic Regression" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:lucianofloridi a owl:Class ;
+    rdfs:label "LucianoFloridi" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:luj a owl:Class ;
+    rdfs:label "LuJ" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:m a owl:Class ;
+    rdfs:label "M" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#machine
+learning_in_python> a owl:Class ;
+    rdfs:label """Machine
+Learning in Python""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:machine_learning a owl:Class ;
+    rdfs:label "Machine Learning" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:madeleinegrundemclaughlin a owl:Class ;
+    rdfs:label "MadeleineGrunde-McLaughlin" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:manexpertswillingnesstocontributetothecocreativetoolduringandaftercocreation a owl:Class ;
+    rdfs:label "manexpert’swillingnesstocontributetotheco-creativetoolduringandafterco-creation" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:marcoautili a owl:Class ;
+    rdfs:label "MarcoAutili" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:marsh_s a owl:Class ;
+    rdfs:label "Marsh S" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:martic_m a owl:Class ;
+    rdfs:label "Martic M" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:martindegeling a owl:Class ;
+    rdfs:label "MartinDegeling" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:massimiliano a owl:Class ;
+    rdfs:label "Massimiliano" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:maxschemmer a owl:Class ;
+    rdfs:label "MaxSchemmer" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:mcdaniel a owl:Class ;
+    rdfs:label "McDaniel" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:mcgrawhill a owl:Class ;
+    rdfs:label "McGraw-Hill" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:mcnair_jb a owl:Class ;
+    rdfs:label "McNair JB" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:mdp a owl:Class ;
+    rdfs:label "MDP" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:mdpandtrytolearnahigherperformingpolicy a owl:Class ;
+    rdfs:label "MDPandtrytolearnahigherperformingpolicy" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:means1015 a owl:Class ;
+    rdfs:label "means’[10,15" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:med_care_res_rev a owl:Class ;
+    rdfs:label "Med Care Res Rev" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:metaylorreinforcementlearningrequireshumanintheloopframingandapproaches_353 a owl:Class ;
+    rdfs:label "M.E.Taylor/ReinforcementLearningRequiresHuman-in-the-LoopFramingandApproaches 353" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:metaylorreinforcementlearningrequireshumanintheloopframingandapproaches_357 a owl:Class ;
+    rdfs:label "M.E.Taylor/ReinforcementLearningRequiresHuman-in-the-LoopFramingandApproaches 357" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#metaylorreinforcementlearningrequireshumanintheloopframingandapproaches_359
+references> a owl:Class ;
+    rdfs:label """M.E.Taylor/ReinforcementLearningRequiresHuman-in-the-LoopFramingandApproaches 359
+References""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:michaeldesmond a owl:Class ;
+    rdfs:label "MichaelDesmond" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:michaelmuller a owl:Class ;
+    rdfs:label "MichaelMuller" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:mieled a owl:Class ;
+    rdfs:label "MieleD" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:mmolaee a owl:Class ;
+    rdfs:label "MMOLAEE" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:mochenyang a owl:Class ;
+    rdfs:label "MochenYang" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:moharebm a owl:Class ;
+    rdfs:label "MoharebM" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:monitoringpatientswell a owl:Class ;
+    rdfs:label "Monitoringpatientswell" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:muir a owl:Class ;
+    rdfs:label "Muir" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:multimodal_semantic_representations a owl:Class ;
+    rdfs:label "Multimodal Semantic Representations" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:narcissism a owl:Class ;
+    rdfs:label "Narcissism" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:nasa a owl:Class ;
+    rdfs:label "NASA" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:nat_med a owl:Class ;
+    rdfs:label "Nat Med" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:nature_machine_intelligence a owl:Class ;
+    rdfs:label "Nature Machine Intelligence" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:netherlands_organisation_for_scientific_research a owl:Class ;
+    rdfs:label "Netherlands Organisation for Scientific Research" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:neural_information_processing_systems a owl:Class ;
+    rdfs:label "Neural Information Processing Systems" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:newyork a owl:Class ;
+    rdfs:label "NewYork" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ngay a owl:Class ;
+    rdfs:label "NgAY" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:nijman_swj a owl:Class ;
+    rdfs:label "Nijman SWJ" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:niklas a owl:Class ;
+    rdfs:label "Niklas" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:niklaskuehl a owl:Class ;
+    rdfs:label "NiklasKuehl" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:nishikawa a owl:Class ;
+    rdfs:label "Nishikawa" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:nn a owl:Class ;
+    rdfs:label "n∈N" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:nondet a owl:Class ;
+    rdfs:label "NONDET" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:normansadeh a owl:Class ;
+    rdfs:label "NormanSadeh" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:northepointe_inc a owl:Class ;
+    rdfs:label "Northepointe, Inc." ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:northpointe_inc a owl:Class ;
+    rdfs:label "Northpointe Inc." ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:notethatsinceacc a owl:Class ;
+    rdfs:label "NotethatsinceAcc" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:novak_ll a owl:Class ;
+    rdfs:label "Novak LL" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:npdtam a owl:Class ;
+    rdfs:label "NPD-TAM" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:npj_digit_med a owl:Class ;
+    rdfs:label "NPJ Digit Med" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:nuthakki_s a owl:Class ;
+    rdfs:label "Nuthakki S" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:nwo a owl:Class ;
+    rdfs:label "NWO" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ny a owl:Class ;
+    rdfs:label "NY" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:objectspace a owl:Class ;
+    rdfs:label "object→space" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:official_journal a owl:Class ;
+    rdfs:label "Official Journal" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ontological_references a owl:Class ;
+    rdfs:label "Ontological References" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ourcontributiontohumanaiin a owl:Class ;
+    rdfs:label "Ourcontributiontohuman-AIin-" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ourcontributiontohumanaiinteractionisthreefold a owl:Class ;
+    rdfs:label "Ourcontributiontohuman-AIinteractionisthree-fold" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:p001andaioutputtrustr76 a owl:Class ;
+    rdfs:label "p<.001∗∗∗)andAIoutputtrust(r=.76" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:p7 a owl:Class ;
+    rdfs:label "P7" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:padhraicsmyth a owl:Class ;
+    rdfs:label "PadhraicSmyth" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:pak_r a owl:Class ;
+    rdfs:label "Pak R" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:paolainverardi a owl:Class ;
+    rdfs:label "PaolaInverardi" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:pareek_a a owl:Class ;
+    rdfs:label "Pareek A" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:parker_w a owl:Class ;
+    rdfs:label "Parker W" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:patrickhemmer a owl:Class ;
+    rdfs:label "PatrickHemmer" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:patriziomigliarini a owl:Class ;
+    rdfs:label "PatrizioMigliarini" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:patriziopelliccione a owl:Class ;
+    rdfs:label "PatrizioPelliccione" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:paul_t_costa a owl:Class ;
+    rdfs:label "Paul T Costa" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:paul_t_costa_jr a owl:Class ;
+    rdfs:label "Paul T Costa Jr" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:pearson a owl:Class ;
+    rdfs:label "Pearson" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:people_business_sme_devops_laypeople_mlrl a owl:Class ;
+    rdfs:label "People Business SME DevOps Laypeople ML/RL" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:personal_differences a owl:Class ;
+    rdfs:label "Personal Differences" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:personality4357477542009 a owl:Class ;
+    rdfs:label "Personality,43(5):747–754,2009" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:phillips_ek a owl:Class ;
+    rdfs:label "Phillips EK" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:philosophy__technology a owl:Class ;
+    rdfs:label "Philosophy & Technology" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:pierssteel a owl:Class ;
+    rdfs:label "PiersSteel" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:pimentelj a owl:Class ;
+    rdfs:label "PimentelJ" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:platt_je a owl:Class ;
+    rdfs:label "Platt JE" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#postdeployment
+351> a owl:Class ;
+    rdfs:label """Post-Deployment
+3.5.1""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:povykalo_a a owl:Class ;
+    rdfs:label "Povykalo A" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:predevelopment a owl:Class ;
+    rdfs:label "Pre-Development" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:pringle_c_eleftheriou_i a owl:Class ;
+    rdfs:label "Pringle C, Eleftheriou I" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:procedia a owl:Class ;
+    rdfs:label "Procedia" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#proceedingsoftheacm
+oninteractive> a owl:Class ;
+    rdfs:label """ProceedingsoftheACM
+onInteractive""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:prokop_m a owl:Class ;
+    rdfs:label "Prokop M" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:propublica a owl:Class ;
+    rdfs:label "ProPublica" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:pvossenetalaconversationalagent a owl:Class ;
+    rdfs:label "pvossenetalaconversationalagent" ;
+    rdfs:comment "Automatically added AI concept" .
+
+hi1:pwd a owl:Class ;
+    rdfs:label "PwD" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:q2 a owl:Class ;
+    rdfs:label "• Q2" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:qrcode a owl:Class ;
+    rdfs:label "QR-Code" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:qualitativecooccurrences a owl:Class ;
+    rdfs:label "QualitativeCo-Occurrences" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:race a owl:Class ;
+    rdfs:label "Race" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:racedimension a owl:Class ;
+    rdfs:label "Racedimension" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:radiol_med a owl:Class ;
+    rdfs:label "Radiol Med" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:rahmaniaslm_sketchopt a owl:Class ;
+    rdfs:label "RahmaniAslM. SketchOpt" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:reale_c a owl:Class ;
+    rdfs:label "Reale C" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:reflexive_thematic_analysis a owl:Class ;
+    rdfs:label "Reflexive Thematic Analysis" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:reinforcement_learning a owl:Class ;
+    rdfs:label "Reinforcement Learning" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:reliance a owl:Class ;
+    rdfs:label "Reliance" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:remark_41 a owl:Class ;
+    rdfs:label "Remark 4.1" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:riener_a a owl:Class ;
+    rdfs:label "Riener A" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:rlops a owl:Class ;
+    rdfs:label "RLOps" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:robben_s a owl:Class ;
+    rdfs:label "Robben S" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:robertloftin a owl:Class ;
+    rdfs:label "RobertLoftin" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:robinsonlpersonalisation a owl:Class ;
+    rdfs:label "RobinsonL.Personalisation" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:rx a owl:Class ;
+    rdfs:label "r(x" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:sampling a owl:Class ;
+    rdfs:label "sampling" ;
+    rdfs:comment "Automatically added AI concept" .
+
+hi1:santaclara a owl:Class ;
+    rdfs:label "SantaClara" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:santosrodrıguezr a owl:Class ;
+    rdfs:label "Santos-Rodr´ıguezR" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:sc a owl:Class ;
+    rdfs:label "SC" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:schapirere a owl:Class ;
+    rdfs:label "SchapireRE" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:scheffler a owl:Class ;
+    rdfs:label "Scheffler" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:schoolofbusinessand a owl:Class ;
+    rdfs:label "SchoolofBusinessand" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:science_of_computer a owl:Class ;
+    rdfs:label "Science of Computer" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:sendak a owl:Class ;
+    rdfs:label "Sendak" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:sepsis_watch a owl:Class ;
+    rdfs:label "Sepsis Watch" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:siewiorek_dp a owl:Class ;
+    rdfs:label "Siewiorek DP" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:singh_p_pomerantz_s_doyle_s_kakarmath_s a owl:Class ;
+    rdfs:label "Singh P, Pomerantz S, Doyle S, Kakarmath S" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:sme a owl:Class ;
+    rdfs:label "SME" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:smithrenner_a a owl:Class ;
+    rdfs:label "Smith-Renner A" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:social_computing a owl:Class ;
+    rdfs:label "Social Computing" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:social_psychology_bulletin12175801986 a owl:Class ;
+    rdfs:label "Social Psychology Bulletin,12(1):75–80,1986" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:socialscience a owl:Class ;
+    rdfs:label "SocialScience" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:softethicsandthegovernanceofthedigital a owl:Class ;
+    rdfs:label "Softethicsandthegovernanceofthedigital" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:somayabenallouch a owl:Class ;
+    rdfs:label "SomayaBENALLOUCH" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:spie a owl:Class ;
+    rdfs:label "SPIE" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#spie
+proceedings> a owl:Class ;
+    rdfs:label """SPIE
+Proceedings""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:statisticsanova a owl:Class ;
+    rdfs:label "StatisticsAnova" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:strohm a owl:Class ;
+    rdfs:label "Strohm" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:success a owl:Class ;
+    rdfs:label "Success" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:suny a owl:Class ;
+    rdfs:label "SunY" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:sutton_rs a owl:Class ;
+    rdfs:label "Sutton RS" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:swift_trust a owl:Class ;
+    rdfs:label "Swift Trust" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:sxττsx a owl:Class ;
+    rdfs:label "s(x)≤τ(τ−s(x" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:table_43 a owl:Class ;
+    rdfs:label "Table 4.3" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:tam a owl:Class ;
+    rdfs:label "TAM" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:taya_r_cohen a owl:Class ;
+    rdfs:label "Taya R Cohen" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:tejeda a owl:Class ;
+    rdfs:label "Tejeda" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:teller_road a owl:Class ;
+    rdfs:label "Teller Road" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#the
+european_unions> a owl:Class ;
+    rdfs:label """the
+European Union’s""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#the_2020_conference_on
+fairness_accountability> a owl:Class ;
+    rdfs:label """the 2020 Conference on
+Fairness, Accountability""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_21st_international_conference_on_intelligent_user_interfaces a owl:Class ;
+    rdfs:label "the 21st International Conference on Intelligent User Interfaces" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_aaai_conference_on_human_computation a owl:Class ;
+    rdfs:label """the AAAI Conference on Human Computation
+""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_acm_on_humancomputer_interaction a owl:Class ;
+    rdfs:label "the ACM on Human-Computer Interaction" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_base_samples_of_cognos_analytics a owl:Class ;
+    rdfs:label "the Base Samples of Cognos Analytics" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_certifiably_optimal_rule_lists a owl:Class ;
+    rdfs:label "the Certifiably Optimal Rule Lists" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_clinical_ai_deployment_cycle a owl:Class ;
+    rdfs:label "the Clinical AI Deployment Cycle" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_compas_recidivism_algorithm a owl:Class ;
+    rdfs:label "the COMPAS Recidivism Algorithm" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_council_of_the_european_union a owl:Class ;
+    rdfs:label "the Council of the European Union" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_dark_triad_dirty a owl:Class ;
+    rdfs:label "the Dark Triad Dirty" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_dutch_ministry_of_education a owl:Class ;
+    rdfs:label "the Dutch Ministry of Education" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_efmi_working_group_for_assessment_of_health_information_systems a owl:Class ;
+    rdfs:label "the EFMI Working Group for Assessment of Health Information Systems" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_ethics_position_questionnaire a owl:Class ;
+    rdfs:label "the Ethics Position Questionnaire" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_european_parliament a owl:Class ;
+    rdfs:label "The European Parliament" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_google_mapsassisted a owl:Class ;
+    rdfs:label "the Google Maps-assisted" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_hybrid_intelligence_center a owl:Class ;
+    rdfs:label "the Hybrid Intelligence Center" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#the_interdependence_of_reliance
+behavior> a owl:Class ;
+    rdfs:label """the Interdependence of Reliance
+Behavior""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#the_journal_of
+education> a owl:Class ;
+    rdfs:label """The Journal of
+Education""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#the_netherlands
+abstract> a owl:Class ;
+    rdfs:label """the Netherlands
+Abstract""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#the_netherlands
+organisation_for_scientific_research> a owl:Class ;
+    rdfs:label """the Netherlands
+Organisation for Scientific Research""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_pearson_correlation a owl:Class ;
+    rdfs:label "The Pearson Correlation" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_small_compas_data a owl:Class ;
+    rdfs:label "the Small COMPAS Data" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_unit_of_analysis_of_trust a owl:Class ;
+    rdfs:label "the Unit of Analysis of Trust" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_university_of_laquila a owl:Class ;
+    rdfs:label "the University of L’Aquila" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:theacademyof a owl:Class ;
+    rdfs:label "TheAcademyof" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:thelocationmapislaidonagrid a owl:Class ;
+    rdfs:label "Thelocationmapislaidonagrid" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:thenumberofdesigngoals a owl:Class ;
+    rdfs:label "• (Thenumberofdesigngoals" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#theparticipantcouldinter
+venebyclickingtheinterruptbutton> a owl:Class ;
+    rdfs:label """Theparticipantcouldinter-
+venebyclickingtheInterruptbutton""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:theparticipantstrustedandusedthegpsdrivingadvice a owl:Class ;
+    rdfs:label "theparticipantstrustedandusedtheGPSdrivingadvice" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:therecentlylaunchedchatgptseemstoprovidehuman a owl:Class ;
+    rdfs:label "therecentlylaunchedChatGPTseemstoprovidehuman" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#theroleoftrustin
+humanrobotinteraction> a owl:Class ;
+    rdfs:label """TheRoleofTrustin
+Human-RobotInteraction""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:thiscodecould__idonotfeeloutofcontrolinworkingwithit a owl:Class ;
+    rdfs:label "Thiscodecould • Idonotfeeloutofcontrolinworkingwithit" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:thispaperdiscusses5stepstowardssuccessfulrldeployment a owl:Class ;
+    rdfs:label "Thispaperdiscusses5stepstowardssuccessfulRLdeployment" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:thomasj a owl:Class ;
+    rdfs:label "ThomasJ" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:thompson_wr a owl:Class ;
+    rdfs:label "Thompson WR" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:timecollaboration a owl:Class ;
+    rdfs:label "TimeCollaboration" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:tombuchanan a owl:Class ;
+    rdfs:label "TomBuchanan" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:totrainwasassociatedwithmorewillingnessr72 a owl:Class ;
+    rdfs:label "totrainwasassociatedwithmorewillingness(r=.72" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:trainvaltestsize a owl:Class ;
+    rdfs:label "Train/Val/Testsize" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:trews a owl:Class ;
+    rdfs:label "TREWS" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#trust_through_a_clinical_champion
+clinical> a owl:Class ;
+    rdfs:label """Trust Through a Clinical Champion
+Clinical""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:trust_through_clinical_involvement a owl:Class ;
+    rdfs:label "Trust Through Clinical Involvement" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#trust_through_clinical_trials_and_peer_reviewed_publications
+prior> a owl:Class ;
+    rdfs:label """Trust Through Clinical Trials and Peer Reviewed Publications
+Prior""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:trust_through_public_accountability a owl:Class ;
+    rdfs:label "Trust Through Public Accountability" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:trust_through_the_ai_development_team a owl:Class ;
+    rdfs:label "Trust Through the AI Development Team" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:trust_through_the_training_of_the_ai a owl:Class ;
+    rdfs:label "Trust Through the Training of the AI" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#trustinhumanrobot
+interaction> a owl:Class ;
+    rdfs:label """TrustinHuman-Robot
+Interaction""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:tukeys_posthoc a owl:Class ;
+    rdfs:label "Tukey’s Post-hoc" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:un a owl:Class ;
+    rdfs:label "un" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:unitedkingdom a owl:Class ;
+    rdfs:label "UnitedKingdom" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:university_of_groningen a owl:Class ;
+    rdfs:label "University of Groningen" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:us_airlines a owl:Class ;
+    rdfs:label "US Airlines" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:us_food_and_drug_administration a owl:Class ;
+    rdfs:label "U.S. Food and Drug Administration" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#usa
+abstract> a owl:Class ;
+    rdfs:label """USA
+Abstract""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:usa2020associationforcomputingmachinery a owl:Class ;
+    rdfs:label "USA,2020.AssociationforComputingMachinery" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:usa_association a owl:Class ;
+    rdfs:label "USA: Association" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:user a owl:Class ;
+    rdfs:label "user" ;
+    rdfs:comment "Automatically added AI concept" .
+
+hi1:user_modeling a owl:Class ;
+    rdfs:label "User Modeling" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:user_profiling a owl:Class ;
+    rdfs:label "User Profiling" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:user_trust a owl:Class ;
+    rdfs:label "User Trust" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:userbot a owl:Class ;
+    rdfs:label "UserBot" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:usingabelievedesireintentprotocol20theplatformutilizesmodulesthatde a owl:Class ;
+    rdfs:label "UsingaBelieve-Desire-Intentprotocol[20],theplatformutilizesmodulesthatde-" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:usingakruskalwallisranksum a owl:Class ;
+    rdfs:label "UsingaKruskal-Wallisranksum" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:utrecht_university a owl:Class ;
+    rdfs:label "Utrecht University" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:valueaware_active_learning a owl:Class ;
+    rdfs:label "Value-Aware Active Learning" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:vanduinc a owl:Class ;
+    rdfs:label "VanDuinC" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:veloso_m a owl:Class ;
+    rdfs:label "Veloso M" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#virtualassistantstheapplication
+broadly> a owl:Class ;
+    rdfs:label """VirtualAssistants-TheApplication
+Broadly""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:wang a owl:Class ;
+    rdfs:label "Wang" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ward a owl:Class ;
+    rdfs:label "Ward" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:wealsosimulatedcriticaleventsduringtherouteplanningtask a owl:Class ;
+    rdfs:label "Wealsosimulatedcriticaleventsduringtherouteplanningtask" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:wenamethisstrategythresholdorientedsamplingtosnote a owl:Class ;
+    rdfs:label "Wenamethisstrategythreshold-orientedsampling(TOS).Note" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:weshowthatthehumanmayneverbeexpectedtocomplementtheai a owl:Class ;
+    rdfs:label "weshowthatthehumanmayneverbeexpectedtocomplementtheAI" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:weuseencoderllmsfine a owl:Class ;
+    rdfs:label "weuseencoderLLMsfine" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:wewouldexpectthehumantoadheretoaofcorrectairecommendationsanda a owl:Class ;
+    rdfs:label "wewouldexpectthehumantoadheretoA%ofcorrectAIrecommendationsandA%" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:wiesee a owl:Class ;
+    rdfs:label "WieseE" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:wilcox_l a owl:Class ;
+    rdfs:label "Wilcox L" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:wilson_s_stumpf_s_user a owl:Class ;
+    rdfs:label "Wilson S, Stumpf S. User" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:working_group a owl:Class ;
+    rdfs:label "Working Group" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:workload a owl:Class ;
+    rdfs:label "Workload" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:world_health_organization a owl:Class ;
+    rdfs:label "World Health Organization" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:wouldyouinvestyourtimeintrainingtouse a owl:Class ;
+    rdfs:label "• Wouldyouinvestyourtimeintrainingtouse" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:wtchangetalhuman a owl:Class ;
+    rdfs:label "W.-T.Changetal./Human" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:xargmin a owl:Class ;
+    rdfs:label "x∗=argmin" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:xargmin_xd a owl:Class ;
+    rdfs:label "x∗=argmin x∈D" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+<http://example.org/HI#yearb
+med_inform> a owl:Class ;
+    rdfs:label """Yearb
+Med Inform""" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:yearb_med_inform a owl:Class ;
+    rdfs:label "Yearb Med Inform" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:yunfengzhang a owl:Class ;
+    rdfs:label "YunfengZhang" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi:Context a owl:Class .
+
+hi:Domain a owl:Class .
+
+hi:Endgoal a owl:Class .
+
+hi:EthicalConsideration a owl:Class .
+
+hi1:HI_Application owl:minCardinality 1 .
+
+hi1:HI_Technique owl:minCardinality 1 .
+
+hi1:acc a owl:Class ;
+    rdfs:label "Acc",
+        "acc" ;
+    rdfs:comment "Automatically added AI concept",
+        "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:autonomous_systems a owl:Class ;
+    rdfs:label "Autonomous Systems" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:available a owl:Class ;
+    rdfs:label "available" ;
+    rdfs:comment "Automatically added AI concept" .
+
+hi1:compas a owl:Class ;
+    rdfs:label "COMPAS" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:dementia a owl:Class ;
+    rdfs:label "Dementia" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:digital a owl:Class ;
+    rdfs:label "Digital" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:f a owl:Class ;
+    rdfs:label "F",
+        "F :" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:figure a owl:Class ;
+    rdfs:label "figure" ;
+    rdfs:comment "Automatically added AI concept" .
+
+hi1:forthisreason a owl:Class ;
+    rdfs:label "Forthisreason" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:gd a owl:Class ;
+    rdfs:label "GD" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:hcomp a owl:Class ;
+    rdfs:label "HCOMP" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:human a owl:Class ;
+    rdfs:label "human" ;
+    rdfs:comment "Automatically added AI concept" .
+
+hi1:ieee a owl:Class ;
+    rdfs:label "IEEE" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:learning a owl:Class ;
+    rdfs:label "learning" ;
+    rdfs:comment "Automatically added AI concept" .
+
+hi1:lil a owl:Class ;
+    rdfs:label "LiL" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:metaylorreinforcementlearningrequireshumanintheloopframingandapproaches a owl:Class ;
+    rdfs:label "M.E.Taylor/ReinforcementLearningRequiresHuman-in-the-LoopFramingandApproaches" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ml a owl:Class ;
+    rdfs:label "ML" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:n a owl:Class ;
+    rdfs:label "N",
+        "n→∞" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:table_2 a owl:Class ;
+    rdfs:label "Table 2" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_2020_conference_on_fairness_accountability a owl:Class ;
+    rdfs:label "the 2020 Conference on Fairness, Accountability" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:tos a owl:Class ;
+    rdfs:label "TOS" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:trust a owl:Class ;
+    rdfs:label "trust" ;
+    rdfs:comment "Automatically added AI concept" .
+
+hi1:university_of_amsterdam a owl:Class ;
+    rdfs:label "University of Amsterdam" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi:ArtificialAgent a owl:Class ;
+    rdfs:subClassOf hi:Actor .
+
+hi1:agent a owl:Class ;
+    rdfs:label "agent" ;
+    rdfs:comment "Automatically added AI concept" .
+
+hi1:al a owl:Class ;
+    rdfs:label "al" ;
+    rdfs:comment "Automatically added AI concept",
+        "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:hybrid_human_ai_systems a owl:Class ;
+    rdfs:label "Hybrid Human AI Systems" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:ios_press a owl:Class ;
+    rdfs:label "IOS Press" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi:InformationProcessing a owl:Class .
+
+hi1:rl a owl:Class ;
+    rdfs:label "RL",
+        "rl" ;
+    rdfs:comment "Automatically added AI concept",
+        "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi:Human a owl:Class ;
+    rdfs:subClassOf hi:Actor .
+
+hi:Interaction a owl:Class .
+
+hi:InteractionTask a owl:Class .
+
+hi:ProcessingMethod a owl:Class .
+
+hi:ProcessingTask a owl:Class .
+
+hi:Actor a owl:Class .
+
+hi:InteractionMethod a owl:Class .
+
+hi:Scenario a owl:Class .
+
+hi:Capability a owl:Class .
+
+hi1:ai a owl:Class ;
+    rdfs:label "AI",
+        "ai" ;
+    rdfs:comment "Automatically added AI concept",
+        "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:HI_Paper rdfs:domain hi1:hasAuthor ;
+    owl:minCardinality 1 .
+
+hi1:open_access a owl:Class ;
+    rdfs:label "Open Access" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
+hi1:the_creative_commons_attribution_noncommercial_license a owl:Class ;
+    rdfs:label "the Creative Commons Attribution Non-Commercial License" ;
+    rdfs:comment "Automatically added Named Entity (Organization, Model, Dataset)" .
+
