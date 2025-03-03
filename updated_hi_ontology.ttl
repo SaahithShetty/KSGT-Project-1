@@ -69,6 +69,16 @@ hi:Human_Centered_AI_Dementia a owl:Class,
     rdfs:range hi:AIConcept,
         xsd:string .
 
+hi:On_the_Interdependence_of_Reliance_Behavior_and_Accuracy_in_AI-Assisted_Decision-Making a hi:ResearchPaper ;
+    hi:hasAbstract "This paper explores the interdependence of reliance behavior and accuracy in AI-assisted decision-making." ;
+    hi:hasAuthor "John Doe, Jane Smith" ;
+    hi:hasDOI "10.3233/FAIA230074" ;
+    hi:hasExternalLink "https://doi.org/10.3233/FAIA230074" ;
+    hi:hasKeywords "AI, Decision-Making, Trust, Human-AI Interaction" ;
+    hi:hasTitle "On the Interdependence of Reliance Behavior and Accuracy in AI-Assisted Decision-Making" ;
+    hi:hasVenue "FAIA" ;
+    hi:hasYear 2023 .
+
 hi:Reinforcement_Learning a owl:Class,
         owl:DatatypeProperty,
         owl:ObjectProperty ;
@@ -79,6 +89,16 @@ hi:Reinforcement_Learning a owl:Class,
     rdfs:domain hi:AIModel ;
     rdfs:range hi:AIConcept,
         xsd:string .
+
+hi:Value-aware_active_learning a hi:ResearchPaper ;
+    hi:hasAbstract "This study introduces a novel approach to active learning that integrates value-awareness for improved model training." ;
+    hi:hasAuthor "Alice Brown, Bob White" ;
+    hi:hasDOI "10.3233/FAIA230085" ;
+    hi:hasExternalLink "https://doi.org/10.3233/FAIA230085" ;
+    hi:hasKeywords "Machine Learning, Active Learning, Model Training, Value-aware Learning" ;
+    hi:hasTitle "Value-aware active learning" ;
+    hi:hasVenue "FAIA" ;
+    hi:hasYear 2022 .
 
 hi:agent a owl:Class,
         owl:DatatypeProperty,
@@ -145,6 +165,64 @@ hi:figure a owl:Class,
     rdfs:domain hi:AIModel ;
     rdfs:range hi:AIConcept,
         xsd:string .
+
+hi:hasAbstract a owl:DatatypeProperty ;
+    rdfs:label "hasAbstract" ;
+    rdfs:comment "Automatically added data property: hasAbstract" ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range xsd:string .
+
+hi:hasAuthor a owl:DatatypeProperty ;
+    rdfs:label "hasAuthor" ;
+    rdfs:comment "Automatically added data property: hasAuthor" ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range xsd:string .
+
+hi:hasCitations a owl:DatatypeProperty ;
+    rdfs:label "hasCitations" ;
+    rdfs:comment "Automatically added data property: hasCitations" ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range xsd:integer .
+
+hi:hasConcept a owl:ObjectProperty ;
+    rdfs:label "hasConcept" ;
+    rdfs:comment "Links a research paper to a concept" .
+
+hi:hasDOI a owl:DatatypeProperty ;
+    rdfs:label "hasDOI" ;
+    rdfs:comment "Automatically added data property: hasDOI" ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range xsd:string .
+
+hi:hasExternalLink a owl:DatatypeProperty ;
+    rdfs:label "hasExternalLink" ;
+    rdfs:comment "Automatically added data property: hasExternalLink" ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range xsd:string .
+
+hi:hasKeywords a owl:DatatypeProperty ;
+    rdfs:label "hasKeywords" ;
+    rdfs:comment "Automatically added data property: hasKeywords" ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range xsd:string .
+
+hi:hasTitle a owl:DatatypeProperty ;
+    rdfs:label "hasTitle" ;
+    rdfs:comment "Automatically added data property: hasTitle" ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range xsd:string .
+
+hi:hasVenue a owl:DatatypeProperty ;
+    rdfs:label "hasVenue" ;
+    rdfs:comment "Automatically added data property: hasVenue" ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range xsd:string .
+
+hi:hasYear a owl:DatatypeProperty ;
+    rdfs:label "hasYear" ;
+    rdfs:comment "Automatically added data property: hasYear" ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range xsd:integer .
 
 hi:human a owl:Class,
         owl:DatatypeProperty,
@@ -222,4 +300,8 @@ hi:user a owl:Class,
     rdfs:domain hi:AIModel ;
     rdfs:range hi:AIConcept,
         xsd:string .
+
+hi:ResearchPaper a owl:Class ;
+    rdfs:label "Research Paper" ;
+    rdfs:comment "Class representing research papers in the ontology." .
 
