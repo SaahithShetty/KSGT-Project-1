@@ -5,6 +5,9 @@
 
 <http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51> a owl:Ontology .
 
+hi:ABELE_Explainer a hi:Explainable_AI_Method ;
+    hi:explanationQuality "0.89"^^xsd:float .
+
 hi:AI_Decision_Support_Tool a hi:Decision_Support ;
     hi:decisionConfidence "0.91"^^xsd:float .
 
@@ -27,6 +30,12 @@ hi:Adaptive_Trust_System a hi:Trust_Adaptation ;
 hi:Adult a hi:Human,
         owl:NamedIndividual .
 
+hi:Almond_Cookie_Recipe_Network a hi:Narrative_Network ;
+    hi:percentageQuestionsAnswered "0.75"^^xsd:float ;
+    hi:totalQuestionsGenerated "165.0"^^xsd:float .
+
+hi:AlphaZero a hi:Closed_ML .
+
 hi:AssistantRobot a hi:InteractiveRobot ;
     hi:capability hi:Collaborativeness .
 
@@ -47,6 +56,11 @@ hi:CaseStudy_TrustAI a hi:AI_Assisted_DecisionMaking ;
 hi:Causal_Explainability_Framework a hi:Causal_Inference ;
     hi:interpretabilityLevel "0.91"^^xsd:float .
 
+hi:ChatGPT_Assisted_Physics_Study a hi:ChatGPT_Interaction ;
+    hi:copyPasteUsage "0.42"^^xsd:float ;
+    hi:falsePositiveRate "0.57"^^xsd:float ;
+    hi:truePositiveRate "0.91"^^xsd:float .
+
 hi:Child a hi:Human,
         owl:NamedIndividual .
 
@@ -63,6 +77,9 @@ hi:Collaborative_AI_Model a hi:Human_AI_Collaboration ;
 
 hi:Communication a hi:Capability,
         owl:NamedIndividual .
+
+hi:Complexity_Aware_AI a hi:Open_ML ;
+    hi:explainabilityLevel "0.92"^^xsd:float .
 
 hi:Contribution-based a hi:InteractionMethod,
         owl:NamedIndividual .
@@ -91,6 +108,9 @@ hi:ExpertUser a hi:HumanExpert ;
 
 hi:Explainability a hi:InteractionTask,
         owl:NamedIndividual .
+
+hi:Explainable_DNN_Model a hi:Explainable_AI ;
+    hi:explainabilityMetric "0.95"^^xsd:float .
 
 hi:FDA_Approval_Process a hi:RegulatoryCompliance ;
     hi:complianceScore "0.9"^^xsd:float .
@@ -122,8 +142,14 @@ hi:Interactive_Feedback_Model a hi:Interactive_Rewards ;
 hi:Interactive_ML a owl:Class ;
     rdfs:subClassOf hi:Human_in_Loop .
 
+hi:Language_Parsing a hi:Knowledge_Source ;
+    hi:knowledgeSourceType "Natural Language Processing"^^xsd:string .
+
 hi:Learning a hi:ProcessingTask,
         owl:NamedIndividual .
+
+hi:Mental_Simulation a hi:Knowledge_Source ;
+    hi:knowledgeSourceType "Cognitive Modeling"^^xsd:string .
 
 hi:Multimodal a hi:InteractionMethod,
         owl:NamedIndividual .
@@ -134,11 +160,34 @@ hi:Neuro-symbolic a hi:ProcessingMethod,
 hi:Non-cooperative a hi:InteractionMethod,
         owl:NamedIndividual .
 
+hi:Ontology_Reasoning a hi:Knowledge_Source ;
+    hi:knowledgeSourceType "Ontology-based Reasoning"^^xsd:string .
+
+hi:PGAAE_Model a hi:Progressive_Growing_AAE ;
+    hi:confidenceLevel "0.87"^^xsd:float .
+
+hi:PSO_Topographic_Analysis a hi:Topographic_Activation_Map ;
+    hi:activationSimilarityScore "0.89"^^xsd:float .
+
+hi:Physics_ProblemSolving_WithAI a hi:Physics_Education_Assistance .
+
+hi:PredictiveML_Study a hi:ML_Research_Games ;
+    hi:modelTransparencyScore "0.75"^^xsd:float ;
+    hi:researchHypeIndex "0.85"^^xsd:float .
+
+hi:ProteinFolding_ML a hi:Partially_Open_ML .
+
 hi:Question-Answering a hi:InteractionTask,
         owl:NamedIndividual .
 
+hi:Question_Answering_System a owl:Class ;
+    rdfs:comment "A system that generates and resolves questions in the understanding process" ;
+    rdfs:subClassOf hi:Understanding_Agent .
+
 hi:Reasoning a hi:ProcessingTask,
         owl:NamedIndividual .
+
+hi:Recipe_Understanding_Agent a hi:Understanding_Agent .
 
 hi:Recommendation a hi:InteractionTask,
         owl:NamedIndividual .
@@ -146,8 +195,18 @@ hi:Recommendation a hi:InteractionTask,
 hi:Reinforcement_Agent a hi:Reinforcement_Learning ;
     hi:rewardOptimizationFactor "0.92"^^xsd:float .
 
+hi:ResNet_Skin_Classifier a hi:Skin_Lesion_Classifier ;
+    hi:accuracyScore "0.92"^^xsd:float .
+
 hi:Responsibility a hi:Capability,
         owl:NamedIndividual .
+
+hi:Saliency_Map_XAI a hi:Saliency_Map ;
+    hi:featureImportanceScore "0.85"^^xsd:float .
+
+hi:SearchEngine_Assisted_Physics_Study a hi:SearchEngine_Interaction ;
+    hi:interactionFrequency 12 ;
+    hi:searchEfficiency "0.82"^^xsd:float .
 
 hi:Selective_Learning_System a hi:Selective_Classification ;
     hi:classificationConfidence "0.87"^^xsd:float .
@@ -188,6 +247,9 @@ hi:Trust_Evaluation_Model a hi:Trust_Measurement ;
 hi:Trust_Survey a hi:Human_Trust_Factors ;
     hi:trustScore "0.78"^^xsd:float .
 
+hi:UMAP_Visualization a hi:Topographic_Activation_Map ;
+    hi:activationSimilarityScore "0.92"^^xsd:float .
+
 hi:XAI_Model a hi:Explainable_AI ;
     hi:transparencyScore "0.85"^^xsd:float .
 
@@ -201,6 +263,14 @@ hi:accuracyImprovement a owl:DatatypeProperty ;
 hi:accuracyRate a owl:DatatypeProperty ;
     rdfs:domain hi:Intelligent_System ;
     rdfs:range xsd:decimal .
+
+hi:accuracyScore a owl:DatatypeProperty ;
+    rdfs:domain hi:Skin_Lesion_Classifier ;
+    rdfs:range xsd:float .
+
+hi:activationSimilarityScore a owl:DatatypeProperty ;
+    rdfs:domain hi:Neuron_Visualization ;
+    rdfs:range xsd:float .
 
 hi:adaptsTrustLevel a owl:ObjectProperty ;
     rdfs:domain hi:Trust_Adaptation ;
@@ -218,6 +288,14 @@ hi:affectsHumanTrust a owl:ObjectProperty ;
     rdfs:domain hi:Human_Trust_Factors ;
     rdfs:range hi:Trust_in_Healthcare_AI .
 
+hi:affectsLearningOutcomes a owl:ObjectProperty ;
+    rdfs:domain hi:LLM_Usage_Behavior ;
+    rdfs:range hi:Physics_Education_Assistance .
+
+hi:affectsMLMethodology a owl:ObjectProperty ;
+    rdfs:domain hi:Critical_Complexity ;
+    rdfs:range hi:ML_Research_Games .
+
 hi:affectsTrust a owl:ObjectProperty ;
     rdfs:domain hi:Trust_Calibration ;
     rdfs:range hi:Trust_in_AI .
@@ -225,6 +303,10 @@ hi:affectsTrust a owl:ObjectProperty ;
 hi:appliesThresholding a owl:ObjectProperty ;
     rdfs:domain hi:Threshold_Oriented_Sampling ;
     rdfs:range hi:Selective_Classification .
+
+hi:appliesToModelingApproach a owl:ObjectProperty ;
+    rdfs:domain hi:Open_ML ;
+    rdfs:range hi:ML_Research_Games .
 
 hi:biasReductionRate a owl:DatatypeProperty ;
     rdfs:domain hi:AI_Fairness ;
@@ -246,9 +328,17 @@ hi:complianceScore a owl:DatatypeProperty ;
     rdfs:domain hi:RegulatoryCompliance ;
     rdfs:range xsd:float .
 
+hi:confidenceLevel a owl:DatatypeProperty ;
+    rdfs:domain hi:Adversarial_Autoencoder ;
+    rdfs:range xsd:float .
+
 hi:context a owl:ObjectProperty ;
     rdfs:domain hi:Scenario ;
     rdfs:range hi:Context .
+
+hi:copyPasteUsage a owl:DatatypeProperty ;
+    rdfs:domain hi:ChatGPT_Interaction ;
+    rdfs:range xsd:float .
 
 hi:decisionAccuracy a owl:DatatypeProperty ;
     rdfs:domain hi:AI_Assisted_DecisionMaking ;
@@ -266,6 +356,10 @@ hi:endgoal a owl:ObjectProperty ;
     rdfs:domain hi:Scenario ;
     rdfs:range hi:Endgoal .
 
+hi:engagesInCriticalThinking a owl:ObjectProperty ;
+    rdfs:domain hi:SearchEngine_Interaction ;
+    rdfs:range hi:Problem_Solving_Strategy .
+
 hi:enhancesInterpretability a owl:ObjectProperty ;
     rdfs:domain hi:Explainable_AI ;
     rdfs:range hi:Interpretable_Models .
@@ -278,13 +372,45 @@ hi:evaluatesBias a owl:ObjectProperty ;
     rdfs:domain hi:AI_Ethics_Compliance ;
     rdfs:range hi:Bias_in_AI .
 
+hi:explainabilityLevel a owl:DatatypeProperty ;
+    rdfs:domain hi:Open_ML ;
+    rdfs:range xsd:float .
+
+hi:explainabilityMetric a owl:DatatypeProperty ;
+    rdfs:domain hi:Explainable_AI ;
+    rdfs:range xsd:float .
+
+hi:explanationQuality a owl:DatatypeProperty ;
+    rdfs:domain hi:Exemplar_Explanation ;
+    rdfs:range xsd:float .
+
 hi:fairnessIndex a owl:DatatypeProperty ;
     rdfs:domain hi:Fairness_Metrics ;
     rdfs:range xsd:float .
 
+hi:falsePositiveRate a owl:DatatypeProperty ;
+    rdfs:domain hi:ChatGPT_Interaction ;
+    rdfs:range xsd:float .
+
+hi:featureImportanceScore a owl:DatatypeProperty ;
+    rdfs:domain hi:Feature_Analysis ;
+    rdfs:range xsd:float .
+
+hi:findsAnswers a owl:ObjectProperty ;
+    rdfs:domain hi:Understanding_Agent ;
+    rdfs:range hi:Narrative_Network .
+
 hi:followsHumanCenteredDesign a owl:ObjectProperty ;
     rdfs:domain hi:AI_Safety_Measures ;
     rdfs:range hi:Human_Centered_Design .
+
+hi:generatesExemplars a owl:ObjectProperty ;
+    rdfs:domain hi:Adversarial_Autoencoder ;
+    rdfs:range hi:Exemplar_Explanation .
+
+hi:hasComplexityLevel a owl:ObjectProperty ;
+    rdfs:domain hi:ML_Research_Games ;
+    rdfs:range hi:Critical_Complexity .
 
 hi:hasEthicalChallenge a owl:ObjectProperty ;
     rdfs:domain hi:Artificial_Intelligence ;
@@ -347,9 +473,17 @@ hi:informationMethod a owl:ObjectProperty ;
     rdfs:domain hi:InformationProcessing ;
     rdfs:range hi:ProcessingMethod .
 
+hi:integratesKnowledge a owl:ObjectProperty ;
+    rdfs:domain hi:Understanding_Agent ;
+    rdfs:range hi:Knowledge_Source .
+
 hi:interactingAgent a owl:ObjectProperty ;
     rdfs:domain hi:Interaction ;
     rdfs:range hi:Actor .
+
+hi:interactionFrequency a owl:DatatypeProperty ;
+    rdfs:domain hi:LLM_Usage_Behavior ;
+    rdfs:range xsd:integer .
 
 hi:interactionMethod a owl:ObjectProperty ;
     rdfs:domain hi:Interaction ;
@@ -387,13 +521,25 @@ hi:isUsedInClinicalContext a owl:ObjectProperty ;
     rdfs:domain hi:Clinical_AI ;
     rdfs:range hi:AI_Deployment .
 
+hi:knowledgeSourceType a owl:DatatypeProperty ;
+    rdfs:domain hi:Knowledge_Source ;
+    rdfs:range xsd:string .
+
 hi:learningEfficiency a owl:DatatypeProperty ;
     rdfs:domain hi:Active_Learning_Strategy ;
+    rdfs:range xsd:float .
+
+hi:modelTransparencyScore a owl:DatatypeProperty ;
+    rdfs:domain hi:ML_Research_Games ;
     rdfs:range xsd:float .
 
 hi:optimizesRewards a owl:ObjectProperty ;
     rdfs:domain hi:Reinforcement_Learning ;
     rdfs:range hi:Reward_Shaping .
+
+hi:percentageQuestionsAnswered a owl:DatatypeProperty ;
+    rdfs:domain hi:Narrative_Network ;
+    rdfs:range xsd:float .
 
 hi:processingInformation a owl:ObjectProperty ;
     rdfs:domain hi:Actor ;
@@ -407,6 +553,18 @@ hi:processingTask a owl:ObjectProperty ;
     rdfs:domain hi:InformationProcessing ;
     rdfs:range hi:ProcessingTask .
 
+hi:providesExplanation a owl:ObjectProperty ;
+    rdfs:domain hi:Explainable_AI_Method ;
+    rdfs:range hi:Exemplar_Explanation .
+
+hi:reliesOnChatGPT a owl:ObjectProperty ;
+    rdfs:domain hi:Problem_Solving_Strategy ;
+    rdfs:range hi:ChatGPT_Interaction .
+
+hi:researchHypeIndex a owl:DatatypeProperty ;
+    rdfs:domain hi:ML_Research_Games ;
+    rdfs:range xsd:float .
+
 hi:rewardOptimizationFactor a owl:DatatypeProperty ;
     rdfs:domain hi:Reward_Shaping ;
     rdfs:range xsd:float .
@@ -415,12 +573,28 @@ hi:safetyComplianceRate a owl:DatatypeProperty ;
     rdfs:domain hi:AI_Safety_Measures ;
     rdfs:range xsd:float .
 
+hi:searchEfficiency a owl:DatatypeProperty ;
+    rdfs:domain hi:SearchEngine_Interaction ;
+    rdfs:range xsd:float .
+
 hi:supportsDecisionMaking a owl:ObjectProperty ;
     rdfs:domain hi:Decision_Support ;
     rdfs:range hi:AI_Assisted_DecisionMaking .
 
+hi:supportsExplainability a owl:ObjectProperty ;
+    rdfs:domain hi:Explainable_AI ;
+    rdfs:range hi:Feature_Analysis .
+
+hi:totalQuestionsGenerated a owl:DatatypeProperty ;
+    rdfs:domain hi:Narrative_Network ;
+    rdfs:range xsd:integer .
+
 hi:transparencyScore a owl:DatatypeProperty ;
     rdfs:domain hi:Explainable_AI ;
+    rdfs:range xsd:float .
+
+hi:truePositiveRate a owl:DatatypeProperty ;
+    rdfs:domain hi:ChatGPT_Interaction ;
     rdfs:range xsd:float .
 
 hi:trustCalibrationScore a owl:DatatypeProperty ;
@@ -455,6 +629,14 @@ hi:usesInteractiveLearning a owl:ObjectProperty ;
     rdfs:domain hi:Human_AI_Collaboration ;
     rdfs:range hi:Interactive_Machine_Learning .
 
+hi:usesSaliencyMethod a owl:ObjectProperty ;
+    rdfs:domain hi:Explainable_AI ;
+    rdfs:range hi:Saliency_Map .
+
+hi:usesVisualizationTechnique a owl:ObjectProperty ;
+    rdfs:domain hi:Explainable_AI ;
+    rdfs:range hi:Neuron_Visualization .
+
 hi:workflowEfficiency a owl:DatatypeProperty ;
     rdfs:domain hi:Healthcare_Workflow ;
     rdfs:range xsd:float .
@@ -469,6 +651,10 @@ hi:Chatbot_X a hi:Explainable_AI ;
     hi:AI_Reliability "0.85"^^xsd:float ;
     hi:Ethical_Score 7 ;
     hi:hasEthicalChallenge hi:Bias_in_AI .
+
+hi:Closed_ML a owl:Class ;
+    rdfs:comment "A black-box machine learning approach where models are trained with minimal human intervention." ;
+    rdfs:subClassOf hi:AIConcept .
 
 hi:Collaborativeness a hi:Capability,
         owl:NamedIndividual .
@@ -493,6 +679,10 @@ hi:Interactive_Machine_Learning a owl:Class ;
 
 hi:MachineLearningSystem rdfs:subClassOf hi:ArtificialAgent .
 
+hi:Progressive_Growing_AAE a owl:Class ;
+    rdfs:comment "A special type of adversarial autoencoder with progressive training" ;
+    rdfs:subClassOf hi:Adversarial_Autoencoder .
+
 hi:Restriction1 a owl:Restriction ;
     owl:minCardinality "1"^^xsd:nonNegativeInteger ;
     owl:onProperty hi:interactsWith .
@@ -500,9 +690,19 @@ hi:Restriction1 a owl:Restriction ;
 hi:Robot a hi:ArtificialAgent,
         owl:NamedIndividual .
 
+hi:analyzesNeuralActivity a owl:ObjectProperty ;
+    rdfs:domain hi:Neuron_Visualization ;
+    rdfs:range hi:Topographic_Activation_Map ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
 hi:enhancesSelectiveLearning a owl:ObjectProperty ;
     rdfs:domain hi:Selective_Classification ;
     rdfs:range hi:Value_Aware_Learning .
+
+hi:generatesQuestions a owl:ObjectProperty ;
+    rdfs:domain hi:Understanding_Agent ;
+    rdfs:range hi:Narrative_Network ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger .
 
 hi:hasBiasMitigation a owl:ObjectProperty ;
     rdfs:domain hi:AI_Fairness ;
@@ -515,6 +715,11 @@ hi:hasProcessingTask a owl:ObjectProperty ;
 hi:interactsWith a owl:ObjectProperty ;
     rdfs:domain hi:Human_Agent ;
     rdfs:range hi:Artificial_Intelligence .
+
+hi:involvesHumanParticipation a owl:ObjectProperty ;
+    rdfs:domain hi:Partially_Open_ML ;
+    rdfs:range hi:Human ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger .
 
 hi:requiresExplainability a owl:ObjectProperty ;
     rdfs:domain hi:AI_Deployment ;
@@ -532,6 +737,16 @@ hi:requiresRegulatoryApproval a owl:ObjectProperty ;
     rdfs:domain hi:AI_Deployment ;
     rdfs:range hi:RegulatoryCompliance .
 
+hi:usesAutoencoder a owl:ObjectProperty ;
+    rdfs:domain hi:Skin_Lesion_Classifier ;
+    rdfs:range hi:Adversarial_Autoencoder ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
+hi:usesCopyPaste a owl:ObjectProperty ;
+    rdfs:domain hi:ChatGPT_Interaction ;
+    rdfs:range hi:Problem_Solving_Strategy ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger .
+
 hi:Accuracy_Assessment a owl:Class ;
     rdfs:subClassOf hi:Human_AI_Interaction .
 
@@ -542,6 +757,10 @@ hi:Causal_Inference a owl:Class ;
     rdfs:subClassOf hi:Explainable_AI .
 
 hi:Ethical_Challenge a owl:Class .
+
+hi:Feature_Analysis a owl:Class ;
+    rdfs:comment "Methods used to interpret how features are encoded in hidden layers of a neural network." ;
+    rdfs:subClassOf hi:Explainable_AI .
 
 hi:Human_Agent a owl:Class ;
     rdfs:subClassOf hi:Actor,
@@ -557,6 +776,19 @@ hi:Intelligent_System a hi:ArtificialAgent,
         owl:NamedIndividual .
 
 hi:Interpretable_Models a owl:Class ;
+    rdfs:subClassOf hi:Explainable_AI .
+
+hi:Partially_Open_ML a owl:Class ;
+    rdfs:comment "A hybrid ML approach where human expertise and models interact to refine predictions." ;
+    rdfs:subClassOf hi:AIConcept ;
+    owl:onProperty hi:involvesHumanParticipation .
+
+hi:Physics_Education_Assistance a owl:Class ;
+    rdfs:comment "Use of AI tools to support students in physics learning" ;
+    rdfs:subClassOf hi:AIConcept .
+
+hi:Saliency_Map a owl:Class ;
+    rdfs:comment "A heatmap-based visualization technique to show important features in an input." ;
     rdfs:subClassOf hi:Explainable_AI .
 
 hi:TrustCalibration a owl:Class ;
@@ -577,8 +809,20 @@ hi:AI_Safety_Measures a owl:Class ;
 hi:Active_Learning_Strategy a owl:Class ;
     rdfs:subClassOf hi:Value_Aware_Learning .
 
+hi:Critical_Complexity a owl:Class ;
+    rdfs:comment "A perspective emphasizing the nonlinearity, historicity, and contextuality of complex systems." ;
+    rdfs:subClassOf hi:AIConcept .
+
 hi:Decision_Support a owl:Class ;
     rdfs:subClassOf hi:AIConcept .
+
+hi:Exemplar_Explanation a owl:Class ;
+    rdfs:comment "Exemplars and counter-exemplars used to explain AI decisions" ;
+    rdfs:subClassOf hi:Explainable_AI_Method .
+
+hi:Explainable_AI_Method a owl:Class ;
+    rdfs:comment "AI methods that provide explainability for black-box models" ;
+    rdfs:subClassOf hi:Explainable_AI .
 
 hi:Fairness_Metrics a owl:Class ;
     rdfs:subClassOf hi:Bias_in_AI .
@@ -594,14 +838,40 @@ hi:InformationProcessing a owl:Class .
 hi:Interactive_Rewards a owl:Class ;
     rdfs:subClassOf hi:Reinforcement_Learning .
 
+hi:Neuron_Visualization a owl:Class ;
+    rdfs:comment "A technique to represent neuron activations in a deep learning model." ;
+    rdfs:subClassOf hi:Explainable_AI .
+
+hi:Open_ML a owl:Class ;
+    rdfs:comment "An approach to machine learning that acknowledges the complexity and open-ended nature of systems." ;
+    rdfs:subClassOf hi:AIConcept .
+
+hi:Problem_Solving_Strategy a owl:Class ;
+    rdfs:comment "Strategies students use when solving physics problems with AI tools" ;
+    rdfs:subClassOf hi:AIConcept .
+
 hi:RegulatoryCompliance a owl:Class ;
     rdfs:subClassOf hi:AI_Deployment .
 
 hi:Reward_Shaping a owl:Class ;
     rdfs:subClassOf hi:Reinforcement_Learning .
 
+hi:SearchEngine_Interaction a owl:Class ;
+    rdfs:comment "The way students interact with search engines for problem-solving" ;
+    rdfs:subClassOf hi:LLM_Usage_Behavior .
+
+hi:Skin_Lesion_Classifier a owl:Class ;
+    rdfs:comment "AI systems designed to classify skin lesions" ;
+    rdfs:subClassOf hi:Artificial_Intelligence ;
+    owl:onProperty hi:usesAutoencoder .
+
 hi:Threshold_Oriented_Sampling a owl:Class ;
     rdfs:subClassOf hi:Active_Learning_Strategy .
+
+hi:Topographic_Activation_Map a owl:Class ;
+    rdfs:comment "A visualization method for deep neural network activations inspired by neuroscience." ;
+    rdfs:subClassOf hi:Explainable_AI ;
+    owl:onProperty hi:analyzesNeuralActivity .
 
 hi:Trust_Adaptation a owl:Class ;
     rdfs:subClassOf hi:Human_in_Loop .
@@ -628,6 +898,10 @@ hi:requiresTrustCalibration a owl:ObjectProperty ;
 hi:AI_Ethics_Compliance a owl:Class ;
     rdfs:subClassOf hi:AI_Deployment .
 
+hi:Adversarial_Autoencoder a owl:Class ;
+    rdfs:comment "A type of autoencoder used for generating adversarial examples" ;
+    rdfs:subClassOf hi:AI_Concept .
+
 hi:Human_in_Loop a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:minCardinality "1"^^xsd:nonNegativeInteger ;
@@ -637,6 +911,10 @@ hi:Human_in_Loop a owl:Class ;
 hi:Interaction a owl:Class .
 
 hi:InteractionTask a owl:Class .
+
+hi:LLM_Usage_Behavior a owl:Class ;
+    rdfs:comment "A study of how students interact with large language models in education" ;
+    rdfs:subClassOf hi:AIConcept .
 
 hi:Reinforcement_Learning a owl:Class ;
     rdfs:subClassOf hi:AIConcept .
@@ -653,7 +931,20 @@ hi:Trust_Calibration a owl:Class ;
 hi:Human_AI_Interaction a owl:Class ;
     rdfs:subClassOf hi:AIConcept .
 
+hi:Knowledge_Source a owl:Class ;
+    rdfs:comment "A source of knowledge used in understanding, such as language, ontology, or simulation" ;
+    rdfs:subClassOf hi:AIConcept .
+
+hi:Narrative_Network a owl:Class ;
+    rdfs:comment "A structured network of questions and answers for understanding" ;
+    rdfs:subClassOf hi:AIConcept .
+
 hi:ProcessingMethod a owl:Class .
+
+hi:Understanding_Agent a owl:Class ;
+    rdfs:comment "An AI system capable of understanding complex inputs using multiple knowledge sources" ;
+    rdfs:subClassOf hi:AIConcept ;
+    owl:onProperty hi:generatesQuestions .
 
 hi:AI_Assisted_DecisionMaking a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
@@ -674,7 +965,16 @@ hi:Bias_in_AI a hi:Ethical_Challenge,
         owl:Class ;
     rdfs:subClassOf hi:AI_Ethics_Compliance .
 
+hi:ChatGPT_Interaction a owl:Class ;
+    rdfs:comment "The way students interact with ChatGPT for problem-solving" ;
+    rdfs:subClassOf hi:LLM_Usage_Behavior ;
+    owl:onProperty hi:usesCopyPaste .
+
 hi:InteractionMethod a owl:Class .
+
+hi:ML_Research_Games a owl:Class ;
+    rdfs:comment "A set of paradigms and assumptions that guide how machine learning research is conducted." ;
+    rdfs:subClassOf hi:Critical_Complexity .
 
 hi:ProcessingTask a owl:Class .
 
@@ -691,9 +991,6 @@ hi:AI_Deployment a owl:Class ;
 
 hi:Actor a owl:Class .
 
-hi:Artificial_Intelligence a owl:Class ;
-    rdfs:subClassOf hi:ArtificialAgent .
-
 hi:Capability a owl:Class .
 
 hi:Clinical_AI a owl:Class ;
@@ -705,19 +1002,23 @@ hi:Reliance_Behavior a owl:Class ;
 hi:Trust_in_Healthcare_AI a owl:Class ;
     rdfs:subClassOf hi:Clinical_AI .
 
+hi:Artificial_Intelligence a owl:Class ;
+    rdfs:subClassOf hi:ArtificialAgent .
+
 hi:Human a owl:Class ;
     rdfs:subClassOf hi:Actor .
-
-hi:Explainable_AI a owl:Class ;
-    rdfs:subClassOf hi:AIConcept,
-        hi:Artificial_Intelligence .
 
 hi:Human_AI_Collaboration a owl:Class ;
     rdfs:subClassOf [ a owl:Restriction ;
             owl:minCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty hi:requiresHumanSupervision ],
+            owl:onProperty hi:requiresTrustCalibration ],
         [ a owl:Restriction ;
             owl:minCardinality "1"^^xsd:nonNegativeInteger ;
-            owl:onProperty hi:requiresTrustCalibration ],
+            owl:onProperty hi:requiresHumanSupervision ],
         hi:AIConcept .
+
+hi:Explainable_AI a owl:Class ;
+    rdfs:comment "A branch of AI that aims to make machine learning models more interpretable." ;
+    rdfs:subClassOf hi:AIConcept,
+        hi:Artificial_Intelligence .
 
