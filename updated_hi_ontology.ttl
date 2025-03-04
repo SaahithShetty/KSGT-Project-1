@@ -3,305 +3,721 @@
 @prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 
-hi:Accuracy a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Accuracy" ;
-    rdfs:comment "Automatically added class: Accuracy",
-        "Automatically added data property: Accuracy",
-        "Automatically added object property: Accuracy" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+<http://www.semanticweb.org/vbr240/ontologies/2022/4/untitled-ontology-51> a owl:Ontology .
 
-hi:Algorithm a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Algorithm" ;
-    rdfs:comment "Automatically added class: Algorithm",
-        "Automatically added data property: Algorithm",
-        "Automatically added object property: Algorithm" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:AI_Decision_Support_Tool a hi:Decision_Support ;
+    hi:decisionConfidence "0.91"^^xsd:float .
 
-hi:Artificial_Intelligence a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Artificial_Intelligence" ;
-    rdfs:comment "Automatically added class: Artificial_Intelligence",
-        "Automatically added data property: Artificial_Intelligence",
-        "Automatically added object property: Artificial_Intelligence" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:AI_Ethics_Compliance_Report a hi:AI_Safety_Measures ;
+    hi:safetyComplianceRate "0.91"^^xsd:float .
 
-hi:Concept_ID a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Concept_ID" ;
-    rdfs:comment "Automatically added class: Concept_ID",
-        "Automatically added data property: Concept_ID",
-        "Automatically added object property: Concept_ID" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:AI_Human_Team a hi:Human_AI_Collaboration ;
+    hi:humanInvolvementLevel "0.78"^^xsd:float .
 
-hi:Conversational_Agent a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Conversational_Agent" ;
-    rdfs:comment "Automatically added class: Conversational_Agent",
-        "Automatically added data property: Conversational_Agent",
-        "Automatically added object property: Conversational_Agent" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:AI_Reliability a owl:DatatypeProperty ;
+    rdfs:domain hi:Artificial_Intelligence ;
+    rdfs:range xsd:float .
 
-hi:Human_Centered_AI_Dementia a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Human_Centered_AI_Dementia" ;
-    rdfs:comment "Automatically added class: Human_Centered_AI_Dementia",
-        "Automatically added data property: Human_Centered_AI_Dementia",
-        "Automatically added object property: Human_Centered_AI_Dementia" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:AI_Trust_Model a hi:Trust_Calibration ;
+    hi:trustScore "0.87"^^xsd:float .
 
-hi:On_the_Interdependence_of_Reliance_Behavior_and_Accuracy_in_AI-Assisted_Decision-Making a hi:ResearchPaper ;
-    hi:hasAbstract "This paper explores the interdependence of reliance behavior and accuracy in AI-assisted decision-making." ;
-    hi:hasAuthor "John Doe, Jane Smith" ;
-    hi:hasDOI "10.3233/FAIA230074" ;
-    hi:hasExternalLink "https://doi.org/10.3233/FAIA230074" ;
-    hi:hasKeywords "AI, Decision-Making, Trust, Human-AI Interaction" ;
-    hi:hasTitle "On the Interdependence of Reliance Behavior and Accuracy in AI-Assisted Decision-Making" ;
-    hi:hasVenue "FAIA" ;
-    hi:hasYear 2023 .
+hi:Adaptive_Trust_System a hi:Trust_Adaptation ;
+    hi:trustLevelScore "0.85"^^xsd:float .
 
-hi:Reinforcement_Learning a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "Reinforcement_Learning" ;
-    rdfs:comment "Automatically added class: Reinforcement_Learning",
-        "Automatically added data property: Reinforcement_Learning",
-        "Automatically added object property: Reinforcement_Learning" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:Adult a hi:Human,
+        owl:NamedIndividual .
 
-hi:Value-aware_active_learning a hi:ResearchPaper ;
-    hi:hasAbstract "This study introduces a novel approach to active learning that integrates value-awareness for improved model training." ;
-    hi:hasAuthor "Alice Brown, Bob White" ;
-    hi:hasDOI "10.3233/FAIA230085" ;
-    hi:hasExternalLink "https://doi.org/10.3233/FAIA230085" ;
-    hi:hasKeywords "Machine Learning, Active Learning, Model Training, Value-aware Learning" ;
-    hi:hasTitle "Value-aware active learning" ;
-    hi:hasVenue "FAIA" ;
-    hi:hasYear 2022 .
+hi:AssistantRobot a hi:InteractiveRobot ;
+    hi:capability hi:Collaborativeness .
 
-hi:agent a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "agent" ;
-    rdfs:comment "Automatically added class: agent",
-        "Automatically added data property: agent",
-        "Automatically added object property: agent" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:Autonomous_AI rdfs:subClassOf hi:Artificial_Intelligence .
 
-hi:available a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "available" ;
-    rdfs:comment "Automatically added class: available",
-        "Automatically added data property: available",
-        "Automatically added object property: available" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:BDI a hi:Capability,
+        owl:NamedIndividual .
 
-hi:cluster a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "cluster" ;
-    rdfs:comment "Automatically added class: cluster",
-        "Automatically added data property: cluster",
-        "Automatically added object property: cluster" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:Bias_Correction_Algorithm a hi:Bias_Mitigation_Strategy ;
+    hi:biasReductionRate "0.76"^^xsd:float .
 
-hi:data a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "data" ;
-    rdfs:comment "Automatically added class: data",
-        "Automatically added data property: data",
-        "Automatically added object property: data" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:Bias_Detection_Tool a hi:Bias_in_AI ;
+    hi:biasScore "0.12"^^xsd:float .
 
-hi:design a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "design" ;
-    rdfs:comment "Automatically added class: design",
-        "Automatically added data property: design",
-        "Automatically added object property: design" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:CaseStudy_TrustAI a hi:AI_Assisted_DecisionMaking ;
+    hi:decisionAccuracy "0.85"^^xsd:float .
 
-hi:figure a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "figure" ;
-    rdfs:comment "Automatically added class: figure",
-        "Automatically added data property: figure",
-        "Automatically added object property: figure" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:Causal_Explainability_Framework a hi:Causal_Inference ;
+    hi:interpretabilityLevel "0.91"^^xsd:float .
 
-hi:hasAbstract a owl:DatatypeProperty ;
-    rdfs:label "hasAbstract" ;
-    rdfs:comment "Automatically added data property: hasAbstract" ;
-    rdfs:domain hi:ResearchPaper ;
-    rdfs:range xsd:string .
+hi:Child a hi:Human,
+        owl:NamedIndividual .
 
-hi:hasAuthor a owl:DatatypeProperty ;
-    rdfs:label "hasAuthor" ;
-    rdfs:comment "Automatically added data property: hasAuthor" ;
-    rdfs:domain hi:ResearchPaper ;
-    rdfs:range xsd:string .
+hi:Clinical_Trial_Study a hi:AI_Deployment ;
+    hi:errorRate "0.05"^^xsd:float .
 
-hi:hasCitations a owl:DatatypeProperty ;
-    rdfs:label "hasCitations" ;
-    rdfs:comment "Automatically added data property: hasCitations" ;
-    rdfs:domain hi:ResearchPaper ;
+hi:CognitiveSystem rdfs:subClassOf hi:Intelligent_System .
+
+hi:Collaboration-based a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Collaborative_AI_Model a hi:Human_AI_Collaboration ;
+    hi:humanInteractionLevel "0.75"^^xsd:float .
+
+hi:Communication a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Contribution-based a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:DeepLearningAI a hi:MachineLearningSystem ;
+    hi:accuracyRate 98.5 ;
+    hi:processingSpeed "0.85"^^xsd:float .
+
+hi:Designer a hi:Human,
+        owl:NamedIndividual .
+
+hi:Doctor_Y a hi:Human_Agent ;
+    hi:interactsWith hi:Chatbot_X .
+
+hi:Ethical_AI rdfs:subClassOf hi:Artificial_Intelligence .
+
+hi:Ethical_Score a owl:DatatypeProperty ;
+    rdfs:domain hi:Artificial_Intelligence ;
     rdfs:range xsd:integer .
 
-hi:hasConcept a owl:ObjectProperty ;
-    rdfs:label "hasConcept" ;
-    rdfs:comment "Links a research paper to a concept" .
+hi:Experiment_OverReliance a hi:Reliance_Behavior ;
+    hi:adherenceLevel 90 .
 
-hi:hasDOI a owl:DatatypeProperty ;
-    rdfs:label "hasDOI" ;
-    rdfs:comment "Automatically added data property: hasDOI" ;
-    rdfs:domain hi:ResearchPaper ;
-    rdfs:range xsd:string .
+hi:ExpertUser a hi:HumanExpert ;
+    hi:capability hi:Adaptiveness .
 
-hi:hasExternalLink a owl:DatatypeProperty ;
-    rdfs:label "hasExternalLink" ;
-    rdfs:comment "Automatically added data property: hasExternalLink" ;
-    rdfs:domain hi:ResearchPaper ;
-    rdfs:range xsd:string .
+hi:Explainability a hi:InteractionTask,
+        owl:NamedIndividual .
 
-hi:hasKeywords a owl:DatatypeProperty ;
-    rdfs:label "hasKeywords" ;
-    rdfs:comment "Automatically added data property: hasKeywords" ;
-    rdfs:domain hi:ResearchPaper ;
-    rdfs:range xsd:string .
+hi:FDA_Approval_Process a hi:RegulatoryCompliance ;
+    hi:complianceScore "0.9"^^xsd:float .
 
-hi:hasTitle a owl:DatatypeProperty ;
-    rdfs:label "hasTitle" ;
-    rdfs:comment "Automatically added data property: hasTitle" ;
-    rdfs:domain hi:ResearchPaper ;
-    rdfs:range xsd:string .
+hi:Fairness_Audit_Report a hi:Fairness_Metrics ;
+    hi:fairnessIndex "0.85"^^xsd:float .
 
-hi:hasVenue a owl:DatatypeProperty ;
-    rdfs:label "hasVenue" ;
-    rdfs:comment "Automatically added data property: hasVenue" ;
-    rdfs:domain hi:ResearchPaper ;
-    rdfs:range xsd:string .
+hi:Generating a hi:ProcessingTask,
+        owl:NamedIndividual .
 
-hi:hasYear a owl:DatatypeProperty ;
-    rdfs:label "hasYear" ;
-    rdfs:comment "Automatically added data property: hasYear" ;
-    rdfs:domain hi:ResearchPaper ;
+hi:Hospital_Workflow_Optimization a hi:Healthcare_Workflow ;
+    hi:workflowEfficiency "0.92"^^xsd:float .
+
+hi:Human_Agent_Trust_Model a hi:Trust_Aware_DecisionMaking ;
+    hi:trustLevel "0.92"^^xsd:float .
+
+hi:Human_Guided_RL a hi:Human_in_Loop ;
+    hi:trustLevelScore "0.78"^^xsd:float .
+
+hi:Human_Reliance_Study a hi:Reliance_Behavior ;
+    hi:accuracyImprovement "0.78"^^xsd:float .
+
+hi:Hybrid a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Interactive_Feedback_Model a hi:Interactive_Rewards ;
+    hi:humanFeedbackReliability "0.88"^^xsd:float .
+
+hi:Interactive_ML a owl:Class ;
+    rdfs:subClassOf hi:Human_in_Loop .
+
+hi:Learning a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Multimodal a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Neuro-symbolic a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Non-cooperative a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Question-Answering a hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:Reasoning a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Recommendation a hi:InteractionTask,
+        owl:NamedIndividual .
+
+hi:Reinforcement_Agent a hi:Reinforcement_Learning ;
+    hi:rewardOptimizationFactor "0.92"^^xsd:float .
+
+hi:Responsibility a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Selective_Learning_System a hi:Selective_Classification ;
+    hi:classificationConfidence "0.87"^^xsd:float .
+
+hi:Single-agent a hi:InteractionMethod,
+        owl:NamedIndividual .
+
+hi:Statistical a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Study_TrustCalibration a hi:TrustCalibration ;
+    hi:trustScore "0.75"^^xsd:float .
+
+hi:Study_Trust_in_AI a hi:Trust_in_Healthcare_AI ;
+    hi:trustLevel "0.7"^^xsd:float .
+
+hi:Symbolic a hi:ProcessingMethod,
+        owl:NamedIndividual .
+
+hi:Teacher a hi:Human,
+        owl:NamedIndividual .
+
+hi:Threshold_Sampling_Model a hi:Threshold_Oriented_Sampling ;
+    hi:learningEfficiency "0.89"^^xsd:float .
+
+hi:Transforming a hi:ProcessingTask,
+        owl:NamedIndividual .
+
+hi:Transparency a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Trust_Benchmarking_Study a hi:Trust_Calibration_Methods ;
+    hi:trustCalibrationScore "0.82"^^xsd:float .
+
+hi:Trust_Evaluation_Model a hi:Trust_Measurement ;
+    hi:trustScore "0.83"^^xsd:float .
+
+hi:Trust_Survey a hi:Human_Trust_Factors ;
+    hi:trustScore "0.78"^^xsd:float .
+
+hi:XAI_Model a hi:Explainable_AI ;
+    hi:transparencyScore "0.85"^^xsd:float .
+
+hi:XAI_Research_Study a hi:Explainable_AI ;
+    hi:requiresExplainability true .
+
+hi:accuracyImprovement a owl:DatatypeProperty ;
+    rdfs:domain hi:Accuracy_Assessment ;
+    rdfs:range xsd:float .
+
+hi:accuracyRate a owl:DatatypeProperty ;
+    rdfs:domain hi:Intelligent_System ;
+    rdfs:range xsd:decimal .
+
+hi:adaptsTrustLevel a owl:ObjectProperty ;
+    rdfs:domain hi:Trust_Adaptation ;
+    rdfs:range hi:AIConcept .
+
+hi:adherenceLevel a owl:DatatypeProperty ;
+    rdfs:domain hi:Reliance_Behavior ;
     rdfs:range xsd:integer .
 
-hi:human a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "human" ;
-    rdfs:comment "Automatically added class: human",
-        "Automatically added data property: human",
-        "Automatically added object property: human" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:affectsDecisionMaking a owl:ObjectProperty ;
+    rdfs:domain hi:Reliance_Behavior ;
+    rdfs:range hi:AI_Assisted_DecisionMaking .
 
-hi:learning a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "learning" ;
-    rdfs:comment "Automatically added class: learning",
-        "Automatically added data property: learning",
-        "Automatically added object property: learning" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:affectsHumanTrust a owl:ObjectProperty ;
+    rdfs:domain hi:Human_Trust_Factors ;
+    rdfs:range hi:Trust_in_Healthcare_AI .
 
-hi:model a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "model" ;
-    rdfs:comment "Automatically added class: model",
-        "Automatically added data property: model",
-        "Automatically added object property: model" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:affectsTrust a owl:ObjectProperty ;
+    rdfs:domain hi:Trust_Calibration ;
+    rdfs:range hi:Trust_in_AI .
 
-hi:sampling a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "sampling" ;
-    rdfs:comment "Automatically added class: sampling",
-        "Automatically added data property: sampling",
-        "Automatically added object property: sampling" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:appliesThresholding a owl:ObjectProperty ;
+    rdfs:domain hi:Threshold_Oriented_Sampling ;
+    rdfs:range hi:Selective_Classification .
 
-hi:trust a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "trust" ;
-    rdfs:comment "Automatically added class: trust",
-        "Automatically added data property: trust",
-        "Automatically added object property: trust" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:biasReductionRate a owl:DatatypeProperty ;
+    rdfs:domain hi:AI_Fairness ;
+    rdfs:range xsd:float .
 
-hi:uncertainty a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "uncertainty" ;
-    rdfs:comment "Automatically added class: uncertainty",
-        "Automatically added data property: uncertainty",
-        "Automatically added object property: uncertainty" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:biasScore a owl:DatatypeProperty ;
+    rdfs:domain hi:Bias_in_AI ;
+    rdfs:range xsd:float .
 
-hi:user a owl:Class,
-        owl:DatatypeProperty,
-        owl:ObjectProperty ;
-    rdfs:label "user" ;
-    rdfs:comment "Automatically added class: user",
-        "Automatically added data property: user",
-        "Automatically added object property: user" ;
-    rdfs:domain hi:AIModel ;
-    rdfs:range hi:AIConcept,
-        xsd:string .
+hi:capability a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:Capability .
 
-hi:ResearchPaper a owl:Class ;
-    rdfs:label "Research Paper" ;
-    rdfs:comment "Class representing research papers in the ontology." .
+hi:classificationConfidence a owl:DatatypeProperty ;
+    rdfs:domain hi:Selective_Classification ;
+    rdfs:range xsd:float .
+
+hi:complianceScore a owl:DatatypeProperty ;
+    rdfs:domain hi:RegulatoryCompliance ;
+    rdfs:range xsd:float .
+
+hi:context a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Context .
+
+hi:decisionAccuracy a owl:DatatypeProperty ;
+    rdfs:domain hi:AI_Assisted_DecisionMaking ;
+    rdfs:range xsd:float .
+
+hi:decisionConfidence a owl:DatatypeProperty ;
+    rdfs:domain hi:Decision_Support ;
+    rdfs:range xsd:float .
+
+hi:domain a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Domain .
+
+hi:endgoal a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Endgoal .
+
+hi:enhancesInterpretability a owl:ObjectProperty ;
+    rdfs:domain hi:Explainable_AI ;
+    rdfs:range hi:Interpretable_Models .
+
+hi:errorRate a owl:DatatypeProperty ;
+    rdfs:domain hi:AI_Deployment ;
+    rdfs:range xsd:float .
+
+hi:evaluatesBias a owl:ObjectProperty ;
+    rdfs:domain hi:AI_Ethics_Compliance ;
+    rdfs:range hi:Bias_in_AI .
+
+hi:fairnessIndex a owl:DatatypeProperty ;
+    rdfs:domain hi:Fairness_Metrics ;
+    rdfs:range xsd:float .
+
+hi:followsHumanCenteredDesign a owl:ObjectProperty ;
+    rdfs:domain hi:AI_Safety_Measures ;
+    rdfs:range hi:Human_Centered_Design .
+
+hi:hasEthicalChallenge a owl:ObjectProperty ;
+    rdfs:domain hi:Artificial_Intelligence ;
+    rdfs:range hi:Ethical_Challenge .
+
+hi:hasEthicalConsideration a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:EthicalConsideration .
+
+hi:hasInteraction a owl:ObjectProperty ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:Interaction .
+
+hi:hasInteractiveRewards a owl:ObjectProperty ;
+    rdfs:domain hi:Reward_Shaping ;
+    rdfs:range hi:Interactive_Rewards .
+
+hi:hasRelianceBehavior a owl:ObjectProperty ;
+    rdfs:domain hi:Human_AI_Interaction ;
+    rdfs:range hi:Reliance_Behavior .
+
+hi:hasRiskFactor a owl:ObjectProperty ;
+    rdfs:domain hi:Trust_in_Healthcare_AI ;
+    rdfs:range hi:Human_Factors .
+
+hi:humanFeedbackReliability a owl:DatatypeProperty ;
+    rdfs:domain hi:Interactive_Rewards ;
+    rdfs:range xsd:float .
+
+hi:humanInteractionLevel a owl:DatatypeProperty ;
+    rdfs:domain hi:Human_AI_Collaboration ;
+    rdfs:range xsd:float .
+
+hi:humanInvolvementLevel a owl:DatatypeProperty ;
+    rdfs:domain hi:Human_AI_Collaboration ;
+    rdfs:range xsd:float .
+
+hi:impactsDecisionAccuracy a owl:ObjectProperty ;
+    rdfs:domain hi:Reliance_Behavior ;
+    rdfs:range hi:Accuracy_Assessment .
+
+hi:improvesDecisionMaking a owl:ObjectProperty ;
+    rdfs:domain hi:Trust_Aware_DecisionMaking ;
+    rdfs:range hi:Human_Agent_Interaction .
+
+hi:improvesTransparency a owl:ObjectProperty ;
+    rdfs:domain hi:Explainable_AI ;
+    rdfs:range hi:Human .
+
+hi:inScenario a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:Scenario ;
+    rdfs:subPropertyOf owl:topObjectProperty .
+
+hi:influencesTrust a owl:ObjectProperty ;
+    rdfs:domain hi:Human_Factors ;
+    rdfs:range hi:Trust_in_Healthcare_AI .
+
+hi:informationMethod a owl:ObjectProperty ;
+    rdfs:domain hi:InformationProcessing ;
+    rdfs:range hi:ProcessingMethod .
+
+hi:interactingAgent a owl:ObjectProperty ;
+    rdfs:domain hi:Interaction ;
+    rdfs:range hi:Actor .
+
+hi:interactionMethod a owl:ObjectProperty ;
+    rdfs:domain hi:Interaction ;
+    rdfs:range hi:InteractionMethod .
+
+hi:interactionTask a owl:ObjectProperty ;
+    rdfs:domain hi:Interaction ;
+    rdfs:range hi:InteractionTask .
+
+hi:interactsWithHuman a owl:ObjectProperty ;
+    rdfs:domain hi:Human_AI_Interaction ;
+    rdfs:range hi:Human .
+
+hi:interpretabilityLevel a owl:DatatypeProperty ;
+    rdfs:domain hi:Interpretable_Models ;
+    rdfs:range xsd:float .
+
+hi:involvesDecisionSupport a owl:ObjectProperty ;
+    rdfs:domain hi:Human_AI_Collaboration ;
+    rdfs:range hi:Trust_Calibration .
+
+hi:involvesHumanInteraction a owl:ObjectProperty ;
+    rdfs:domain hi:Human_AI_Collaboration ;
+    rdfs:range hi:Human .
+
+hi:isIntegratedIn a owl:ObjectProperty ;
+    rdfs:domain hi:AI_Deployment_Process ;
+    rdfs:range hi:Healthcare_Workflow .
+
+hi:isUsedIn a owl:ObjectProperty ;
+    rdfs:domain hi:Threshold_Oriented_Sampling ;
+    rdfs:range hi:Active_Learning_Strategy .
+
+hi:isUsedInClinicalContext a owl:ObjectProperty ;
+    rdfs:domain hi:Clinical_AI ;
+    rdfs:range hi:AI_Deployment .
+
+hi:learningEfficiency a owl:DatatypeProperty ;
+    rdfs:domain hi:Active_Learning_Strategy ;
+    rdfs:range xsd:float .
+
+hi:optimizesRewards a owl:ObjectProperty ;
+    rdfs:domain hi:Reinforcement_Learning ;
+    rdfs:range hi:Reward_Shaping .
+
+hi:processingInformation a owl:ObjectProperty ;
+    rdfs:domain hi:Actor ;
+    rdfs:range hi:InformationProcessing .
+
+hi:processingSpeed a owl:DatatypeProperty ;
+    rdfs:domain hi:ArtificialAgent ;
+    rdfs:range xsd:float .
+
+hi:processingTask a owl:ObjectProperty ;
+    rdfs:domain hi:InformationProcessing ;
+    rdfs:range hi:ProcessingTask .
+
+hi:rewardOptimizationFactor a owl:DatatypeProperty ;
+    rdfs:domain hi:Reward_Shaping ;
+    rdfs:range xsd:float .
+
+hi:safetyComplianceRate a owl:DatatypeProperty ;
+    rdfs:domain hi:AI_Safety_Measures ;
+    rdfs:range xsd:float .
+
+hi:supportsDecisionMaking a owl:ObjectProperty ;
+    rdfs:domain hi:Decision_Support ;
+    rdfs:range hi:AI_Assisted_DecisionMaking .
+
+hi:transparencyScore a owl:DatatypeProperty ;
+    rdfs:domain hi:Explainable_AI ;
+    rdfs:range xsd:float .
+
+hi:trustCalibrationScore a owl:DatatypeProperty ;
+    rdfs:domain hi:Trust_Calibration_Methods ;
+    rdfs:range xsd:float .
+
+hi:trustLevel a owl:DatatypeProperty ;
+    rdfs:domain hi:Trust_Aware_DecisionMaking,
+        hi:Trust_in_Healthcare_AI ;
+    rdfs:range xsd:float .
+
+hi:trustLevelScore a owl:DatatypeProperty ;
+    rdfs:domain hi:Trust_Adaptation ;
+    rdfs:range xsd:float .
+
+hi:trustScore a owl:DatatypeProperty ;
+    rdfs:domain hi:Human_AI_Interaction,
+        hi:Human_Trust_Factors,
+        hi:Trust_Calibration,
+        hi:Trust_Measurement ;
+    rdfs:range xsd:float .
+
+hi:usesCausalInference a owl:ObjectProperty ;
+    rdfs:domain hi:Explainable_AI ;
+    rdfs:range hi:Causal_Inference .
+
+hi:usesFairnessMetric a owl:ObjectProperty ;
+    rdfs:domain hi:Bias_in_AI ;
+    rdfs:range hi:Fairness_Metrics .
+
+hi:usesInteractiveLearning a owl:ObjectProperty ;
+    rdfs:domain hi:Human_AI_Collaboration ;
+    rdfs:range hi:Interactive_Machine_Learning .
+
+hi:workflowEfficiency a owl:DatatypeProperty ;
+    rdfs:domain hi:Healthcare_Workflow ;
+    rdfs:range xsd:float .
+
+hi:AI_Deployment_Process a owl:Class ;
+    rdfs:subClassOf hi:Clinical_AI .
+
+hi:Adaptiveness a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Chatbot_X a hi:Explainable_AI ;
+    hi:AI_Reliability "0.85"^^xsd:float ;
+    hi:Ethical_Score 7 ;
+    hi:hasEthicalChallenge hi:Bias_in_AI .
+
+hi:Collaborativeness a hi:Capability,
+        owl:NamedIndividual .
+
+hi:Context a owl:Class .
+
+hi:Domain a owl:Class .
+
+hi:Endgoal a owl:Class .
+
+hi:EthicalConsideration a owl:Class .
+
+hi:HumanExpert rdfs:subClassOf hi:Human .
+
+hi:Human_Centered_Design a owl:Class ;
+    rdfs:subClassOf hi:AI_Ethics_Compliance .
+
+hi:InteractiveRobot rdfs:subClassOf hi:Robot .
+
+hi:Interactive_Machine_Learning a owl:Class ;
+    rdfs:subClassOf hi:Human_AI_Collaboration .
+
+hi:MachineLearningSystem rdfs:subClassOf hi:ArtificialAgent .
+
+hi:Restriction1 a owl:Restriction ;
+    owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+    owl:onProperty hi:interactsWith .
+
+hi:Robot a hi:ArtificialAgent,
+        owl:NamedIndividual .
+
+hi:enhancesSelectiveLearning a owl:ObjectProperty ;
+    rdfs:domain hi:Selective_Classification ;
+    rdfs:range hi:Value_Aware_Learning .
+
+hi:hasBiasMitigation a owl:ObjectProperty ;
+    rdfs:domain hi:AI_Fairness ;
+    rdfs:range hi:Bias_Mitigation_Strategy .
+
+hi:hasProcessingTask a owl:ObjectProperty ;
+    rdfs:domain hi:ArtificialAgent ;
+    rdfs:range hi:ProcessingTask .
+
+hi:interactsWith a owl:ObjectProperty ;
+    rdfs:domain hi:Human_Agent ;
+    rdfs:range hi:Artificial_Intelligence .
+
+hi:requiresExplainability a owl:ObjectProperty ;
+    rdfs:domain hi:AI_Deployment ;
+    rdfs:range hi:Explainable_AI .
+
+hi:requiresHumanInput a owl:ObjectProperty ;
+    rdfs:domain hi:Human_in_Loop ;
+    rdfs:range hi:Human .
+
+hi:requiresHumanSupervision a owl:ObjectProperty ;
+    rdfs:domain hi:Human_AI_Collaboration ;
+    rdfs:range hi:Clinical_AI .
+
+hi:requiresRegulatoryApproval a owl:ObjectProperty ;
+    rdfs:domain hi:AI_Deployment ;
+    rdfs:range hi:RegulatoryCompliance .
+
+hi:Accuracy_Assessment a owl:Class ;
+    rdfs:subClassOf hi:Human_AI_Interaction .
+
+hi:Bias_Mitigation_Strategy a owl:Class ;
+    rdfs:subClassOf hi:AI_Fairness .
+
+hi:Causal_Inference a owl:Class ;
+    rdfs:subClassOf hi:Explainable_AI .
+
+hi:Ethical_Challenge a owl:Class .
+
+hi:Human_Agent a owl:Class ;
+    rdfs:subClassOf hi:Actor,
+        hi:Restriction1 .
+
+hi:Human_Agent_Interaction a owl:Class ;
+    rdfs:subClassOf hi:AIConcept .
+
+hi:Human_Factors a owl:Class ;
+    rdfs:subClassOf hi:Trust_in_Healthcare_AI .
+
+hi:Intelligent_System a hi:ArtificialAgent,
+        owl:NamedIndividual .
+
+hi:Interpretable_Models a owl:Class ;
+    rdfs:subClassOf hi:Explainable_AI .
+
+hi:TrustCalibration a owl:Class ;
+    rdfs:subClassOf hi:Reliance_Behavior .
+
+hi:Trust_in_AI a owl:Class ;
+    rdfs:subClassOf hi:Clinical_AI .
+
+hi:AI_Fairness a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty hi:hasBiasMitigation ],
+        hi:AIConcept .
+
+hi:AI_Safety_Measures a owl:Class ;
+    rdfs:subClassOf hi:AI_Ethics_Compliance .
+
+hi:Active_Learning_Strategy a owl:Class ;
+    rdfs:subClassOf hi:Value_Aware_Learning .
+
+hi:Decision_Support a owl:Class ;
+    rdfs:subClassOf hi:AIConcept .
+
+hi:Fairness_Metrics a owl:Class ;
+    rdfs:subClassOf hi:Bias_in_AI .
+
+hi:Healthcare_Workflow a owl:Class ;
+    rdfs:subClassOf hi:Clinical_AI .
+
+hi:Human_Trust_Factors a owl:Class ;
+    rdfs:subClassOf hi:Trust_in_Healthcare_AI .
+
+hi:InformationProcessing a owl:Class .
+
+hi:Interactive_Rewards a owl:Class ;
+    rdfs:subClassOf hi:Reinforcement_Learning .
+
+hi:RegulatoryCompliance a owl:Class ;
+    rdfs:subClassOf hi:AI_Deployment .
+
+hi:Reward_Shaping a owl:Class ;
+    rdfs:subClassOf hi:Reinforcement_Learning .
+
+hi:Threshold_Oriented_Sampling a owl:Class ;
+    rdfs:subClassOf hi:Active_Learning_Strategy .
+
+hi:Trust_Adaptation a owl:Class ;
+    rdfs:subClassOf hi:Human_in_Loop .
+
+hi:Trust_Aware_DecisionMaking a owl:Class ;
+    rdfs:subClassOf hi:Human_Agent_Interaction .
+
+hi:Trust_Calibration_Methods a owl:Class ;
+    rdfs:subClassOf hi:Human_AI_Collaboration .
+
+hi:Trust_Measurement a owl:Class ;
+    rdfs:subClassOf hi:Human_AI_Interaction .
+
+hi:Value_Aware_Learning a owl:Class ;
+    rdfs:subClassOf hi:AIConcept .
+
+hi:requiresTrustCalibration a owl:ObjectProperty ;
+    rdfs:domain hi:AI_Assisted_DecisionMaking,
+        hi:Human_AI_Collaboration ;
+    rdfs:range hi:TrustCalibration,
+        hi:Trust_Calibration_Methods,
+        hi:Trust_Measurement .
+
+hi:AI_Ethics_Compliance a owl:Class ;
+    rdfs:subClassOf hi:AI_Deployment .
+
+hi:Human_in_Loop a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty hi:requiresHumanInput ],
+        hi:AIConcept .
+
+hi:Interaction a owl:Class .
+
+hi:InteractionTask a owl:Class .
+
+hi:Reinforcement_Learning a owl:Class ;
+    rdfs:subClassOf hi:AIConcept .
+
+hi:Selective_Classification a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty hi:enhancesSelectiveLearning ],
+        hi:Value_Aware_Learning .
+
+hi:Trust_Calibration a owl:Class ;
+    rdfs:subClassOf hi:Trust_in_AI .
+
+hi:Human_AI_Interaction a owl:Class ;
+    rdfs:subClassOf hi:AIConcept .
+
+hi:ProcessingMethod a owl:Class .
+
+hi:AI_Assisted_DecisionMaking a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty hi:requiresTrustCalibration ],
+        [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty hi:requiresTrustCalibration ],
+        hi:AIConcept .
+
+hi:ArtificialAgent a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty hi:hasProcessingTask ],
+        hi:Actor .
+
+hi:Bias_in_AI a hi:Ethical_Challenge,
+        owl:Class ;
+    rdfs:subClassOf hi:AI_Ethics_Compliance .
+
+hi:InteractionMethod a owl:Class .
+
+hi:ProcessingTask a owl:Class .
+
+hi:Scenario a owl:Class .
+
+hi:AI_Deployment a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty hi:requiresExplainability ],
+        [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty hi:requiresRegulatoryApproval ],
+        hi:Clinical_AI .
+
+hi:Actor a owl:Class .
+
+hi:Artificial_Intelligence a owl:Class ;
+    rdfs:subClassOf hi:ArtificialAgent .
+
+hi:Capability a owl:Class .
+
+hi:Clinical_AI a owl:Class ;
+    rdfs:subClassOf hi:AIConcept .
+
+hi:Reliance_Behavior a owl:Class ;
+    rdfs:subClassOf hi:AI_Assisted_DecisionMaking .
+
+hi:Trust_in_Healthcare_AI a owl:Class ;
+    rdfs:subClassOf hi:Clinical_AI .
+
+hi:Human a owl:Class ;
+    rdfs:subClassOf hi:Actor .
+
+hi:Explainable_AI a owl:Class ;
+    rdfs:subClassOf hi:AIConcept,
+        hi:Artificial_Intelligence .
+
+hi:Human_AI_Collaboration a owl:Class ;
+    rdfs:subClassOf [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty hi:requiresHumanSupervision ],
+        [ a owl:Restriction ;
+            owl:minCardinality "1"^^xsd:nonNegativeInteger ;
+            owl:onProperty hi:requiresTrustCalibration ],
+        hi:AIConcept .
 

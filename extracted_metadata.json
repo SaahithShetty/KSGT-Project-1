@@ -1,0 +1,126 @@
+[
+    {
+        "title": "On the Interdependence of Reliance Behavior and Accuracy in AI-Assisted Decision-Making",
+        "authors": "Jakob Schoeffer, Johannes Jakubik, Michael Voessing, Niklas Kuehl, Gerhard Satzger",
+        "year": 2023,
+        "venue": "Frontiers in Artificial Intelligence and Applications",
+        "doi": "10.3233/faia230074",
+        "url": "https://doi.org/10.3233/faia230074",
+        "abstract": "<jats:p>In AI-assisted decision-making, a central promise of putting a human in the loop is that they should be able to complement the AI system by adhering to its correct and overriding its mistaken recommendations. In practice, however, we often see that humans tend to over- or under-rely on AI recommendations, meaning that they either adhere to wrong or override correct recommendations. Such reliance behavior is detrimental to decision-making accuracy. In this work, we articulate and analyze the interdependence between reliance behavior and accuracy in AI-assisted decision-making, which has been largely neglected in prior work. We also propose a visual framework to make this interdependence more tangible. This framework helps us interpret and compare empirical findings, as well as obtain a nuanced understanding of the effects of interventions (e.g., explanations) in AI-assisted decision-making. Finally, we infer several interesting properties from the framework: (i) when humans under-rely on AI recommendations, there may be no possibility for them to complement the AI in terms of decision-making accuracy; (ii) when humans cannot discern correct and wrong AI recommendations, no such improvement can be expected either; (iii) interventions may lead to an increase in decision-making accuracy that is solely driven by an increase in humans\u2019 adherence to AI recommendations, without any ability to discern correct and wrong. Our work emphasizes the importance of measuring and reporting both effects on accuracy and reliance behavior when empirically assessing interventions.</jats:p>",
+        "keywords": [
+            "AI"
+        ]
+    },
+    {
+        "title": "Value-Aware Active Learning",
+        "authors": "Burcu Sayin, Jie Yang, Andrea Passerini, Fabio Casati",
+        "year": 2023,
+        "venue": "Frontiers in Artificial Intelligence and Applications",
+        "doi": "10.3233/faia230085",
+        "url": "https://doi.org/10.3233/faia230085",
+        "abstract": "<jats:p>In many practical applications, machine learning models are embedded into a pipeline involving a human actor that decides whether to trust the machine prediction or take a default route (e.g., classify the example herself). Selective classifiers have the option to abstain from making a prediction on an example they do not feel confident about. Recently, the notion of the value of a machine learning model has been introduced as a way to jointly consider the benefit of a correct prediction, the cost of an error, and that of abstaining. In this paper, we study how active learning of selective classifiers is affected by the focus on value. We show that the performance of the state-of-the-art active learning strategies drops significantly when we evaluate them based on value rather than accuracy. Finally, we propose a novel value-aware active learning strategy that outperforms the state-of-the-art ones when the cost of incorrect predictions substantially outweighs that of abstaining.</jats:p>",
+        "keywords": []
+    },
+    {
+        "title": "Human-Centered AI for Dementia Care: Using Reinforcement Learning for Personalized Interventions Support in Eating and Drinking Scenarios",
+        "authors": "Wen-Tseng Chang, Shihan Wang, Stephanie Kramer, Michel Oey, Somaya Ben Allouch",
+        "year": 2024,
+        "venue": "Frontiers in Artificial Intelligence and Applications",
+        "doi": "10.3233/faia240185",
+        "url": "https://doi.org/10.3233/faia240185",
+        "abstract": "<jats:p>For people with early-dementia (PwD), it can be challenging to remember to eat and drink regularly and maintain a healthy independent living. Existing intelligent home technologies primarily focus on activity recognition but lack adaptive support. This research addresses this gap by developing an AI system inspired by the Just-in-Time Adaptive Intervention (JITAI) concept. It adapts to individual behaviors and provides personalized interventions within the home environment, reminding and encouraging PwD to manage their eating and drinking routines. Considering the cognitive impairment of PwD, we design a human-centered AI system based on healthcare theories and caregivers\u2019 insights. It employs reinforcement learning (RL) techniques to deliver personalized interventions. To avoid overwhelming interaction with PwD, we develop an RL-based simulation protocol. This allows us to evaluate different RL algorithms in various simulation scenarios, not only finding the most effective and efficient approach but also validating the robustness of our system before implementation in real-world human experiments. The simulation experimental results demonstrate the promising potential of the adaptive RL for building a human-centered AI system with perceived expressions of empathy to improve dementia care. To further evaluate the system, we plan to conduct real-world user studies.</jats:p>",
+        "keywords": [
+            "PwD",
+            "RL"
+        ]
+    },
+    {
+        "title": "Reinforcement Learning Requires Human-in-the-Loop Framing and Approaches",
+        "authors": "Matthew E. Taylor",
+        "year": 2023,
+        "venue": "Frontiers in Artificial Intelligence and Applications",
+        "doi": "10.3233/faia230098",
+        "url": "https://doi.org/10.3233/faia230098",
+        "abstract": "<jats:p>Reinforcement learning (RL) is typically framed as a machine learning paradigm where agents learn to act autonomously in complex environments. This paper argues instead that RL is fundamentally human in the loop (HitL). The reward functions (and other components) of a Markov decision process are defined by humans. The decisions to tackle a certain problem, and deploy a learned solution, are taken by humans. Humans can also play a critical role in providing information to the agent throughout its life cycle to better succeed at the problem in question. We end by highlighting a set of critical HitL research questions, which, if ignored, could cause RL to fail to live up to its full potential.</jats:p>",
+        "keywords": []
+    },
+    {
+        "title": "Trust in Clinical AI: Expanding the Unit of Analysis",
+        "authors": "Jacob T. Browne, Saskia Bakker, Bin Yu, Peter Lloyd, Somaya Ben Allouch",
+        "year": 2022,
+        "venue": "Frontiers in Artificial Intelligence and Applications",
+        "doi": "10.3233/faia220192",
+        "url": "https://doi.org/10.3233/faia220192",
+        "abstract": "<jats:p>From diagnosis to patient scheduling, AI is increasingly being considered across different clinical applications. Despite increasingly powerful clinical AI, uptake into actual clinical workflows remains limited. One of the major challenges is developing appropriate trust with clinicians. In this paper, we investigate trust in clinical AI in a wider perspective beyond user interactions with the AI. We offer several points in the clinical AI development, usage, and monitoring process that can have a significant impact on trust. We argue that the calibration of trust in AI should go beyond explainable AI and focus on the entire process of clinical AI deployment. We illustrate our argument with case studies from practitioners implementing clinical AI in practice to show how trust can be affected by different stages in the deployment cycle.</jats:p>",
+        "keywords": []
+    },
+    {
+        "title": "A Hybrid Intelligence Approach to Training Generative Design Assistants: Partnership Between Human Experts and AI Enhanced Co-Creative Tools",
+        "authors": "Yaoli Mao, Janet Rafner, Yi Wang, Jacob Sherson",
+        "year": 2023,
+        "venue": "Frontiers in Artificial Intelligence and Applications",
+        "doi": "10.3233/faia230078",
+        "url": "https://doi.org/10.3233/faia230078",
+        "abstract": "<jats:p>The emergence of generative design (GD) has introduced a new paradigm for co-creation between human experts and AI systems. Empirical findings have shown promising outcomes such as augmented human cognition and highly creative design products. Barriers still remain that prevent individuals from perceiving and adopting AI, entering into collaboration with AI and sustaining it over time. It is even more challenging for creative design industries to adopt and trust AI where these professionals value individual style and expression, and therefore require highly personalized and specialized AI assistance. In this paper, we present a holistic hybrid intelligence (HI) approach for individual experts to train and personalize their GD assistants on the fly. Our contribution to human-AI interaction is three-fold including i) a programmable common language between human and AI to represent the expert\u2019s design goals to the generative algorithm, ii) a human-centered continual training loop to seamlessly integrate AI-training into the expert\u2019s task workflow, iii) a hybrid intelligence narrative to address the psychological willingness to spend time and effort training such a virtual assistant. This integral approach enables individuals to directly communicate design goals to AI and seeks to create a psychologically safe space for adopting, training and improving AI without the fear of job-replacement. We concertize these constructs through a newly developed Hybrid Intelligence Technology Acceptance Model (HI-TAM). We used mixed methods to empirically evaluate this approach through the lens of HI-TAM with 8 architectural professionals working individually with a GD assistant to co-create floor plan layouts of office buildings. We believe that the proposed approach enables individual professionals, even non-technical ones, to adopt and trust AI-enhanced co-creative tools.</jats:p>",
+        "keywords": [
+            "Hybrid Intelligence Technology Acceptance Model",
+            "GD",
+            "AI"
+        ]
+    },
+    {
+        "title": "Landmarks in Case-Based Reasoning: From Theory to Data",
+        "authors": "Wijnand van Woerkom, Davide Grossi, Henry Prakken, Bart Verheij",
+        "year": 2022,
+        "venue": "Frontiers in Artificial Intelligence and Applications",
+        "doi": "10.3233/faia220200",
+        "url": "https://doi.org/10.3233/faia220200",
+        "abstract": "<jats:p>Widespread application of uninterpretable machine learning systems for sensitive purposes has spurred research into elucidating the decision making process of these systems. These efforts have their background in many different disciplines, one of which is the field of AI &amp; law. In particular, recent works have observed that machine learning training data can be interpreted as legal cases. Under this interpretation the formalism developed to study case law, called the theory of precedential constraint, can be used to analyze the way in which machine learning systems draw on training data \u2013 or should draw on them \u2013 to make decisions. These works predominantly stay on the theoretical level, hence in the present work the formalism is evaluated on a real world dataset. Through this analysis we identify a significant new concept which we call landmark cases, and use it to characterize the types of datasets that are more or less suitable to be described by the theory.</jats:p>",
+        "keywords": [
+            "AI &amp"
+        ]
+    },
+    {
+        "title": "A Conversational Agent for Structured Diary Construction Enabling Monitoring of Functioning &amp; Well-Being",
+        "authors": "Piek Vossen, Selene B\u00e1ez Santamar\u00eda, Thomas Baier",
+        "year": 2024,
+        "venue": "Frontiers in Artificial Intelligence and Applications",
+        "doi": "10.3233/faia240204",
+        "url": "https://doi.org/10.3233/faia240204",
+        "abstract": "<jats:p>We describe a Hybrid Intelligence agent that constructs a personal diary through conversation. The diary is represented in an episodic Knowledge Graph as a timeline of events, where the communication is driven by the information need of the agent. We argue that such a structured diary provides valuable information to contextualize physical, social and mental functioning and well-being for medical research and monitoring. We provide details on the formal model and implementation and demonstrate the communication by our first baseline agent. Our code is available under the MIT license on GitHub: https://github.com/leolani/ cltl-diary-parent.</jats:p>",
+        "keywords": [
+            "MIT",
+            "GitHub"
+        ]
+    },
+    {
+        "title": "Unknown",
+        "authors": "",
+        "year": null,
+        "venue": "Unknown",
+        "doi": "",
+        "url": "",
+        "abstract": "No abstract available",
+        "keywords": []
+    },
+    {
+        "title": "Exemplars and Counterexemplars Explanations for Skin Lesion Classifiers",
+        "authors": "Carlo Metta, Riccardo Guidotti, Yuan Yin, Patrick Gallinari, Salvatore Rinzivillo",
+        "year": 2022,
+        "venue": "Frontiers in Artificial Intelligence and Applications",
+        "doi": "10.3233/faia220209",
+        "url": "https://doi.org/10.3233/faia220209",
+        "abstract": "<jats:p>Explainable AI consists in developing models allowing interaction between decision systems and humans by making the decisions understandable. We propose a case study for skin lesion diagnosis showing how it is possible to provide explanations of the decisions of deep neural network trained to label skin lesions.</jats:p>",
+        "keywords": []
+    },
+    {
+        "title": "Unreflected Acceptance \u2013 Investigating the Negative Consequences of ChatGPT-Assisted Problem Solving in Physics Education",
+        "authors": "Lars Krupp, Steffen Steinert, Maximilian Kiefer-Emmanouilidis, Karina E. Avila, Paul Lukowicz, Jochen Kuhn, Stefan K\u00fcchemann, Jakob Karolus",
+        "year": 2024,
+        "venue": "Frontiers in Artificial Intelligence and Applications",
+        "doi": "10.3233/faia240195",
+        "url": "https://doi.org/10.3233/faia240195",
+        "abstract": "<jats:p>The general availability of large language models and thus unrestricted usage in sensitive areas of everyday life, such as education, remains a major debate. We argue that employing generative artificial intelligence (AI) tools warrants informed usage and examined their impact on problem solving strategies in higher education. In a study, students with a background in physics were assigned to solve physics exercises, with one group having access to an internet search engine (N=12) and the other group being allowed unrestricted use of ChatGPT (N=27). We evaluated their performance, strategies, and interaction with the provided tools. Our results showed that nearly half of the solutions provided with the support of ChatGPT were mistakenly assumed to be correct by students, indicating that they overly trusted ChatGPT even in their field of expertise. Likewise, in 42% of cases, students used copy &amp; paste to query ChatGPT \u2014 an approach only used in 4% of search engine queries \u2014 highlighting the stark differences in interaction behavior between the groups and indicating limited task reflection when using ChatGPT. In our work, we demonstrated a need to (1) guide students on how to interact with LLMs and (2) create awareness of potential shortcomings for users.</jats:p>",
+        "keywords": []
+    }
+]
