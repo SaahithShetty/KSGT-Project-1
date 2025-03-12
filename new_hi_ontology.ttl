@@ -1,0 +1,477 @@
+@prefix hi: <http://www.semanticweb.org/hi_ontology#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+hi:Absolutist a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Principled idealists who endorse both reliance on moral standards and striving to minimize harm" ;
+    hi:hasName "Absolutist" ;
+    hi:partOf hi:EthicsPositionTheory .
+
+hi:BehaviorPredictionTask a hi:Task ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Predicting digital behaviors based on ethical profiles" ;
+    hi:hasName "Behavior Prediction" ;
+    hi:partOf hi:EthicalProfilingScenario .
+
+hi:BehavioralTrustMeasurement a hi:AI_Concept ;
+    hi:describedIn hi:TrustInterventionsHumanAI ;
+    hi:hasDescription "Using behavioral indicators like intervention frequency to measure trust in human-AI interactions" ;
+    hi:hasName "Behavioral Trust Measurement" ;
+    hi:uses hi:InterventionFrequency .
+
+hi:Compliance a hi:AI_Concept ;
+    hi:describedIn hi:TrustInterventionsHumanAI ;
+    hi:hasDescription "When the human accepts the agent's decisions, a behavioral demonstration of trust" ;
+    hi:hasName "Compliance" ;
+    hi:positivelyCorrelatedWith hi:Trust .
+
+hi:Conscientiousness a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Personality trait reflecting persistence, orderliness, self-regulation and integrity" ;
+    hi:hasName "Conscientiousness" .
+
+hi:DiabetesUseCase a hi:Scenario ;
+    hi:describedIn hi:ConversationalAgentDiaryConstruction ;
+    hi:hasDescription "Supporting lifestyle changes for patients with Type 2 Diabetes Mellitus" ;
+    hi:hasName "Diabetes Management" ;
+    hi:relatedTo hi:DiaryConstructionScenario .
+
+hi:DiaryUser a hi:Human_Agent ;
+    hi:describedIn hi:ConversationalAgentDiaryConstruction ;
+    hi:hasDescription "Person interacting with the conversational agent to build a diary" ;
+    hi:hasName "Diary User/Patient" ;
+    hi:interactsWith hi:HybridIntelligenceAgent .
+
+hi:DynamicTrust a hi:AI_Concept ;
+    hi:describedIn hi:TrustInterventionsHumanAI ;
+    hi:hasDescription "Trust as a dynamic process that changes over time, not a static one-time measurement" ;
+    hi:hasName "Dynamic Trust" ;
+    hi:relatedTo hi:Trust .
+
+hi:EnvironmentUncertainty a hi:AI_Concept ;
+    hi:describedIn hi:TrustInterventionsHumanAI ;
+    hi:hasDescription "Non-determinism in the environment, where external events occur outside the control of the agent and human" ;
+    hi:hasName "Environment Uncertainty" ;
+    hi:influences hi:InterventionFrequency,
+        hi:MiscalibratedTrust ;
+    hi:negativelyCorrelatedWith hi:Trust .
+
+hi:EthicalProfilingTask a hi:Task ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Creating ethical profiles to predict digital behaviors" ;
+    hi:hasName "Ethical Profiling" ;
+    hi:partOf hi:EthicalProfilingScenario .
+
+hi:Exceptionist a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Conventionalists who tolerate exceptions to moral standards when benefits offset potential harmful consequences" ;
+    hi:hasName "Exceptionist" ;
+    hi:partOf hi:EthicsPositionTheory .
+
+hi:GoalMisalignment a hi:AI_Concept ;
+    hi:describedIn hi:TrustInterventionsHumanAI ;
+    hi:hasDescription "When an agent's behavior or decisions do not fully align with what the user wants to accomplish" ;
+    hi:hasName "Goal Misalignment" ;
+    hi:influences hi:InterventionFrequency ;
+    hi:negativelyCorrelatedWith hi:Trust ;
+    hi:oppositeOf hi:GoalAlignment .
+
+hi:Machiavellianism a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Personality trait reflecting manipulative tactics, cynicism, and 'the ends justify the means' attitude" ;
+    hi:hasName "Machiavellianism" ;
+    hi:negativelyCorrelatedWith hi:Idealism ;
+    hi:positivelyCorrelatedWith hi:Relativism .
+
+hi:Narcissism a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Personality trait reflecting inflated opinion of self, entitlement, superiority and need for admiration" ;
+    hi:hasName "Narcissism" .
+
+hi:NavigatorHuman a hi:Human_Agent ;
+    hi:describedIn hi:TrustInterventionsHumanAI ;
+    hi:hasDescription "Human using the AI navigation system and making intervention decisions" ;
+    hi:hasName "Navigator Human" ;
+    hi:interactsWith hi:NavigationAI ;
+    hi:performsTask hi:Intervention,
+        hi:NavigationTask .
+
+hi:PatientRecoveryUseCase a hi:Scenario ;
+    hi:describedIn hi:ConversationalAgentDiaryConstruction ;
+    hi:hasDescription "Monitoring recovery and functioning of elderly patients" ;
+    hi:hasName "Patient Recovery and Functioning Patterns" ;
+    hi:relatedTo hi:DiaryConstructionScenario .
+
+hi:Situationist a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Idealistic contextualists who value minimizing harm rather than reliance on moral standards" ;
+    hi:hasName "Situationist" ;
+    hi:partOf hi:EthicsPositionTheory .
+
+hi:SoftwareExoskeleton a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Software shield that protects users and mediates actions according to moral preferences" ;
+    hi:hasName "Software Exoskeleton" ;
+    hi:partOf hi:ExosoulProject ;
+    hi:uses hi:LegalistProfile,
+        hi:OpportunistProfile,
+        hi:SensibleProfile,
+        hi:VirtuousProfile .
+
+hi:Subjectivist a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Realists who do not endorse moral standards or the avoidance of harmful consequences" ;
+    hi:hasName "Subjectivist" ;
+    hi:partOf hi:EthicsPositionTheory .
+
+hi:ToxicityUseCase a hi:Scenario ;
+    hi:describedIn hi:ConversationalAgentDiaryConstruction ;
+    hi:hasDescription "Monitoring side effects of cancer treatments like chemotherapy" ;
+    hi:hasName "Cancer Therapy Toxicity Monitoring" ;
+    hi:relatedTo hi:DiaryConstructionScenario .
+
+hi:achievesScore a owl:ObjectProperty ;
+    rdfs:label "achievesScore" ;
+    rdfs:domain hi:Agent ;
+    rdfs:range hi:Score .
+
+hi:appliesTo a owl:ObjectProperty ;
+    rdfs:label "appliesTo" ;
+    rdfs:domain hi:Evaluation ;
+    rdfs:range hi:Task .
+
+hi:basedOn a owl:ObjectProperty ;
+    rdfs:label "basedOn" ;
+    rdfs:domain hi:Scenario ;
+    rdfs:range hi:ResearchPaper .
+
+hi:describedIn a owl:ObjectProperty ;
+    rdfs:label "describedIn" ;
+    rdfs:range hi:ResearchPaper .
+
+hi:evaluatedWith a owl:ObjectProperty ;
+    rdfs:label "evaluatedWith" ;
+    rdfs:domain hi:Agent ;
+    rdfs:range hi:Evaluation .
+
+hi:hasAuthor a owl:DatatypeProperty ;
+    rdfs:label "hasAuthor" ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range xsd:string .
+
+hi:hasDOI a owl:DatatypeProperty ;
+    rdfs:label "hasDOI" ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range xsd:string .
+
+hi:hasDescription a owl:DatatypeProperty ;
+    rdfs:label "hasDescription" ;
+    rdfs:range xsd:string .
+
+hi:hasName a owl:DatatypeProperty ;
+    rdfs:label "hasName" ;
+    rdfs:range xsd:string .
+
+hi:hasResult a owl:ObjectProperty ;
+    rdfs:label "hasResult" ;
+    rdfs:domain hi:Evaluation ;
+    rdfs:range hi:Score .
+
+hi:hasTitle a owl:DatatypeProperty ;
+    rdfs:label "hasTitle" ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range xsd:string .
+
+hi:hasValue a owl:DatatypeProperty ;
+    rdfs:label "hasValue" ;
+    rdfs:domain hi:Score ;
+    rdfs:range xsd:float .
+
+hi:hasYear a owl:DatatypeProperty ;
+    rdfs:label "hasYear" ;
+    rdfs:domain hi:ResearchPaper ;
+    rdfs:range xsd:integer .
+
+hi:influences a owl:ObjectProperty ;
+    rdfs:label "influences" .
+
+hi:interactsWith a owl:ObjectProperty ;
+    rdfs:label "interactsWith" ;
+    rdfs:domain hi:Human_Agent ;
+    rdfs:range hi:AI_Agent .
+
+hi:negativelyCorrelatedWith a owl:ObjectProperty ;
+    rdfs:label "negativelyCorrelatedWith" .
+
+hi:partOf a owl:ObjectProperty ;
+    rdfs:label "partOf" ;
+    rdfs:domain hi:Task ;
+    rdfs:range hi:Scenario .
+
+hi:performsTask a owl:ObjectProperty ;
+    rdfs:label "performsTask" ;
+    rdfs:domain hi:Agent ;
+    rdfs:range hi:Task .
+
+hi:positivelyCorrelatedWith a owl:ObjectProperty ;
+    rdfs:label "positivelyCorrelatedWith" .
+
+hi:prevents a owl:ObjectProperty ;
+    rdfs:label "prevents" .
+
+hi:uses a owl:ObjectProperty ;
+    rdfs:label "uses" .
+
+hi:AgentCapability a hi:AI_Concept ;
+    hi:describedIn hi:TrustInterventionsHumanAI ;
+    hi:hasDescription "The agent's ability to act as a decision aid, reflecting partial alignment between what the agent optimizes for and the user's goals" ;
+    hi:hasName "Agent Capability" ;
+    hi:influences hi:InterventionFrequency,
+        hi:Trust .
+
+hi:DiaryConstructionTask a hi:Task ;
+    hi:describedIn hi:ConversationalAgentDiaryConstruction ;
+    hi:hasDescription "Creating a structured diary through conversation" ;
+    hi:hasName "Diary Construction" ;
+    hi:partOf hi:DiaryConstructionScenario .
+
+hi:EpisodicKnowledgeGraph a hi:AI_Concept ;
+    hi:describedIn hi:ConversationalAgentDiaryConstruction ;
+    hi:hasDescription "A timeline of events represented as a knowledge graph" ;
+    hi:hasName "Episodic Knowledge Graph" .
+
+hi:ExosoulProject a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Project aiming to develop a personalized software exoskeleton to protect and support citizen's ethics and privacy" ;
+    hi:hasName "Exosoul Project" .
+
+hi:GRaSPFramework a hi:AI_Concept ;
+    hi:describedIn hi:ConversationalAgentDiaryConstruction ;
+    hi:hasDescription "Framework to represent mentions of events in conversation" ;
+    hi:hasName "GRaSP Framework" .
+
+hi:GoalAlignment a hi:AI_Concept ;
+    hi:describedIn hi:TrustInterventionsHumanAI ;
+    hi:hasDescription "The degree to which the human's goal matches the AI's programmed goal" ;
+    hi:hasName "Goal Alignment" .
+
+hi:Human a owl:Class ;
+    rdfs:label "Human" ;
+    rdfs:comment "General class representing human beings" .
+
+hi:HybridIntelligenceAgent a hi:AI_Agent ;
+    hi:describedIn hi:ConversationalAgentDiaryConstruction ;
+    hi:hasDescription "An agent that constructs a personal diary through conversation" ;
+    hi:hasName "Hybrid Intelligence Conversational Agent" ;
+    hi:performsTask hi:DiaryConstructionTask,
+        hi:TimelineReconstructionTask,
+        hi:WellBeingMonitoringTask ;
+    hi:uses hi:EpisodicKnowledgeGraph,
+        hi:GRaSPFramework,
+        hi:PerspectiveDrivenIntent,
+        hi:PropertyDrivenIntent,
+        hi:SimpleEventModel,
+        hi:TimelineDrivenIntent .
+
+hi:Idealism a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Reflects absolute moral principles, oriented to truth, benevolence and avoiding harming others" ;
+    hi:hasName "Idealism" ;
+    hi:partOf hi:EthicsPositionTheory ;
+    hi:positivelyCorrelatedWith hi:HonestyHumility .
+
+hi:LegalistProfile a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Ethical profile with moderate idealism and relativism, and high normativism" ;
+    hi:hasName "Legalist Profile" .
+
+hi:MiscalibratedTrust a hi:AI_Concept ;
+    hi:describedIn hi:TrustInterventionsHumanAI ;
+    hi:hasDescription "When trust level doesn't match the actual capabilities of the system, leading to misuse or disuse" ;
+    hi:hasName "Miscalibrated Trust" ;
+    hi:subClassOf hi:Trust .
+
+hi:NavigationAI a hi:AI_Agent ;
+    hi:describedIn hi:TrustInterventionsHumanAI ;
+    hi:hasDescription "AI agent that optimizes for either distance or time in a route planning task" ;
+    hi:hasName "Navigation AI" ;
+    hi:performsTask hi:NavigationTask ;
+    hi:uses hi:AgentCapability .
+
+hi:OpportunistProfile a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Ethical profile with low idealism, honesty/humility, conscientiousness and high relativism, Machiavellianism and narcissism" ;
+    hi:hasName "Opportunist Profile" ;
+    hi:influences hi:CopyrightInfringement,
+        hi:PrivacyViolation ;
+    hi:prevents hi:Caution .
+
+hi:PerspectiveDrivenIntent a hi:AI_Concept ;
+    hi:describedIn hi:ConversationalAgentDiaryConstruction ;
+    hi:hasDescription "Low-level intents driven by possible and likely perspectives" ;
+    hi:hasName "Perspective-Driven Intent" .
+
+hi:PropertyDrivenIntent a hi:AI_Concept ;
+    hi:describedIn hi:ConversationalAgentDiaryConstruction ;
+    hi:hasDescription "Mid-level intents driven by necessary/possible/probable properties in the ontology" ;
+    hi:hasName "Property-Driven Intent" .
+
+hi:Relativism a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Relies on evaluations of situations, contexts and consequences, reflecting that harm may be necessary for good" ;
+    hi:hasName "Relativism" ;
+    hi:negativelyCorrelatedWith hi:HonestyHumility ;
+    hi:partOf hi:EthicsPositionTheory .
+
+hi:SensibleProfile a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Ethical profile with moderate idealism, low relativism, and high honesty/humility" ;
+    hi:hasName "Sensible Profile" .
+
+hi:SimpleEventModel a hi:AI_Concept ;
+    hi:describedIn hi:ConversationalAgentDiaryConstruction ;
+    hi:hasDescription "Formal model for defining events in someone's life" ;
+    hi:hasName "Simple Event Model" .
+
+hi:TimelineDrivenIntent a hi:AI_Concept ;
+    hi:describedIn hi:ConversationalAgentDiaryConstruction ;
+    hi:hasDescription "High-level intents driven by the timeline, e.g., verifying expected events" ;
+    hi:hasName "Timeline-Driven Intent" .
+
+hi:TimelineReconstructionTask a hi:Task ;
+    hi:describedIn hi:ConversationalAgentDiaryConstruction ;
+    hi:hasDescription "Reconstructing a timeline of events through conversation" ;
+    hi:hasName "Timeline Reconstruction" ;
+    hi:partOf hi:DiaryConstructionScenario .
+
+hi:TrustInterventionsScenario a hi:Scenario ;
+    hi:basedOn hi:TrustInterventionsHumanAI ;
+    hi:describedIn hi:TrustInterventionsHumanAI ;
+    hi:hasDescription "A scenario exploring interventions as trust indicators in human-AI collaborative tasks with misaligned goals" ;
+    hi:hasName "Trust Interventions in Human-AI Collaboration" .
+
+hi:VirtuousProfile a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Ethical profile with high idealism, honesty/humility, conscientiousness and low relativism, Machiavellianism and narcissism" ;
+    hi:hasName "Virtuous Profile" ;
+    hi:influences hi:Caution ;
+    hi:prevents hi:CopyrightInfringement,
+        hi:PrivacyViolation .
+
+hi:WellBeingMonitoringTask a hi:Task ;
+    hi:describedIn hi:ConversationalAgentDiaryConstruction ;
+    hi:hasDescription "Monitoring physical, social and mental functioning through conversation" ;
+    hi:hasName "Well-Being Monitoring" ;
+    hi:partOf hi:DiaryConstructionScenario .
+
+hi:Caution a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Reading privacy policies and being cautious with personal information online" ;
+    hi:hasName "Caution" .
+
+hi:CopyrightInfringement a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Using software or content without owning a license" ;
+    hi:hasName "Copyright Infringement" .
+
+hi:EthicalProfilingScenario a hi:Scenario ;
+    hi:basedOn hi:ExosoulEthicalProfiling ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "A scenario for creating ethical profiles of users to predict digital behaviors" ;
+    hi:hasName "Ethical Profiling Scenario" .
+
+hi:HonestyHumility a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Personality trait reflecting sincerity, fairness, modesty, and lack of manipulation" ;
+    hi:hasName "Honesty/Humility" .
+
+hi:Intervention a hi:AI_Concept ;
+    hi:describedIn hi:TrustInterventionsHumanAI ;
+    hi:hasDescription "A human-initiated action to alter the agent's behavior, rejecting its decision and suggesting an alternative" ;
+    hi:hasName "Intervention" .
+
+hi:PrivacyViolation a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Using others' personal information without permission" ;
+    hi:hasName "Privacy Violation" .
+
+hi:AI_Agent a owl:Class ;
+    rdfs:label "AI_Agent" ;
+    rdfs:comment "An artificial intelligence system acting as an agent" ;
+    rdfs:subClassOf hi:Agent .
+
+hi:Evaluation a owl:Class ;
+    rdfs:label "Evaluation" .
+
+hi:Human_Agent a owl:Class ;
+    rdfs:label "Human_Agent" ;
+    rdfs:comment "A human specifically acting as an agent in human-AI interaction" ;
+    rdfs:subClassOf hi:Agent,
+        hi:Human .
+
+hi:NavigationTask a hi:Task ;
+    hi:describedIn hi:TrustInterventionsHumanAI ;
+    hi:hasDescription "A route planning task where the human collaborates with an agent having partially aligned goals" ;
+    hi:hasName "Navigation Task" ;
+    hi:partOf hi:TrustInterventionsScenario .
+
+hi:Score a owl:Class ;
+    rdfs:label "Score" .
+
+hi:InterventionFrequency a hi:AI_Concept ;
+    hi:describedIn hi:TrustInterventionsHumanAI ;
+    hi:hasDescription "The rate at which humans intervene in an AI system's decisions, used as a behavioral measure of trust" ;
+    hi:hasName "Intervention Frequency" ;
+    hi:measuredIn hi:NavigationTask ;
+    hi:negativelyCorrelatedWith hi:Trust ;
+    hi:partOf hi:Intervention .
+
+hi:Agent a owl:Class ;
+    rdfs:label "Agent" .
+
+hi:DiaryConstructionScenario a hi:Scenario ;
+    hi:basedOn hi:ConversationalAgentDiaryConstruction ;
+    hi:describedIn hi:ConversationalAgentDiaryConstruction ;
+    hi:hasName "Diary Construction Scenario" .
+
+hi:EthicsPositionTheory a hi:AI_Concept ;
+    hi:describedIn hi:ExosoulEthicalProfiling ;
+    hi:hasDescription "Theory suggesting individuals' differences in moral judgments based on idealism and relativism" ;
+    hi:hasName "Ethics Position Theory" .
+
+hi:Trust a hi:AI_Concept ;
+    hi:hasDescription "The attitude that an agent will help achieve an individual's goals in a situation characterized by uncertainty and vulnerability" ;
+    hi:hasName "Trust" .
+
+hi:Scenario a owl:Class ;
+    rdfs:label "Scenario" .
+
+hi:ResearchPaper a owl:Class ;
+    rdfs:label "ResearchPaper" .
+
+hi:Task a owl:Class ;
+    rdfs:label "Task" .
+
+hi:TrustInterventionsHumanAI a hi:ResearchPaper ;
+    hi:hasAuthor "Sachini Weerawardhana, Michael Akintunde, Luc Moreau" ;
+    hi:hasDOI "10.3233/FAIA240206" ;
+    hi:hasTitle "Exploring the Dynamic Nature of Trust Using Interventions in a Human-AI Collaborative Task" ;
+    hi:hasVenue "HHAI 2024: Hybrid Human AI Systems for the Social Good" ;
+    hi:hasYear 2024 .
+
+hi:ConversationalAgentDiaryConstruction a hi:ResearchPaper ;
+    hi:hasAuthor "Piek Vossen, Selene Báez Santamaría, Thomas Baier" ;
+    hi:hasDOI "10.3233/FAIA240204" ;
+    hi:hasTitle "A Conversational Agent for Structured Diary Construction Enabling Monitoring of Functioning & Well-Being" ;
+    hi:hasVenue "Frontiers in Artificial Intelligence and Applications" ;
+    hi:hasYear 2024 .
+
+hi:ExosoulEthicalProfiling a hi:ResearchPaper ;
+    hi:hasAuthor "Costanza Alfieri, Paola Inverardi, Patrizio Migliarini, Massimiliano Palmiero" ;
+    hi:hasDOI "10.3233/FAIA220194" ;
+    hi:hasTitle "Exosoul: Ethical Profiling in the Digital World" ;
+    hi:hasVenue "HHAI2022: Augmenting Human Intellect" ;
+    hi:hasYear 2022 .
+
