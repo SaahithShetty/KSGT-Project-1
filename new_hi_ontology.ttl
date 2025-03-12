@@ -14,6 +14,22 @@ hi:Absolutist a hi:AI_Concept ;
     hi:hasName "Absolutist" ;
     hi:partOf hi:EthicsPositionTheory .
 
+hi:ActivationSimilarity a hi:AI_Concept ;
+    hi:hasDescription "Measure of how similar neuron activations are across different groups" ;
+    hi:hasName "ActivationSimilarity" .
+
+hi:AnnotationErrorDetection a hi:AI_Concept ;
+    hi:hasDescription "Using topographic maps to identify systematic errors in data labeling" ;
+    hi:hasName "AnnotationErrorDetection" ;
+    hi:partOf hi:NeuralNetworkVisualizationScenario .
+
+hi:AppropriateReliance a hi:AI_Concept ;
+    hi:describedIn hi:AIAssistedDecisionMakingReliance ;
+    hi:hasDescription "Adhering to AI recommendations when correct and overriding when incorrect" ;
+    hi:hasName "Appropriate Reliance" ;
+    hi:partOf hi:Reliances_Behavior ;
+    hi:positivelyCorrelatedWith hi:AIAssistedDecisionMakingTask .
+
 hi:ArchitecturalExpert a hi:Human_Agent ;
     hi:achievesScore hi:PartnershipScore ;
     hi:describedIn hi:HybridIntelligenceGenerativeDesign ;
@@ -35,6 +51,17 @@ hi:BehavioralTrustMeasurement a hi:AI_Concept ;
     hi:hasDescription "Using behavioral indicators like intervention frequency to measure trust in human-AI interactions" ;
     hi:hasName "Behavioral Trust Measurement" ;
     hi:uses hi:InterventionFrequency .
+
+hi:BelowThresholdOrientedSampling a hi:AI_Concept ;
+    hi:hasDescription "A variant that selects only rejected samples closest to the threshold" ;
+    hi:hasName "BelowThresholdOrientedSampling" ;
+    hi:partOf hi:ValueAwareActiveLearningScenario ;
+    hi:uses hi:RejectionThreshold .
+
+hi:BiasVisualization a hi:AI_Concept ;
+    hi:hasDescription "Detecting potential biases in neural network representations" ;
+    hi:hasName "BiasVisualization" ;
+    hi:partOf hi:NeuralNetworkVisualizationScenario .
 
 hi:CaseBasedReasoningSystem a hi:AI_Agent ;
     hi:describedIn hi:LandmarksCaseBasedReasoning ;
@@ -61,11 +88,43 @@ hi:CaseResearcher a hi:Human_Agent ;
     hi:hasName "Case Researcher" ;
     hi:performsTask hi:CaseAnalysisTask .
 
+hi:CertaintySampling a hi:AI_Concept ;
+    hi:hasDescription "Sampling instances with the highest confidence" ;
+    hi:hasName "CertaintySampling" ;
+    hi:partOf hi:ValueAwareActiveLearningScenario .
+
+hi:Clinc150Dataset a hi:Dataset ;
+    hi:hasDescription "A 150-class balanced dataset for intent classification" ;
+    hi:hasName "Clinc150" ;
+    hi:usedIn hi:ValueAwareActiveLearning .
+
+hi:ClinicalAISystem a hi:AI_Agent ;
+    hi:hasDescription "AI system deployed in clinical workflows for decision support" ;
+    hi:hasName "Clinical AI System" .
+
+hi:ClinicalAITrustScenario a hi:Scenario ;
+    hi:basedOn hi:TrustInClinicalAI ;
+    hi:hasDescription "A scenario exploring trust formation and calibration in clinical AI deployment" ;
+    hi:hasName "Clinical AI Trust Development Scenario" .
+
+hi:ClinicalExpert a hi:Human_Agent ;
+    hi:hasDescription "Healthcare professional interacting with AI systems" ;
+    hi:hasName "Clinical Expert" .
+
+hi:CoActivationGraph a hi:AI_Concept ;
+    hi:hasDescription "A method that considers the most similar pairs of neurons to create a layout" ;
+    hi:hasName "CoActivationGraph" ;
+    hi:partOf hi:TopographicActivationMaps .
+
 hi:Compliance a hi:AI_Concept ;
     hi:describedIn hi:TrustInterventionsHumanAI ;
     hi:hasDescription "When the human accepts the agent's decisions, a behavioral demonstration of trust" ;
     hi:hasName "Compliance" ;
     hi:positivelyCorrelatedWith hi:Trust .
+
+hi:ComponentAnalysis a hi:AI_Concept ;
+    hi:hasDescription "Metrics based on analyzing connected components in topographic maps" ;
+    hi:hasName "ComponentAnalysis" .
 
 hi:Conscientiousness a hi:AI_Concept ;
     hi:describedIn hi:ExosoulEthicalProfiling ;
@@ -77,6 +136,20 @@ hi:ContextualThompsonSampling a hi:AI_Concept ;
     hi:hasDescription "Reinforcement learning algorithm that adapts to each meal's context to optimize interventions" ;
     hi:hasName "Contextual Thompson Sampling" ;
     hi:partOf hi:ReinforcementLearningDementiaCare .
+
+hi:ConvolutionalNeuralNetwork a hi:AI_Concept ;
+    hi:hasDescription "Neural network with convolutional layers" ;
+    hi:hasName "ConvolutionalNeuralNetwork" .
+
+hi:DBPediaDataset a hi:Dataset ;
+    hi:hasDescription "A 9-class unbalanced dataset for content classification from Wikipedia" ;
+    hi:hasName "DBPedia" ;
+    hi:usedIn hi:ValueAwareActiveLearning .
+
+hi:DataRepresentationAnalysis a hi:AI_Concept ;
+    hi:hasDescription "Approach to investigate how a neural network processes input data by analyzing its internal representations" ;
+    hi:hasName "DataRepresentationAnalysis" ;
+    hi:partOf hi:NeuralNetworkVisualizationScenario .
 
 hi:DiabetesUseCase a hi:Scenario ;
     hi:describedIn hi:ConversationalAgentDiaryConstruction ;
@@ -95,6 +168,21 @@ hi:DimensionOrdering a hi:AI_Concept ;
     hi:hasDescription "A method to determine the orders for dimensions in case-based reasoning by using statistical trends like logistic regression coefficients" ;
     hi:hasName "Dimension Ordering" ;
     hi:partOf hi:PrecedentialConstraint .
+
+hi:DimensionalityReduction a hi:AI_Concept ;
+    hi:hasDescription "Techniques like PCA, t-SNE, and UMAP to project high-dimensional data into a two-dimensional space" ;
+    hi:hasName "DimensionalityReduction" ;
+    hi:partOf hi:TopographicActivationMaps .
+
+hi:DispositionalTrust a hi:AI_Concept ;
+    hi:hasDescription "Personal tendency to trust based on individual characteristics like culture, age, personality traits" ;
+    hi:partOf hi:Trust .
+
+hi:DuringDevelopmentTrustStage a hi:AI_Concept ;
+    hi:partOf hi:Trust .
+
+hi:DuringUseTrustStage a hi:AI_Concept ;
+    hi:partOf hi:Trust .
 
 hi:DynamicTrust a hi:AI_Concept ;
     hi:describedIn hi:TrustInterventionsHumanAI ;
@@ -116,11 +204,29 @@ hi:EthicalProfilingTask a hi:Task ;
     hi:hasName "Ethical Profiling" ;
     hi:partOf hi:EthicalProfilingScenario .
 
+hi:EvidenceGenerationTrustStage a hi:AI_Concept ;
+    hi:partOf hi:Trust .
+
 hi:Exceptionist a hi:AI_Concept ;
     hi:describedIn hi:ExosoulEthicalProfiling ;
     hi:hasDescription "Conventionalists who tolerate exceptions to moral standards when benefits offset potential harmful consequences" ;
     hi:hasName "Exceptionist" ;
     hi:partOf hi:EthicsPositionTheory .
+
+hi:FairFaceDataset a hi:Dataset ;
+    hi:hasDescription "Balanced dataset for investigating potential racial bias in neural networks" ;
+    hi:hasName "FairFace" ;
+    hi:usedIn hi:TopographicActivationMaps .
+
+hi:FashionMNISTDataset a hi:Dataset ;
+    hi:hasDescription "Dataset used to demonstrate annotation error detection" ;
+    hi:hasName "FashionMNIST" ;
+    hi:usedIn hi:TopographicActivationMaps .
+
+hi:FeatureVisualization a hi:AI_Concept ;
+    hi:hasDescription "Method to explain internal structures of a deep learning model by investigating which patterns are detected by filters" ;
+    hi:hasName "FeatureVisualization" ;
+    hi:partOf hi:NeuralNetworkVisualizationScenario .
 
 hi:ForcingRelation a hi:AI_Concept ;
     hi:describedIn hi:LandmarksCaseBasedReasoning ;
@@ -141,6 +247,16 @@ hi:HI_TAM_Concept a hi:AI_Concept ;
     hi:hasDescription "A model adapted from AI-TAM incorporating key aspects from HI including AI transparency and user control to support both virtual assistant training and general human-AI mutual learning" ;
     hi:hasName "Hybrid Intelligence Technology Acceptance Model" .
 
+hi:HateSpeechDataset a hi:Dataset ;
+    hi:hasDescription "A 3-class unbalanced dataset for hate speech classification" ;
+    hi:hasName "HateSpeech" ;
+    hi:usedIn hi:ValueAwareActiveLearning .
+
+hi:HumanInLoopRLConcept a hi:AI_Concept ;
+    hi:describedIn hi:RLHumanInLoopPaper ;
+    hi:hasDescription "A paradigm emphasizing human involvement throughout the reinforcement learning process, from problem identification to system maintenance" ;
+    hi:hasName "Human-in-the-Loop Reinforcement Learning" .
+
 hi:HumanSimulator a hi:AI_Concept ;
     hi:describedIn hi:HumanCenteredAIDementiaCare ;
     hi:hasDescription "Simulation of behaviors and responses of users with dementia to test AI system effectiveness in a controlled environment" ;
@@ -151,11 +267,26 @@ hi:HybridIntelligenceNarrative a hi:AI_Concept ;
     hi:hasDescription "A narrative designed to create a psychologically safe space for co-creation without the fear of job-replacement" ;
     hi:hasName "Hybrid Intelligence Narrative" .
 
+hi:LearnedTrust a hi:AI_Concept ;
+    hi:hasDescription "Trust developed through past interactions with the system, including initial and dynamic learned trust" ;
+    hi:partOf hi:Trust .
+
 hi:LinearUpperConfidenceBound a hi:AI_Concept ;
     hi:describedIn hi:HumanCenteredAIDementiaCare ;
     hi:hasDescription "Contextual reinforcement learning algorithm for decision-making under uncertainty" ;
     hi:hasName "Linear Upper Confidence Bound" ;
     hi:partOf hi:ReinforcementLearningDementiaCare .
+
+hi:MDPFormulationTask a hi:Task ;
+    hi:describedIn hi:RLHumanInLoopPaper ;
+    hi:hasDescription "Collaborative task of defining action spaces, state representations, and reward functions with human experts" ;
+    hi:hasName "Markov Decision Process Formulation" ;
+    hi:partOf hi:RLHumanInLoopScenario .
+
+hi:MNISTDataset a hi:Dataset ;
+    hi:hasDescription "Handwritten digit dataset used for initial experiments" ;
+    hi:hasName "MNIST" ;
+    hi:usedIn hi:TopographicActivationMaps .
 
 hi:Machiavellianism a hi:AI_Concept ;
     hi:describedIn hi:ExosoulEthicalProfiling ;
@@ -163,6 +294,24 @@ hi:Machiavellianism a hi:AI_Concept ;
     hi:hasName "Machiavellianism" ;
     hi:negativelyCorrelatedWith hi:Idealism ;
     hi:positivelyCorrelatedWith hi:Relativism .
+
+hi:MachineLearningDeveloperRole a hi:AI_Concept ;
+    hi:describedIn hi:RLHumanInLoopPaper ;
+    hi:hasDescription "Technical role responsible for implementing RL algorithms, selecting learning approaches, and tuning system parameters" ;
+    hi:hasName "Machine Learning Developer Role" .
+
+hi:MeanSquaredError a hi:AI_Concept ;
+    hi:hasDescription "Metric to quantify the similarity between original and perturbed topographic maps" ;
+    hi:hasName "MeanSquaredError" .
+
+hi:ModelValue a hi:AI_Concept ;
+    hi:hasDescription "A metric that jointly considers the benefit of correct prediction, cost of errors, and cost of abstaining" ;
+    hi:hasName "Model Value" ;
+    hi:uses hi:CostFactor .
+
+hi:MultiLayerPerceptron a hi:AI_Concept ;
+    hi:hasDescription "A simple neural network model used in initial experiments" ;
+    hi:hasName "MultiLayerPerceptron" .
 
 hi:Narcissism a hi:AI_Concept ;
     hi:describedIn hi:ExosoulEthicalProfiling ;
@@ -177,17 +326,82 @@ hi:NavigatorHuman a hi:Human_Agent ;
     hi:performsTask hi:Intervention,
         hi:NavigationTask .
 
+hi:OverReliance a hi:AI_Concept ;
+    hi:describedIn hi:AIAssistedDecisionMakingReliance ;
+    hi:hasDescription "Adhering to AI recommendations in too many cases, potentially including wrong recommendations" ;
+    hi:hasName "Over-Reliance" ;
+    hi:negativelyCorrelatedWith hi:AIAssistedDecisionMakingTask ;
+    hi:partOf hi:Reliances_Behavior .
+
+hi:ParticleSwarmOptimization a hi:AI_Concept ;
+    hi:hasDescription "A biologically inspired algorithm to optimize neuron placement based on activation similarity" ;
+    hi:hasName "ParticleSwarmOptimization" ;
+    hi:partOf hi:TopographicActivationMaps .
+
 hi:PatientRecoveryUseCase a hi:Scenario ;
     hi:describedIn hi:ConversationalAgentDiaryConstruction ;
     hi:hasDescription "Monitoring recovery and functioning of elderly patients" ;
     hi:hasName "Patient Recovery and Functioning Patterns" ;
     hi:relatedTo hi:DiaryConstructionScenario .
 
+hi:PostDeploymentTrustStage a hi:AI_Concept ;
+    hi:partOf hi:Trust .
+
+hi:PreDevelopmentTrustStage a hi:AI_Concept ;
+    hi:partOf hi:Trust .
+
 hi:PwDUser a hi:Human_Agent ;
     hi:describedIn hi:HumanCenteredAIDementiaCare ;
     hi:hasDescription "User with early-stage dementia who needs assistance with eating and drinking routines" ;
     hi:hasName "Person with Early-Stage Dementia" ;
     hi:interactsWith hi:WhoTakesCareAI .
+
+hi:RLProblemIdentificationConcept a hi:AI_Concept ;
+    hi:describedIn hi:RLHumanInLoopPaper ;
+    hi:hasDescription "Process of identifying appropriate problems that can be effectively solved using Reinforcement Learning, requiring both technical and business input" ;
+    hi:hasName "RL Problem Identification" ;
+    hi:influences hi:MDPFormulationConcept .
+
+hi:RLProblemIdentificationTask a hi:Task ;
+    hi:describedIn hi:RLHumanInLoopPaper ;
+    hi:hasDescription "Evaluating potential RL applications, assessing technical feasibility, and determining potential return on investment" ;
+    hi:hasName "RL Problem Identification" ;
+    hi:partOf hi:RLHumanInLoopScenario .
+
+hi:RandomSampling a hi:AI_Concept ;
+    hi:hasDescription "A baseline strategy that samples instances randomly" ;
+    hi:hasName "RandomSampling" ;
+    hi:partOf hi:ValueAwareActiveLearningScenario .
+
+hi:RelianceEvaluation a hi:Evaluation ;
+    hi:appliesTo hi:AIAssistedDecisionMakingTask ;
+    hi:describedIn hi:AIAssistedDecisionMakingReliance ;
+    hi:hasDescription "Evaluation of human reliance behavior in AI-assisted decision-making" ;
+    hi:hasName "Reliance Behavior Evaluation" .
+
+hi:RelianceQuality a hi:AI_Concept ;
+    hi:describedIn hi:AIAssistedDecisionMakingReliance ;
+    hi:hasDescription "The ability of humans to distinguish correct and wrong AI recommendations" ;
+    hi:hasName "Reliance Quality" .
+
+hi:SaliencyMaps a hi:AI_Concept ;
+    hi:hasDescription "Technique to quantify the relevance of input values for the output of a neural network" ;
+    hi:hasName "SaliencyMaps" ;
+    hi:partOf hi:NeuralNetworkVisualizationScenario .
+
+hi:SelectiveClassification a hi:AI_Concept ;
+    hi:hasDescription "A classification approach where the model can choose to abstain from making a prediction on uncertain instances" ;
+    hi:hasName "Selective Classification" ;
+    hi:uses hi:RejectionThreshold .
+
+hi:SelfOrganizingMap a hi:AI_Concept ;
+    hi:hasDescription "A neural network technique to create a two-dimensional layout where similar neurons are placed nearby" ;
+    hi:hasName "SelfOrganizingMap" ;
+    hi:partOf hi:TopographicActivationMaps .
+
+hi:SituationalTrust a hi:AI_Concept ;
+    hi:hasDescription "Trust influenced by the context of interaction, including external and internal factors" ;
+    hi:partOf hi:Trust .
 
 hi:Situationist a hi:AI_Concept ;
     hi:describedIn hi:ExosoulEthicalProfiling ;
@@ -205,6 +419,11 @@ hi:SoftwareExoskeleton a hi:AI_Concept ;
         hi:SensibleProfile,
         hi:VirtuousProfile .
 
+hi:SubjectMatterExpertRole a hi:AI_Concept ;
+    hi:describedIn hi:RLHumanInLoopPaper ;
+    hi:hasDescription "Critical human role providing domain-specific knowledge and insights during RL problem formulation and evaluation" ;
+    hi:hasName "Subject Matter Expert Role" .
+
 hi:Subjectivist a hi:AI_Concept ;
     hi:describedIn hi:ExosoulEthicalProfiling ;
     hi:hasDescription "Realists who do not endorse moral standards or the avoidance of harmful consequences" ;
@@ -216,11 +435,64 @@ hi:ThreeStageEscalationScenario a hi:AI_Concept ;
     hi:hasDescription "Approach with increasing intensity of signals to gently guide dementia patients through eating routines" ;
     hi:hasName "Three-Stage Escalated Eating Scenario" .
 
+hi:ThresholdOrientedSampling a hi:AI_Concept ;
+    hi:hasDescription "A novel strategy focusing on examples near the rejection threshold" ;
+    hi:hasName "ThresholdOrientedSampling" ;
+    hi:partOf hi:ValueAwareActiveLearningScenario ;
+    hi:uses hi:RejectionThreshold .
+
 hi:ToxicityUseCase a hi:Scenario ;
     hi:describedIn hi:ConversationalAgentDiaryConstruction ;
     hi:hasDescription "Monitoring side effects of cancer treatments like chemotherapy" ;
     hi:hasName "Cancer Therapy Toxicity Monitoring" ;
     hi:relatedTo hi:DiaryConstructionScenario .
+
+hi:TrainingProcessVisualization a hi:AI_Concept ;
+    hi:hasDescription "Tracking the evolution of neural network activations during training" ;
+    hi:hasName "TrainingProcessVisualization" ;
+    hi:partOf hi:NeuralNetworkVisualizationScenario .
+
+hi:TrustCalibrationTask a hi:Task ;
+    hi:hasDescription "Process of aligning AI system trust with its actual capabilities" ;
+    hi:hasName "AI Trust Calibration" .
+
+hi:TrustDampeningMechanism a hi:AI_Concept ;
+    hi:hasDescription "Mechanisms to lower expectations and calibrate trust as needed" ;
+    hi:partOf hi:Trust .
+
+hi:TrustRepairMechanism a hi:AI_Concept ;
+    hi:hasDescription "Mechanisms to rebuild trust after a trust violation" ;
+    hi:partOf hi:Trust .
+
+hi:TwitterUSAirlineSentimentDataset a hi:Dataset ;
+    hi:hasDescription "A 3-class unbalanced dataset for sentiment classification of airline tweets" ;
+    hi:hasName "TwitterUSAirlineSentiment" ;
+    hi:usedIn hi:ValueAwareActiveLearning .
+
+hi:UncertaintySampling a hi:AI_Concept ;
+    hi:hasDescription "The standard active learning strategy that samples instances with the highest uncertainty" ;
+    hi:hasName "UncertaintySampling" ;
+    hi:partOf hi:ValueAwareActiveLearningScenario .
+
+hi:UnderReliance a hi:AI_Concept ;
+    hi:describedIn hi:AIAssistedDecisionMakingReliance ;
+    hi:hasDescription "Adhering to AI recommendations in too few cases, potentially missing correct recommendations" ;
+    hi:hasName "Under-Reliance" ;
+    hi:negativelyCorrelatedWith hi:AIAssistedDecisionMakingTask ;
+    hi:partOf hi:Reliances_Behavior .
+
+hi:VGG16 a hi:AI_Concept ;
+    hi:hasDescription "Pre-trained deep convolutional neural network used for feature extraction" ;
+    hi:hasName "VGG16" .
+
+hi:ValueAwareActiveLearningTask a hi:Task ;
+    hi:hasDescription "Task of selecting the most valuable instances to label in an active learning scenario" ;
+    hi:hasName "Value-Aware Active Learning" ;
+    hi:partOf hi:ValueAwareActiveLearningScenario .
+
+hi:ValuePerformanceMetric a hi:AI_Concept ;
+    hi:hasDescription "A performance metric that considers the value of correct predictions, errors, and abstentions" ;
+    hi:hasName "Value Performance Metric" .
 
 hi:achievesScore a owl:ObjectProperty ;
     rdfs:label "achievesScore" ;
@@ -314,6 +586,12 @@ hi:prevents a owl:ObjectProperty ;
 hi:uses a owl:ObjectProperty ;
     rdfs:label "uses" .
 
+hi:AIAssistedDecisionMakingScenario a hi:Scenario ;
+    hi:basedOn hi:AIAssistedDecisionMakingReliance ;
+    hi:describedIn hi:AIAssistedDecisionMakingReliance ;
+    hi:hasDescription "A scenario exploring the interdependence between human reliance behavior and decision-making accuracy in AI-assisted decision-making" ;
+    hi:hasName "AI-Assisted Decision-Making Reliance Scenario" .
+
 hi:AIInterpretabilityTask a hi:Task ;
     hi:describedIn hi:LandmarksCaseBasedReasoning ;
     hi:hasDescription "The task of elucidating the decision making process of machine learning systems" ;
@@ -344,6 +622,10 @@ hi:ContinualLearningLoops a hi:AI_Concept ;
     hi:describedIn hi:HybridIntelligenceGenerativeDesign ;
     hi:hasDescription "Human-centered design principles to seamlessly integrate AI training into the expert's task workflow" ;
     hi:hasName "Continual Learning Loops" .
+
+hi:CostFactor a hi:AI_Concept ;
+    hi:hasDescription "A parameter representing the relative cost of errors compared to correct predictions" ;
+    hi:hasName "Cost Factor" .
 
 hi:DementiaCareSystemEvaluation a hi:Evaluation ;
     hi:appliesTo hi:EatingReminderTask ;
@@ -433,6 +715,12 @@ hi:LegalistProfile a hi:AI_Concept ;
     hi:hasDescription "Ethical profile with moderate idealism and relativism, and high normativism" ;
     hi:hasName "Legalist Profile" .
 
+hi:MDPFormulationConcept a hi:AI_Concept ;
+    hi:describedIn hi:RLHumanInLoopPaper ;
+    hi:hasDescription "Careful construction of action sets, state variables, and reward functions to enable effective agent learning" ;
+    hi:hasName "Markov Decision Process Formulation" ;
+    hi:influences hi:RLLearningPhaseConcept .
+
 hi:MiscalibratedTrust a hi:AI_Concept ;
     hi:describedIn hi:TrustInterventionsHumanAI ;
     hi:hasDescription "When trust level doesn't match the actual capabilities of the system, leading to misuse or disuse" ;
@@ -474,11 +762,28 @@ hi:PropertyDrivenIntent a hi:AI_Concept ;
     hi:hasDescription "Mid-level intents driven by necessary/possible/probable properties in the ontology" ;
     hi:hasName "Property-Driven Intent" .
 
+hi:RLDeploymentDecisionConcept a hi:AI_Concept ;
+    hi:describedIn hi:RLHumanInLoopPaper ;
+    hi:hasDescription "Critical evaluation of whether an RL agent is ready to be deployed in a real-world environment, considering performance and potential risks" ;
+    hi:hasName "RL Deployment Decision" ;
+    hi:influences hi:RLSystemMaintenanceConcept .
+
+hi:RLLearningPhaseConcept a hi:AI_Concept ;
+    hi:describedIn hi:RLHumanInLoopPaper ;
+    hi:hasDescription "The process of agent learning, including decisions about data, simulators, learning approaches, and hyperparameter tuning" ;
+    hi:hasName "RL Learning Phase" ;
+    hi:influences hi:RLDeploymentDecisionConcept .
+
 hi:RLOptimizationTask a hi:Task ;
     hi:describedIn hi:HumanCenteredAIDementiaCare ;
     hi:hasDescription "Optimizing signal combinations based on user behavior and preferences using reinforcement learning" ;
     hi:hasName "RL Signal Optimization" ;
     hi:partOf hi:DementiaCareScenario .
+
+hi:RLSystemMaintenanceConcept a hi:AI_Concept ;
+    hi:describedIn hi:RLHumanInLoopPaper ;
+    hi:hasDescription "Ongoing process of monitoring, updating, and potentially retraining the RL system as environmental conditions change" ;
+    hi:hasName "RL System Maintenance" .
 
 hi:Relativism a hi:AI_Concept ;
     hi:describedIn hi:ExosoulEthicalProfiling ;
@@ -512,6 +817,13 @@ hi:TimelineReconstructionTask a hi:Task ;
     hi:hasDescription "Reconstructing a timeline of events through conversation" ;
     hi:hasName "Timeline Reconstruction" ;
     hi:partOf hi:DiaryConstructionScenario .
+
+hi:TrustInClinicalAI a hi:ResearchPaper ;
+    hi:hasAuthor "Jacob T. Browne, Saskia Bakker, Bin Yu, Peter Lloyd, Somaya Ben Allouch" ;
+    hi:hasDOI "10.3233/FAIA220192" ;
+    hi:hasTitle "Trust in Clinical AI: Expanding the Unit of Analysis" ;
+    hi:hasVenue "HHAI2022: Augmenting Human Intellect" ;
+    hi:hasYear 2022 .
 
 hi:TrustInterventionsScenario a hi:Scenario ;
     hi:basedOn hi:TrustInterventionsHumanAI ;
@@ -640,6 +952,12 @@ hi:PrivacyViolation a hi:AI_Concept ;
     hi:hasDescription "Using others' personal information without permission" ;
     hi:hasName "Privacy Violation" .
 
+hi:RLHumanInLoopScenario a hi:Scenario ;
+    hi:basedOn hi:RLHumanInLoopPaper ;
+    hi:describedIn hi:RLHumanInLoopPaper ;
+    hi:hasDescription "A scenario exploring the critical role of humans throughout the reinforcement learning process" ;
+    hi:hasName "Human-in-the-Loop Reinforcement Learning Scenario" .
+
 hi:SimulationScore a hi:Score ;
     hi:hasName "Simulation Performance Score" ;
     hi:hasValue "0.91"^^xsd:float .
@@ -649,6 +967,21 @@ hi:NavigationTask a hi:Task ;
     hi:hasDescription "A route planning task where the human collaborates with an agent having partially aligned goals" ;
     hi:hasName "Navigation Task" ;
     hi:partOf hi:TrustInterventionsScenario .
+
+hi:RejectionThreshold a hi:AI_Concept ;
+    hi:hasDescription "A confidence threshold below which predictions are rejected" ;
+    hi:hasName "Rejection Threshold" .
+
+hi:Reliances_Behavior a hi:AI_Concept ;
+    hi:describedIn hi:AIAssistedDecisionMakingReliance ;
+    hi:hasDescription "Human's behavior of adhering to or overriding AI recommendations in decision-making" ;
+    hi:hasName "Reliance Behavior" .
+
+hi:AIAssistedDecisionMakingTask a hi:Task ;
+    hi:describedIn hi:AIAssistedDecisionMakingReliance ;
+    hi:hasDescription "Task of making decisions with assistance from an AI system, involving potential adherence or override of AI recommendations" ;
+    hi:hasName "AI-Assisted Decision Making" ;
+    hi:partOf hi:AIAssistedDecisionMakingScenario .
 
 hi:InterventionFrequency a hi:AI_Concept ;
     hi:describedIn hi:TrustInterventionsHumanAI ;
@@ -671,10 +1004,12 @@ hi:PrecedentialConstraint a hi:AI_Concept ;
     hi:hasDescription "A formal framework developed to describe the a fortiori reasoning process underlying case law, analyzing how precedents constrain decisions in new cases" ;
     hi:hasName "Theory of Precedential Constraint" .
 
-hi:AI_Agent a owl:Class ;
-    rdfs:label "AI_Agent" ;
-    rdfs:comment "An artificial intelligence system acting as an agent" ;
-    rdfs:subClassOf hi:Agent .
+hi:ValueAwareActiveLearning a hi:ResearchPaper ;
+    hi:hasAuthor "Burcu Sayin, Jie Yang, Andrea Passerini, Fabio Casati" ;
+    hi:hasDOI "10.3233/FAIA230085" ;
+    hi:hasTitle "Value-Aware Active Learning" ;
+    hi:hasVenue "HHAI 2023: Augmenting Human Intellect" ;
+    hi:hasYear 2023 .
 
 hi:DiaryConstructionScenario a hi:Scenario ;
     hi:basedOn hi:ConversationalAgentDiaryConstruction ;
@@ -686,6 +1021,19 @@ hi:EthicsPositionTheory a hi:AI_Concept ;
     hi:hasDescription "Theory suggesting individuals' differences in moral judgments based on idealism and relativism" ;
     hi:hasName "Ethics Position Theory" .
 
+hi:Score a owl:Class ;
+    rdfs:label "Score" .
+
+hi:ValueAwareActiveLearningScenario a hi:Scenario ;
+    hi:basedOn hi:ValueAwareActiveLearning ;
+    hi:hasDescription "A scenario exploring active learning strategies that maximize model value in selective classification" ;
+    hi:hasName "Value-Aware Active Learning Scenario" .
+
+hi:AI_Agent a owl:Class ;
+    rdfs:label "AI_Agent" ;
+    rdfs:comment "An artificial intelligence system acting as an agent" ;
+    rdfs:subClassOf hi:Agent .
+
 hi:Evaluation a owl:Class ;
     rdfs:label "Evaluation" .
 
@@ -695,15 +1043,28 @@ hi:Human_Agent a owl:Class ;
     rdfs:subClassOf hi:Agent,
         hi:Human .
 
-hi:Score a owl:Class ;
-    rdfs:label "Score" .
+hi:NeuralNetworkVisualizationScenario a hi:Scenario ;
+    hi:basedOn hi:TopographicActivationMaps ;
+    hi:hasDescription "A scenario for creating topographic activation maps to understand neural network representations" ;
+    hi:hasName "Neural Network Activation Visualization Scenario" .
 
-hi:Trust a hi:AI_Concept ;
-    hi:hasDescription "The attitude that an agent will help achieve an individual's goals in a situation characterized by uncertainty and vulnerability" ;
-    hi:hasName "Trust" .
+hi:TopographicActivationMaps a hi:AI_Concept,
+        hi:ResearchPaper ;
+    hi:hasAuthor "Valerie Krug, Raihan Kabir Ratul, Christopher Olson, Sebastian Stober" ;
+    hi:hasDOI "10.3233/FAIA230080" ;
+    hi:hasDescription "A technique to visualize neuron activations in a two-dimensional space where neurons with similar activations are placed nearby" ;
+    hi:hasName "TopographicActivationMaps" ;
+    hi:hasTitle "Visualizing Deep Neural Networks with Topographic Activation Maps" ;
+    hi:hasVenue "HHAI 2023: Augmenting Human Intellect" ;
+    hi:hasYear 2023 ;
+    hi:partOf hi:NeuralNetworkVisualizationScenario .
 
-hi:Scenario a owl:Class ;
-    rdfs:label "Scenario" .
+hi:AIAssistedDecisionMakingReliance a hi:ResearchPaper ;
+    hi:hasAuthor "Jakob Schoeffer, Johannes Jakubik, Michael Voessing, Niklas Kuehl, Gerhard Satzger" ;
+    hi:hasDOI "10.3233/FAIA230098" ;
+    hi:hasTitle "On the Interdependence of Reliance Behavior and Accuracy in AI-Assisted Decision-Making" ;
+    hi:hasVenue "HHAI 2023: Augmenting Human Intellect" ;
+    hi:hasYear 2023 .
 
 hi:LandmarksCaseBasedReasoning a hi:ResearchPaper ;
     hi:hasAuthor "Wijnand van Woerkom, Davide Grossi, Henry Prakken, Bart Verheij" ;
@@ -712,8 +1073,12 @@ hi:LandmarksCaseBasedReasoning a hi:ResearchPaper ;
     hi:hasVenue "HHAI2022: Augmenting Human Intellect" ;
     hi:hasYear 2022 .
 
-hi:ResearchPaper a owl:Class ;
-    rdfs:label "ResearchPaper" .
+hi:RLHumanInLoopPaper a hi:ResearchPaper ;
+    hi:hasAuthor "Matthew E. Taylor" ;
+    hi:hasDOI "10.3233/FAIA230098" ;
+    hi:hasTitle "Reinforcement Learning Requires Human-in-the-Loop Framing and Approaches" ;
+    hi:hasVenue "HHAI 2023: Augmenting Human Intellect" ;
+    hi:hasYear 2023 .
 
 hi:HybridIntelligenceGenerativeDesign a hi:ResearchPaper ;
     hi:hasAuthor "Yaoli Mao, Janet Rafner, Yi Wang, Jacob Sherson" ;
@@ -721,9 +1086,6 @@ hi:HybridIntelligenceGenerativeDesign a hi:ResearchPaper ;
     hi:hasTitle "A Hybrid Intelligence Approach to Training Generative Design Assistants: Partnership Between Human Experts and AI Enhanced Co-Creative Tools" ;
     hi:hasVenue "HHAI 2023: Augmenting Human Intellect" ;
     hi:hasYear 2023 .
-
-hi:Task a owl:Class ;
-    rdfs:label "Task" .
 
 hi:TrustInterventionsHumanAI a hi:ResearchPaper ;
     hi:hasAuthor "Sachini Weerawardhana, Michael Akintunde, Luc Moreau" ;
@@ -745,6 +1107,21 @@ hi:HumanCenteredAIDementiaCare a hi:ResearchPaper ;
     hi:hasTitle "Human-Centered AI for Dementia Care: Using Reinforcement Learning for Personalized Interventions Support in Eating and Drinking Scenarios" ;
     hi:hasVenue "HHAI 2024: Hybrid Human AI Systems for the Social Good" ;
     hi:hasYear 2024 .
+
+hi:Scenario a owl:Class ;
+    rdfs:label "Scenario" .
+
+hi:ResearchPaper a owl:Class ;
+    rdfs:label "ResearchPaper" .
+
+hi:Trust a hi:AI_Concept ;
+    hi:hasDescription "The attitude that an AI system will help achieve an individual's goals in a situation characterized by uncertainty and vulnerability",
+        "The attitude that an agent will help achieve an individual's goals in a situation characterized by uncertainty and vulnerability" ;
+    hi:hasName "Trust",
+        "Trust in Clinical AI" .
+
+hi:Task a owl:Class ;
+    rdfs:label "Task" .
 
 hi:ExosoulEthicalProfiling a hi:ResearchPaper ;
     hi:hasAuthor "Costanza Alfieri, Paola Inverardi, Patrizio Migliarini, Massimiliano Palmiero" ;
